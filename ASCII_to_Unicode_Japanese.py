@@ -1,4 +1,4 @@
-### print ("HI")
+#!/usr/bin/python3
 
 from sys import stdin, stdout
 for line in stdin.readlines():
