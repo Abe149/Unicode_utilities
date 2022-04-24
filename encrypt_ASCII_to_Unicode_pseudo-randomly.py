@@ -3,7 +3,7 @@
 from random import getrandbits, randrange
 from sys    import stdin, stdout
 
-### singles: dict [map] from {strings of length 3} to list of {replacement string}
+### singles: dict [map] from {strings of length 3} to string of possible replacement char.s
 
 ### doubles: dict [map] from {strings of length 2} to list of (tuple of {replacement string, number of spaces to maybe add})
 
@@ -12,7 +12,7 @@ from sys    import stdin, stdout
 triples={"...": [('…', 2)]}
 doubles={}
 # doubles={"": ''} ### place-holder
-singles={' ': [' ']} ### ASCII space ⇒ NBSP
+singles={' ': " "} ### ASCII space ⇒ NBSP
 
 
 
@@ -39,13 +39,23 @@ for input_line in stdin.readlines():
 #        output_line += " " ### one NBSP
 
 
+########### a temp. copy of a WIP version of the code for singles, while that still used a list of strings as the value type of the dict
+###########
+######    while len(input_line) and (input_line[0] in singles):
+######      choices_list = singles[ input_line[0] ]
+######      if len(choices_list) == 1:
+######        output_line += choices_list[0]
+######      else:
+######        output_line += choices_list[randrange( len(choices_list) )]
+
+
 
     while len(input_line) and (input_line[0] in singles):
-      choices_list = singles[ input_line[0] ]
-      if len(choices_list) == 1:
-        output_line += choices_list[0]
+      choices_str = singles[ input_line[0] ]
+      if len(choices_str) == 1:
+        output_line += choices_str[0]
       else:
-        output_line += choices_list[randrange( len(choices_list) )]
+        output_line += choices_str[randrange( len(choices_str) )]
 
       input_line = input_line[1:]
           
