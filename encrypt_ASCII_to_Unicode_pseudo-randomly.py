@@ -5,15 +5,15 @@ from sys    import stdin, stdout
 
 ### singles: dict [map] from {strings of length 3} to string of possible replacement char.s
 
-### doubles: dict [map] from {strings of length 2} to list of (tuple of {replacement string, number of spaces to maybe add})
+### doubles: dict [map] from {strings of length 2} to list of string
 
-### triples: dict [map] from {strings of length 1} to list of (tuple of {replacement string, number of spaces to maybe add})
+### triples: dict [map] from {strings of length 1} to list of string
 
-triples={"...": [('…', 2)]}
-doubles={}
-# doubles={"": ''} ### place-holder
-singles={' ': " "} ### ASCII space ⇒ NBSP
-
+triples={}
+doubles={"  ": ["  ", "　"]}
+singles={' ': " ", ### ASCII space ⇒ NBSP
+         'A': "АΑ" ### first Cyrillic, then Greek
+        }
 
 
 add_spacing_to_try_to_make_multiLines_text_still_line_up = True ### WIP: hard-coded
@@ -32,21 +32,15 @@ for input_line in stdin.readlines():
 
 
 
-#    while (len(input_line) > 1) and (input_line[:2] in doubles):
-#      output_line += doubles[ input_line[:2] ]
-#      input_line = input_line[2:]
-#      if add_spacing_to_try_to_make_multiLines_text_still_line_up:
-#        output_line += " " ### one NBSP
 
+    while len(input_line) and (input_line[:2] in doubles):
+      choices_list = doubles[ input_line[:2] ]
+      if len(choices_list) == 1:
+        output_line += choices_list[0]
+      else:
+        output_line += choices_list[randrange( len(choices_list) )]
 
-########### a temp. copy of a WIP version of the code for singles, while that still used a list of strings as the value type of the dict
-###########
-######    while len(input_line) and (input_line[0] in singles):
-######      choices_list = singles[ input_line[0] ]
-######      if len(choices_list) == 1:
-######        output_line += choices_list[0]
-######      else:
-######        output_line += choices_list[randrange( len(choices_list) )]
+      input_line = input_line[2:]
 
 
 
