@@ -81,7 +81,9 @@ singles={' ': " ",   ### ASCII space ⇒ NBSP
 
 if OK_to_use_mappings_that_are_likely_to_be_visually_distinguishable_from_the_original_but_should_have_the_same_width_as_the_original:
   create_key_or_plusEquals_to_its_value(singles, '*', "✽✱∗✳")
-  create_key_or_plusEquals_to_its_value(singles, 'c', 'ᴄ')  ### small-caps ‘c’: at least sometimes has a different serif on the upper curve terminus
+  create_key_or_plusEquals_to_its_value(singles, '-', '−') ### MINUS SIGN
+  create_key_or_plusEquals_to_its_value(singles, '5', "Ƽ") ### “Latin” capital “letter” tone five
+  create_key_or_plusEquals_to_its_value(singles, 'c', 'ᴄ') ### small-caps ‘c’: at least sometimes has a different serif on the upper curve terminus
 
 
 
@@ -133,6 +135,8 @@ if OK_to_use_Unicode_chars_that_are_wider_than_the_original:
 if not we_are_in_a_monospaced_context:
   create_key_or_plusEquals_to_its_value(triples, "Pts", '₧') ### peseta(s) sign
 
+  create_key_or_plusEquals_to_its_value(doubles, "==", '⩵')  ### TWO CONSECUTIVE EQUALS SIGNS
+  create_key_or_plusEquals_to_its_value(triples, "===", '⩶') ### THREE CONSECUTIVE EQUALS SIGNS
 
 
 for input_line in stdin.readlines():
