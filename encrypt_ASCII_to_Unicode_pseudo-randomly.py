@@ -11,8 +11,25 @@ from sys    import stdin, stdout
 
 triples={}
 doubles={"  ": ["  ", "　"]}
-singles={' ': " ", ### ASCII space ⇒ NBSP
-         'A': "АΑ" ### first Cyrillic, then Greek
+singles={' ': " ",  ### ASCII space ⇒ NBSP
+         'A': "АΑ", ### first Cyrillic, then Greek
+         'B': "ВΒ", ### first Cyrillic, then Greek
+         'C': 'С',  ### just  Cyrillic for now —— a Roman numeral char. should probably be added later
+         # 'D': '' ### a Roman numeral char. should probably be added later
+         'E': "ЕΕ", ### first Cyrillic, then Greek
+         'F': 'Ϝ',  ### just Greek
+         'H': "НΗ", ### first Cyrillic, then Greek
+         'I': "ІΙ", ### first Cyrillic, then Greek
+         'K': 'Κ',  ### just the Greek, because the Cyrillic equivalent looks a _little_ bit different sometimes [a curvy termination of the upper-right stroke]
+         'M': "МΜ", ### first Cyrillic, then Greek
+         'N': 'Ν',  ### just Greek
+         'O': "ОΟ", ### first Cyrillic, then Greek
+         'P': "РΡ", ### first Cyrillic, then Greek
+         'T': "ТΤ", ### first Cyrillic, then Greek
+         'X': "ХΧ", ### first Cyrillic, then Greek
+         'Z': 'Ζ',  ### just Greek
+
+         # '~': '〜' ### disabled b/c the replacement looks to be “fullwidth”, at least in iTerm2 3.1.7 using 18-point Monaco on MOSX 10.11.6
         }
 
 
