@@ -53,6 +53,7 @@ singles={' ': " ",   ### ASCII space ⇒ NBSP
          'N': 'Ν',   ### just Greek
          'O': "ОΟ",  ### first Cyrillic, then Greek
          'P': "РΡ",  ### first Cyrillic, then Greek
+         'S': 'Ѕ',   ### just Cyrillic
          'T': "ТΤ",  ### first Cyrillic, then Greek
          'V': 'Ⅴ',   ### just Roman
          'X': "ХΧⅩ", ### first Cyrillic, then Greek, then Roman
@@ -67,6 +68,7 @@ singles={' ': " ",   ### ASCII space ⇒ NBSP
          'm': 'ⅿ',   ### just Roman
          'o': "оοᴏ", ### first Cyrillic, then Greek, then “Latin” small caps
          'p': 'р',   ### just Cyrillic [b/c the lower-case letter rho often looks “rounder” on its top-left than an English lower-case P or a Cyrillic lower-case ehr
+         's': 'ѕ',   ### just Cyrillic
          'v': "ⅴᴠ",  ### first Roman, then “Latin” small caps
          'w': 'ᴡ',   ### just “Latin” small caps
          'x': 'хⅹ',  ### first Cyrillic, then Roman
