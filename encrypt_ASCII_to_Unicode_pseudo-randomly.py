@@ -95,6 +95,7 @@ if OK_to_use_Unicode_chars_that_are_narrower_than_the_original_in_a_monospaced_c
   create_key_or_plusEquals_to_its_value(doubles, "!?", ["⁉"+padding]) ### EXCLAMATION QUESTION MARK
   create_key_or_plusEquals_to_its_value(doubles, "Rs", ["₨"+padding]) ### RUPEE SIGN
   create_key_or_plusEquals_to_its_value(doubles, "DZ", ["Ǳ"+padding]) ### LATIN CAPITAL LETTER DZ
+  create_key_or_plusEquals_to_its_value(doubles, "Dz", ["ǲ"+padding]) ### LATIN CAPITAL LETTER D WITH SMALL LETTER Z
   create_key_or_plusEquals_to_its_value(doubles, "dz", ["ǳ"+padding]) ### LATIN SMALL LETTER DZ
 # create_key_or_plusEquals_to_its_value(doubles, "__", ["_"+padding])
 
