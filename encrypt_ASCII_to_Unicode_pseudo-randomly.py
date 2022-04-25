@@ -38,11 +38,13 @@ singles={' ': " ",   ### ASCII space ⇒ NBSP
          'j': 'ј',   ### just Cyrillic
          'l': 'ⅼ',   ### just Roman
          'm': 'ⅿ',   ### just Roman
-         'o': "оο",  ### first Cyrillic, then Greek
+         'o': "оοᴏ", ### first Cyrillic, then Greek, then “Latin” small caps
          'p': 'р',   ### just Cyrillic [b/c the lower-case letter rho often looks “rounder” on its top-left than an English lower-case P or a Cyrillic lower-case ehr
-         'v': 'ⅴ',   ### just Roman
+         'v': "ⅴᴠ",  ### first Roman, then “Latin” small caps
+         'w': 'ᴡ',   ### just “Latin” small caps
          'x': 'хⅹ',  ### first Cyrillic, then Roman
          'y': 'у',   ### just Cyrillic
+         'z': 'ᴢ',   ### just “Latin” small caps
 
 
          # '~': '〜' ### disabled b/c the replacement looks to be “fullwidth”, at least in iTerm2 3.1.7 using 18-point Monaco on MOSX 10.11.6
