@@ -28,6 +28,16 @@ singles={' ': " ",  ### ASCII space ⇒ NBSP
          'T': "ТΤ", ### first Cyrillic, then Greek
          'X': "ХΧ", ### first Cyrillic, then Greek
          'Z': 'Ζ',  ### just Greek
+         'a': 'а',  ### just Cyrillic
+         'c': 'с',  ### just Cyrillic
+         'e': 'е',  ### just Cyrillic
+         'i': 'і',  ### just Cyrillic
+         'j': 'ј',  ### just Cyrillic
+         'o': "оο", ### first Cyrillic, then Greek
+         'p': 'р',  ### just Cyrillic [b/c the lower-case letter rho often looks “rounder” on its top-left than an English lower-case P or a Cyrillic lower-case ehr
+         'x': 'х',  ### just Cyrillic
+         'y': 'у',  ### just Cyrillic
+
 
          # '~': '〜' ### disabled b/c the replacement looks to be “fullwidth”, at least in iTerm2 3.1.7 using 18-point Monaco on MOSX 10.11.6
         }
