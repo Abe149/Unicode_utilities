@@ -11,32 +11,38 @@ from sys    import stdin, stdout
 
 triples={}
 doubles={"  ": ["  ", "　"]}
-singles={' ': " ",  ### ASCII space ⇒ NBSP
-         'A': "АΑ", ### first Cyrillic, then Greek
-         'B': "ВΒ", ### first Cyrillic, then Greek
-         'C': 'С',  ### just  Cyrillic for now —— a Roman numeral char. should probably be added later
-         # 'D': '' ### a Roman numeral char. should probably be added later
-         'E': "ЕΕ", ### first Cyrillic, then Greek
-         'F': 'Ϝ',  ### just Greek
-         'H': "НΗ", ### first Cyrillic, then Greek
-         'I': "ІΙ", ### first Cyrillic, then Greek
-         'K': 'Κ',  ### just the Greek, because the Cyrillic equivalent looks a _little_ bit different sometimes [a curvy termination of the upper-right stroke]
-         'M': "МΜ", ### first Cyrillic, then Greek
-         'N': 'Ν',  ### just Greek
-         'O': "ОΟ", ### first Cyrillic, then Greek
-         'P': "РΡ", ### first Cyrillic, then Greek
-         'T': "ТΤ", ### first Cyrillic, then Greek
-         'X': "ХΧ", ### first Cyrillic, then Greek
-         'Z': 'Ζ',  ### just Greek
-         'a': 'а',  ### just Cyrillic
-         'c': 'с',  ### just Cyrillic
-         'e': 'е',  ### just Cyrillic
-         'i': 'і',  ### just Cyrillic
-         'j': 'ј',  ### just Cyrillic
-         'o': "оο", ### first Cyrillic, then Greek
-         'p': 'р',  ### just Cyrillic [b/c the lower-case letter rho often looks “rounder” on its top-left than an English lower-case P or a Cyrillic lower-case ehr
-         'x': 'х',  ### just Cyrillic
-         'y': 'у',  ### just Cyrillic
+singles={' ': " ",   ### ASCII space ⇒ NBSP
+         'A': "АΑ",  ### first Cyrillic, then Greek
+         'B': "ВΒ",  ### first Cyrillic, then Greek
+         'C': 'СⅭ',  ### first Cyrillic, then Roman
+         'D': 'Ⅾ',   ### just Roman
+         'E': "ЕΕ",  ### first Cyrillic, then Greek
+         'F': 'Ϝ',   ### just Greek
+         'H': "НΗ",  ### first Cyrillic, then Greek
+         'I': "ІΙⅠ", ### first Cyrillic, then Greek, then Roman
+         'K': 'Κ',   ### just the Greek, because the Cyrillic equivalent looks a _little_ bit different sometimes [a curvy termination of the upper-right stroke]
+         'L': 'Ⅼ',   ### just Roman
+         'M': "МΜⅯ", ### first Cyrillic, then Greek, then Roman
+         'N': 'Ν',   ### just Greek
+         'O': "ОΟ",  ### first Cyrillic, then Greek
+         'P': "РΡ",  ### first Cyrillic, then Greek
+         'T': "ТΤ",  ### first Cyrillic, then Greek
+         'V': 'Ⅴ',   ### just Roman
+         'X': "ХΧⅩ", ### first Cyrillic, then Greek, then Roman
+         'Z': 'Ζ',   ### just Greek
+         'a': 'а',   ### just Cyrillic
+         'c': 'сⅽ',  ### first Cyrillic, then Roman
+         'd': 'ⅾ',   ### just Roman
+         'e': 'е',   ### just Cyrillic
+         'i': 'іⅰ',  ### first Cyrillic, then Roman
+         'j': 'ј',   ### just Cyrillic
+         'l': 'ⅼ',   ### just Roman
+         'm': 'ⅿ',   ### just Roman
+         'o': "оο",  ### first Cyrillic, then Greek
+         'p': 'р',   ### just Cyrillic [b/c the lower-case letter rho often looks “rounder” on its top-left than an English lower-case P or a Cyrillic lower-case ehr
+         'v': 'ⅴ',   ### just Roman
+         'x': 'хⅹ',  ### first Cyrillic, then Roman
+         'y': 'у',   ### just Cyrillic
 
 
          # '~': '〜' ### disabled b/c the replacement looks to be “fullwidth”, at least in iTerm2 3.1.7 using 18-point Monaco on MOSX 10.11.6
