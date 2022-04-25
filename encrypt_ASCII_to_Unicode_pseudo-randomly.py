@@ -7,9 +7,10 @@ from sys    import stdin, stdout
 
 ### WIP: hard-coded flags, for now
 OK_to_use_mappings_that_are_likely_to_be_visually_distinguishable_from_the_original_but_should_have_the_same_width_as_the_original = False
-OK_to_use_Unicode_chars_that_are_narrower_than_the_original = False ### the mappings` destinations should have spaces in them to make up the difference
+OK_to_use_Unicode_chars_that_are_narrower_than_the_original_in_a_monospaced_context = False ### the mappings` destinations should have spaces in them to make up the difference
 OK_to_use_Unicode_chars_that_are_wider_than_the_original    = False
 add_spacing_to_try_to_make_multiLines_text_still_line_up    = True
+we_are_in_a_monospaced_context = True
 
 
 
@@ -82,19 +83,29 @@ if OK_to_use_mappings_that_are_likely_to_be_visually_distinguishable_from_the_or
 
 
 
-if OK_to_use_Unicode_chars_that_are_narrower_than_the_original:
-  create_key_or_plusEquals_to_its_value(doubles, "!!", ["‼︎ "])
-  create_key_or_plusEquals_to_its_value(doubles, "??", ["⁇ "])
-  create_key_or_plusEquals_to_its_value(doubles, "?!", ["⁈ "])
-  create_key_or_plusEquals_to_its_value(doubles, "!?", ["⁉︎ "])
+if OK_to_use_Unicode_chars_that_are_narrower_than_the_original_in_a_monospaced_context:
+  padding = ' ' if are_we_in_a_monospaced_context else ""
+  create_key_or_plusEquals_to_its_value(doubles, "!!", ["‼︎"+padding])
+  create_key_or_plusEquals_to_its_value(doubles, "??", ["⁇"+padding])
+  create_key_or_plusEquals_to_its_value(doubles, "?!", ["⁈"+padding])
+  create_key_or_plusEquals_to_its_value(doubles, "!?", ["⁉︎"+padding])
+  create_key_or_plusEquals_to_its_value(doubles, "Rs", ["₨"+padding])
+  create_key_or_plusEquals_to_its_value(doubles, "DZ", ["Ǳ"+padding])
+  create_key_or_plusEquals_to_its_value(doubles, "dz", ["ǳ"+padding])
+# create_key_or_plusEquals_to_its_value(doubles, "__", ["_"+padding])
 
 
 
 if OK_to_use_Unicode_chars_that_are_wider_than_the_original:
-  create_key_or_plusEquals_to_its_value(singles, '~', '〜') ### “wave dash”: not in the default/main/primary set for singles b/c the replacement looks to be “fullwidth”, at least in iTerm2 3.1.7 using 18-point Monaco on MOSX 10.11.6
+  create_key_or_plusEquals_to_its_value(singles, '~', '〜') ### WAVE DASH: not in the default/main/primary set for singles b/c the replacement looks to be “fullwidth”, at least in iTerm2 3.1.7 using 18-point Monaco on MOSX 10.11.6
+  create_key_or_plusEquals_to_its_value(singles, '=', '゠') ### DIGRAM FOR GREATER YANG
   for c in range(33, 127): ### fullwidth replacements for almost all the ASCII printables [the Unicode committee left out space in this range]
     create_key_or_plusEquals_to_its_value( singles, chr(ord('！')-ord('!')+a) )
 
+
+
+if not we_are_in_a_monospaced_context:
+  create_key_or_plusEquals_to_its_value(triples, "Pts", '₧') ### peseta(s) sign
 
 
 
