@@ -89,13 +89,13 @@ if OK_to_use_mappings_that_are_likely_to_be_visually_distinguishable_from_the_or
 
 if OK_to_use_Unicode_chars_that_are_narrower_than_the_original_in_a_monospaced_context:
   padding = ' ' if are_we_in_a_monospaced_context else ""
-  create_key_or_plusEquals_to_its_value(doubles, "!!", ["‼︎"+padding])
-  create_key_or_plusEquals_to_its_value(doubles, "??", ["⁇"+padding])
-  create_key_or_plusEquals_to_its_value(doubles, "?!", ["⁈"+padding])
-  create_key_or_plusEquals_to_its_value(doubles, "!?", ["⁉︎"+padding])
-  create_key_or_plusEquals_to_its_value(doubles, "Rs", ["₨"+padding])
-  create_key_or_plusEquals_to_its_value(doubles, "DZ", ["Ǳ"+padding])
-  create_key_or_plusEquals_to_its_value(doubles, "dz", ["ǳ"+padding])
+  create_key_or_plusEquals_to_its_value(doubles, "!!", ["‼"+padding]) ### DOUBLE EXCLAMATION MARK
+  create_key_or_plusEquals_to_its_value(doubles, "??", ["⁇"+padding]) ### DOUBLE QUESTION MARK
+  create_key_or_plusEquals_to_its_value(doubles, "?!", ["⁈"+padding]) ### QUESTION EXCLAMATION MARK
+  create_key_or_plusEquals_to_its_value(doubles, "!?", ["⁉"+padding]) ### EXCLAMATION QUESTION MARK
+  create_key_or_plusEquals_to_its_value(doubles, "Rs", ["₨"+padding]) ### RUPEE SIGN
+  create_key_or_plusEquals_to_its_value(doubles, "DZ", ["Ǳ"+padding]) ### LATIN CAPITAL LETTER DZ
+  create_key_or_plusEquals_to_its_value(doubles, "dz", ["ǳ"+padding]) ### LATIN SMALL LETTER DZ
 # create_key_or_plusEquals_to_its_value(doubles, "__", ["_"+padding])
 
 
@@ -135,8 +135,9 @@ if OK_to_use_Unicode_chars_that_are_wider_than_the_original:
 if not we_are_in_a_monospaced_context:
   create_key_or_plusEquals_to_its_value(triples, "Pts", '₧') ### peseta(s) sign
 
-  create_key_or_plusEquals_to_its_value(doubles, "==", '⩵')  ### TWO CONSECUTIVE EQUALS SIGNS
+  create_key_or_plusEquals_to_its_value(doubles, "==", '⩵')  ### TWO   CONSECUTIVE EQUALS SIGNS
   create_key_or_plusEquals_to_its_value(triples, "===", '⩶') ### THREE CONSECUTIVE EQUALS SIGNS
+
 
 
 for input_line in stdin.readlines():
