@@ -3,6 +3,28 @@
 from random import getrandbits, randrange
 from sys    import stdin, stdout
 
+
+
+### WIP: hard-coded flags, for now
+OK_to_use_mappings_that_are_likely_to_be_visually_distinguishable_from_the_original_but_should_have_the_same_width_as_the_original = False
+OK_to_use_Unicode_chars_that_are_narrower_than_the_original = False ### the mappings` destinations should have spaces in them to make up the difference
+OK_to_use_Unicode_chars_that_are_wider_than_the_original    = False
+add_spacing_to_try_to_make_multiLines_text_still_line_up    = True
+
+
+
+# def create_key_or_append_to_its_list_value(the_dict, the_key, the_value):
+#   if not the_key in the_dict:
+#     the_dict[the_key] = []
+#   the_dict[the_key].append(the_value)
+
+def create_key_or_plusEquals_to_its_value(the_dict, the_key, the_value): ### use either a string or a list_of_strings for “the_value”
+  if not the_key in the_dict:
+    the_dict[the_key] = []
+  the_dict[the_key] += the_value
+
+
+
 ### singles: dict [map] from {strings of length 3} to string of possible replacement char.s
 
 ### doubles: dict [map] from {strings of length 2} to list of string
@@ -50,12 +72,31 @@ singles={' ': " ",   ### ASCII space ⇒ NBSP
          'y': 'у',   ### just Cyrillic
          'z': 'ᴢ',   ### just “Latin” small caps
 
-
-         # '~': '〜' ### disabled b/c the replacement looks to be “fullwidth”, at least in iTerm2 3.1.7 using 18-point Monaco on MOSX 10.11.6
         }
 
 
-add_spacing_to_try_to_make_multiLines_text_still_line_up = True ### WIP: hard-coded
+
+if OK_to_use_mappings_that_are_likely_to_be_visually_distinguishable_from_the_original_but_should_have_the_same_width_as_the_original:
+  create_key_or_plusEquals_to_its_value(singles, '*', "✽✱∗✳")
+  create_key_or_plusEquals_to_its_value(singles, 'c', 'ᴄ')  ### small-caps ‘c’: at least sometimes has a different serif on the upper curve terminus
+
+
+
+if OK_to_use_Unicode_chars_that_are_narrower_than_the_original:
+  create_key_or_plusEquals_to_its_value(doubles, "!!", ["‼︎ "])
+  create_key_or_plusEquals_to_its_value(doubles, "??", ["⁇ "])
+  create_key_or_plusEquals_to_its_value(doubles, "?!", ["⁈ "])
+  create_key_or_plusEquals_to_its_value(doubles, "!?", ["⁉︎ "])
+
+
+
+if OK_to_use_Unicode_chars_that_are_wider_than_the_original:
+  create_key_or_plusEquals_to_its_value(singles, '~', '〜') ### “wave dash”: not in the default/main/primary set for singles b/c the replacement looks to be “fullwidth”, at least in iTerm2 3.1.7 using 18-point Monaco on MOSX 10.11.6
+  for c in range(33, 127): ### fullwidth replacements for almost all the ASCII printables [the Unicode committee left out space in this range]
+    create_key_or_plusEquals_to_its_value( singles, chr(ord('！')-ord('!')+a) )
+
+
+
 
 for input_line in stdin.readlines():
   ### print ("DEBUG: “"+input_line+"”")
