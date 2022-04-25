@@ -12,6 +12,7 @@ from sys    import stdin, stdout
 triples={}
 doubles={"  ": ["  ", "　"]}
 singles={' ': " ",   ### ASCII space ⇒ NBSP
+         ',': '‚',   ### single low-9 quotation symbol
          '-': '‑',   ### non-breaking hyphen
          '.': '․',   ### one-dot leader
          ';': ';',   ### Greek question symbol
