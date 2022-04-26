@@ -34,7 +34,8 @@ def create_key_or_plusEquals_to_its_value(the_dict, the_key, the_value): ### use
 
 triples={}
 doubles={"  ": ["  ", "　"]}
-singles={' ': " ",   ### ASCII space ⇒ NBSP
+singles={' ': ' ',   ### ASCII space ⇒ NBSP
+         '#': '𐄹',   ### AEGEAN WEIGHT SECOND SUBUNIT
          ',': '‚',   ### single low-9 quotation symbol
          '-': '‑',   ### non-breaking hyphen
          '.': '․',   ### one-dot leader
@@ -81,52 +82,58 @@ singles={' ': " ",   ### ASCII space ⇒ NBSP
 
 if OK_to_use_mappings_that_are_likely_to_be_visually_distinguishable_from_the_original_but_should_have_the_same_width_as_the_original:
   create_key_or_plusEquals_to_its_value(singles, '*', "✽✱∗✳")
-  create_key_or_plusEquals_to_its_value(singles, '-', '−') ### MINUS SIGN
+  create_key_or_plusEquals_to_its_value(singles, '-', '−𐄐') ### MINUS SIGN, AEGEAN NUMBER TEN
   create_key_or_plusEquals_to_its_value(singles, '5', "Ƽ") ### “Latin” capital “letter” tone five
+  create_key_or_plusEquals_to_its_value(singles, '=', "𐄑") ### AEGEAN NUMBER TWENTY
   create_key_or_plusEquals_to_its_value(singles, 'c', 'ᴄ') ### small-caps ‘c’: at least sometimes has a different serif on the upper curve terminus
 
 
 
 if OK_to_use_Unicode_chars_that_are_narrower_than_the_original_in_a_monospaced_context:
   padding = ' ' if are_we_in_a_monospaced_context else ""
-  create_key_or_plusEquals_to_its_value(doubles, "!!", ["‼"+padding]) ### DOUBLE EXCLAMATION MARK
-  create_key_or_plusEquals_to_its_value(doubles, "??", ["⁇"+padding]) ### DOUBLE QUESTION MARK
-  create_key_or_plusEquals_to_its_value(doubles, "?!", ["⁈"+padding]) ### QUESTION EXCLAMATION MARK
-  create_key_or_plusEquals_to_its_value(doubles, "!?", ["⁉"+padding]) ### EXCLAMATION QUESTION MARK
-  create_key_or_plusEquals_to_its_value(doubles, "Rs", ["₨"+padding]) ### RUPEE SIGN
-  create_key_or_plusEquals_to_its_value(doubles, "DZ", ["Ǳ"+padding]) ### LATIN CAPITAL LETTER DZ
-  create_key_or_plusEquals_to_its_value(doubles, "Dz", ["ǲ"+padding]) ### LATIN CAPITAL LETTER D WITH SMALL LETTER Z
-  create_key_or_plusEquals_to_its_value(doubles, "dz", ["ǳ"+padding]) ### LATIN SMALL LETTER DZ
-# create_key_or_plusEquals_to_its_value(doubles, "__", ["_"+padding])
+
+  create_key_or_plusEquals_to_its_value(doubles, "!!", ['‼'+padding]) ### DOUBLE EXCLAMATION MARK
+  create_key_or_plusEquals_to_its_value(doubles, "??", ['⁇'+padding]) ### DOUBLE QUESTION MARK
+  create_key_or_plusEquals_to_its_value(doubles, "?!", ['⁈'+padding]) ### QUESTION EXCLAMATION MARK
+  create_key_or_plusEquals_to_its_value(doubles, "!?", ['⁉'+padding]) ### EXCLAMATION QUESTION MARK
+  create_key_or_plusEquals_to_its_value(doubles, "--", ['╌'+padding, '╍'+padding]) ### BOX DRAWINGS LIGHT DOUBLE DASH HORIZONTAL, BOX DRAWINGS HEAVY DOUBLE DASH HORIZONTAL
+  create_key_or_plusEquals_to_its_value(doubles, "==", ['𐄓'+padding, '⩵'+padding]) ### AEGEAN NUMBER FORTY, TWO CONSECUTIVE EQUALS SIGNS
+  create_key_or_plusEquals_to_its_value(doubles, "Rs", ['₨'+padding]) ### RUPEE SIGN
+  create_key_or_plusEquals_to_its_value(doubles, "DZ", ['Ǳ'+padding]) ### LATIN CAPITAL LETTER DZ
+  create_key_or_plusEquals_to_its_value(doubles, "Dz", ['ǲ'+padding]) ### LATIN CAPITAL LETTER D WITH SMALL LETTER Z
+  create_key_or_plusEquals_to_its_value(doubles, "dz", ['ǳ'+padding]) ### LATIN SMALL LETTER DZ
+  create_key_or_plusEquals_to_its_value(doubles, "||", ['‖'+padding]) ### DOUBLE VERTICAL LINE
+# create_key_or_plusEquals_to_its_value(doubles, "__", ['_'+padding])
 
 
 
 if OK_to_use_Unicode_chars_that_are_wider_than_the_original:
   create_key_or_plusEquals_to_its_value(singles, '~', '〜') ### WAVE DASH: not in the default/main/primary set for singles b/c the replacement looks to be “fullwidth”, at least in iTerm2 3.1.7 using 18-point Monaco on MOSX 10.11.6
 
-  create_key_or_plusEquals_to_its_value(singles, '=', '゠') ### DIGRAM FOR GREATER YANG
-
-  create_key_or_plusEquals_to_its_value(singles, ',', '﹐') ### SMALL COMMA
-  create_key_or_plusEquals_to_its_value(singles, '.', '﹒') ### SMALL FULL STOP
-  create_key_or_plusEquals_to_its_value(singles, ';', '﹔') ### SMALL SEMICOLON
-  create_key_or_plusEquals_to_its_value(singles, ':', '﹕') ### SMALL COLON
-  create_key_or_plusEquals_to_its_value(singles, '?', '﹖') ### SMALL QUESTION MARK
-  create_key_or_plusEquals_to_its_value(singles, '!', '﹗') ### SMALL EXCLAMATION MARK
-  create_key_or_plusEquals_to_its_value(singles, '(', '﹙') ### SMALL LEFT  PARENTHESIS
-  create_key_or_plusEquals_to_its_value(singles, ')', '﹚') ### SMALL RIGHT PARENTHESIS
-  create_key_or_plusEquals_to_its_value(singles, '{', '﹛') ### SMALL LEFT  CURLY BRACKET
-  create_key_or_plusEquals_to_its_value(singles, '}', '﹜') ### SMALL RIGHT CURLY BRACKET
-  create_key_or_plusEquals_to_its_value(singles, '#', '﹟') ### SMALL NUMBER SIGN
-  create_key_or_plusEquals_to_its_value(singles, '&', '﹠') ### SMALL AMPERSAND
-  create_key_or_plusEquals_to_its_value(singles, '*', '﹡') ### SMALL ASTERISK
-  create_key_or_plusEquals_to_its_value(singles, '+', '﹢') ### SMALL PLUS SIGN
-  create_key_or_plusEquals_to_its_value(singles, '-', '﹣') ### SMALL HYPHEN-MINUS
-  create_key_or_plusEquals_to_its_value(singles, '<', '﹤') ### SMALL    LESS-THAN SIGN
-  create_key_or_plusEquals_to_its_value(singles, '>', '﹥') ### SMALL GREATER-THAN SIGN
-  create_key_or_plusEquals_to_its_value(singles, '=', '﹦') ### SMALL EQUALS SIGN
-  create_key_or_plusEquals_to_its_value(singles, '$', '﹩') ### SMALL DOLLAR SIGN
-  create_key_or_plusEquals_to_its_value(singles, '%', '﹪') ### SMALL PERCENT SIGN
-  create_key_or_plusEquals_to_its_value(singles, '@', '﹫') ### SMALL COMMERCIAL AT
+  create_key_or_plusEquals_to_its_value(singles, '=' , '゠') ### DIGRAM FOR GREATER YANG
+  create_key_or_plusEquals_to_its_value(singles, ',' , '﹐') ### SMALL COMMA
+  create_key_or_plusEquals_to_its_value(singles, '.' , '﹒') ### SMALL FULL STOP
+  create_key_or_plusEquals_to_its_value(singles, ';' , '﹔') ### SMALL SEMICOLON
+  create_key_or_plusEquals_to_its_value(singles, ':' , '﹕') ### SMALL COLON
+  create_key_or_plusEquals_to_its_value(singles, '?' , '﹖') ### SMALL QUESTION MARK
+  create_key_or_plusEquals_to_its_value(singles, '!' , '﹗') ### SMALL EXCLAMATION MARK
+  create_key_or_plusEquals_to_its_value(singles, '(' , '﹙') ### SMALL LEFT  PARENTHESIS
+  create_key_or_plusEquals_to_its_value(singles, ')' , '﹚') ### SMALL RIGHT PARENTHESIS
+  create_key_or_plusEquals_to_its_value(singles, '{' , '﹛') ### SMALL LEFT  CURLY BRACKET
+  create_key_or_plusEquals_to_its_value(singles, '}' , '﹜') ### SMALL RIGHT CURLY BRACKET
+  create_key_or_plusEquals_to_its_value(singles, '#' , '﹟') ### SMALL NUMBER SIGN
+  create_key_or_plusEquals_to_its_value(singles, '&' , '﹠') ### SMALL AMPERSAND
+  create_key_or_plusEquals_to_its_value(singles, '*' , '﹡') ### SMALL ASTERISK
+  create_key_or_plusEquals_to_its_value(singles, '+' , '﹢') ### SMALL PLUS SIGN
+  create_key_or_plusEquals_to_its_value(singles, '-' , '﹣') ### SMALL HYPHEN-MINUS
+  create_key_or_plusEquals_to_its_value(singles, '<' , '﹤') ### SMALL    LESS-THAN SIGN
+  create_key_or_plusEquals_to_its_value(singles, '>' , '﹥') ### SMALL GREATER-THAN SIGN
+  create_key_or_plusEquals_to_its_value(singles, '=' , '﹦') ### SMALL EQUALS SIGN
+  create_key_or_plusEquals_to_its_value(singles, '$' , '﹩') ### SMALL DOLLAR SIGN
+  create_key_or_plusEquals_to_its_value(singles, '%' , '﹪') ### SMALL PERCENT SIGN
+  create_key_or_plusEquals_to_its_value(singles, '@' , '﹫') ### SMALL COMMERCIAL AT
+  create_key_or_plusEquals_to_its_value(singles, '/' , '╱') ### BOX DRAWINGS LIGHT DIAGONAL UPPER RIGHT TO LOWER LEFT
+  create_key_or_plusEquals_to_its_value(singles, '\\', '╲') ### BOX DRAWINGS LIGHT DIAGONAL UPPER LEFT TO LOWER RIGHT
 
   for c in range(33, 127): ### fullwidth replacements for almost all the ASCII printables [the Unicode committee left out space in this range]
     create_key_or_plusEquals_to_its_value( singles, chr(ord('！')-ord('!')+a) )
