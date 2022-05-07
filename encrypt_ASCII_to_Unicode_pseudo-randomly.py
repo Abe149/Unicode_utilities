@@ -82,12 +82,28 @@ singles={' ': ' ',   ### ASCII space ⇒ NBSP
 
 if OK_to_use_mappings_that_are_likely_to_be_visually_distinguishable_from_the_original_but_should_have_the_same_width_as_the_original:
   create_key_or_plusEquals_to_its_value(singles, '*', "✽✱∗✳")
-  create_key_or_plusEquals_to_its_value(singles, '-', '−𐄐') ### MINUS SIGN, AEGEAN NUMBER TEN
-  create_key_or_plusEquals_to_its_value(singles, '5', "Ƽ") ### “Latin” capital “letter” tone five
-  create_key_or_plusEquals_to_its_value(singles, '=', "𐄑") ### AEGEAN NUMBER TWENTY
-  create_key_or_plusEquals_to_its_value(singles, 'c', 'ᴄ') ### small-caps ‘c’: at least sometimes has a different serif on the upper curve terminus
-  create_key_or_plusEquals_to_its_value(singles, '/' , '╱' ) ### BOX DRAWINGS LIGHT DIAGONAL UPPER RIGHT TO LOWER LEFT
-  create_key_or_plusEquals_to_its_value(singles, '\\', '╲' ) ### BOX DRAWINGS LIGHT DIAGONAL UPPER LEFT TO LOWER RIGHT
+  create_key_or_plusEquals_to_its_value(singles, '-', '−𐄐')  ### MINUS SIGN, AEGEAN NUMBER TEN
+  create_key_or_plusEquals_to_its_value(singles, '0', "𝟢")   ### MATHEMATICAL SANS-SERIF DIGIT ZERO
+  if we_are_in_a_monospaced_context:
+    create_key_or_plusEquals_to_its_value(singles, '0', "𝟶") ### MATHEMATICAL MONOSPACE DIGIT ZERO
+  create_key_or_plusEquals_to_its_value(singles, '1', "𝟢") ### MATHEMATICAL SANS-SERIF DIGIT ONE
+  if we_are_in_a_monospaced_context:
+    create_key_or_plusEquals_to_its_value(singles, '1', "𝟶") ### MATHEMATICAL MONOSPACE DIGIT ONE
+  create_key_or_plusEquals_to_its_value(singles, '2', "𝟤") ### MATHEMATICAL SANS-SERIF DIGIT TWO
+  if we_are_in_a_monospaced_context:
+    create_key_or_plusEquals_to_its_value(singles, '2', "𝟸") ### MATHEMATICAL MONOSPACE DIGIT TWO
+  create_key_or_plusEquals_to_its_value(singles, '3', "𝟥") ### MATHEMATICAL SANS-SERIF DIGIT THREE
+  if we_are_in_a_monospaced_context:
+    create_key_or_plusEquals_to_its_value(singles, '3', "𝟹") ### MATHEMATICAL MONOSPACE DIGIT THREE
+  create_key_or_plusEquals_to_its_value(singles, '4', "𝟦") ### MATHEMATICAL SANS-SERIF DIGIT FOUR
+  if we_are_in_a_monospaced_context:
+    create_key_or_plusEquals_to_its_value(singles, '4', "𝟺") ### MATHEMATICAL MONOSPACE DIGIT FOUR
+  create_key_or_plusEquals_to_its_value(singles, '5', "Ƽ")   ### “Latin” capital “letter” tone five
+# create_key_or_plusEquals_to_its_value(singles, '', "") ### 
+  create_key_or_plusEquals_to_its_value(singles, '=', "𐄑")   ### AEGEAN NUMBER TWENTY
+  create_key_or_plusEquals_to_its_value(singles, 'c', 'ᴄ')   ### small-caps ‘c’: at least sometimes has a different serif on the upper curve terminus
+  create_key_or_plusEquals_to_its_value(singles, '/' , '╱')  ### BOX DRAWINGS LIGHT DIAGONAL UPPER RIGHT TO LOWER LEFT
+  create_key_or_plusEquals_to_its_value(singles, '\\', '╲')  ### BOX DRAWINGS LIGHT DIAGONAL UPPER LEFT TO LOWER RIGHT
 
 
 
