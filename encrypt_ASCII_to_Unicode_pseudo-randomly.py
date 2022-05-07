@@ -1,17 +1,33 @@
 #!/usr/bin/env python3
 
+DEBUG = 9
+
 from random import getrandbits, randrange
 from sys    import stdin, stdout
+
+import argparse, sys
+
+parser = argparse.ArgumentParser()
+parser.add_argument("--OK_to_use_mappings_that_are_likely_to_be_visually_distinguishable_from_the_original_but_should_have_the_same_width_as_the_original", action="store_true")
+
+args = parser.parse_args() ### sys.argv is the default input source
 
 
 
 ### WIP: hard-coded flags, for now
-OK_to_use_mappings_that_are_likely_to_be_visually_distinguishable_from_the_original_but_should_have_the_same_width_as_the_original = False
 OK_to_use_Unicode_chars_that_are_narrower_than_the_original_in_a_monospaced_context = False ### the mappings` destinations should have spaces in them to make up the difference
 OK_to_use_Unicode_chars_that_are_wider_than_the_original    = False
 add_spacing_to_try_to_make_multiLines_text_still_line_up    = True
 we_are_in_a_monospaced_context = True
 
+
+
+### NON-hardcoded flags
+OK_to_use_mappings_that_are_likely_to_be_visually_distinguishable_from_the_original_but_should_have_the_same_width_as_the_original = False
+if args.OK_to_use_mappings_that_are_likely_to_be_visually_distinguishable_from_the_original_but_should_have_the_same_width_as_the_original:
+  OK_to_use_mappings_that_are_likely_to_be_visually_distinguishable_from_the_original_but_should_have_the_same_width_as_the_original = True
+  if DEBUG:
+    print ("DEBUG [stderr]: set “OK_to_use_mappings_that_are_likely_to_be_visually_distinguishable_from_the_original_but_should_have_the_same_width_as_the_original” to", OK_to_use_mappings_that_are_likely_to_be_visually_distinguishable_from_the_original_but_should_have_the_same_width_as_the_original, file = sys.stderr)
 
 
 # def create_key_or_append_to_its_list_value(the_dict, the_key, the_value):
