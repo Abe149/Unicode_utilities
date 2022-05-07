@@ -132,8 +132,8 @@ if OK_to_use_Unicode_chars_that_are_wider_than_the_original:
   create_key_or_plusEquals_to_its_value(singles, '$' , '﹩') ### SMALL DOLLAR SIGN
   create_key_or_plusEquals_to_its_value(singles, '%' , '﹪') ### SMALL PERCENT SIGN
   create_key_or_plusEquals_to_its_value(singles, '@' , '﹫') ### SMALL COMMERCIAL AT
-  create_key_or_plusEquals_to_its_value(singles, '/' , '╱') ### BOX DRAWINGS LIGHT DIAGONAL UPPER RIGHT TO LOWER LEFT
-  create_key_or_plusEquals_to_its_value(singles, '\\', '╲') ### BOX DRAWINGS LIGHT DIAGONAL UPPER LEFT TO LOWER RIGHT
+  create_key_or_plusEquals_to_its_value(singles, '/' , '╱' ) ### BOX DRAWINGS LIGHT DIAGONAL UPPER RIGHT TO LOWER LEFT
+  create_key_or_plusEquals_to_its_value(singles, '\\', '╲' ) ### BOX DRAWINGS LIGHT DIAGONAL UPPER LEFT TO LOWER RIGHT
 
   for c in range(33, 127): ### fullwidth replacements for almost all the ASCII printables [the Unicode committee left out space in this range]
     create_key_or_plusEquals_to_its_value( singles, chr(ord('！')-ord('!')+a) )
@@ -143,7 +143,7 @@ if OK_to_use_Unicode_chars_that_are_wider_than_the_original:
 if not we_are_in_a_monospaced_context:
   create_key_or_plusEquals_to_its_value(triples, "Pts", '₧') ### peseta(s) sign
 
-  create_key_or_plusEquals_to_its_value(doubles, "==", '⩵')  ### TWO   CONSECUTIVE EQUALS SIGNS
+  create_key_or_plusEquals_to_its_value(doubles, "==", '⩵' ) ### TWO   CONSECUTIVE EQUALS SIGNS
   create_key_or_plusEquals_to_its_value(triples, "===", '⩶') ### THREE CONSECUTIVE EQUALS SIGNS
 
 
