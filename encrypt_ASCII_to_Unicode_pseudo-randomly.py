@@ -86,6 +86,8 @@ if OK_to_use_mappings_that_are_likely_to_be_visually_distinguishable_from_the_or
   create_key_or_plusEquals_to_its_value(singles, '5', "Ƽ") ### “Latin” capital “letter” tone five
   create_key_or_plusEquals_to_its_value(singles, '=', "𐄑") ### AEGEAN NUMBER TWENTY
   create_key_or_plusEquals_to_its_value(singles, 'c', 'ᴄ') ### small-caps ‘c’: at least sometimes has a different serif on the upper curve terminus
+  create_key_or_plusEquals_to_its_value(singles, '/' , '╱' ) ### BOX DRAWINGS LIGHT DIAGONAL UPPER RIGHT TO LOWER LEFT
+  create_key_or_plusEquals_to_its_value(singles, '\\', '╲' ) ### BOX DRAWINGS LIGHT DIAGONAL UPPER LEFT TO LOWER RIGHT
 
 
 
@@ -132,8 +134,6 @@ if OK_to_use_Unicode_chars_that_are_wider_than_the_original:
   create_key_or_plusEquals_to_its_value(singles, '$' , '﹩') ### SMALL DOLLAR SIGN
   create_key_or_plusEquals_to_its_value(singles, '%' , '﹪') ### SMALL PERCENT SIGN
   create_key_or_plusEquals_to_its_value(singles, '@' , '﹫') ### SMALL COMMERCIAL AT
-  create_key_or_plusEquals_to_its_value(singles, '/' , '╱' ) ### BOX DRAWINGS LIGHT DIAGONAL UPPER RIGHT TO LOWER LEFT
-  create_key_or_plusEquals_to_its_value(singles, '\\', '╲' ) ### BOX DRAWINGS LIGHT DIAGONAL UPPER LEFT TO LOWER RIGHT
 
   for c in range(33, 127): ### fullwidth replacements for almost all the ASCII printables [the Unicode committee left out space in this range]
     create_key_or_plusEquals_to_its_value( singles, chr(ord('！')-ord('!')+a) )
