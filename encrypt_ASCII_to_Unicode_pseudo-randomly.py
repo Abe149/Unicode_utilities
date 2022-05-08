@@ -93,11 +93,13 @@ singles={' ': ' ',   ### ASCII space ⇒ NBSP
          'y': 'у',   ### just Cyrillic
          'z': 'ᴢ',   ### just “Latin” small caps
 
+         '~': '∼'    ### TILDE OPERATOR
         }
 
 
 
 if OK_to_use_mappings_that_are_likely_to_be_visually_distinguishable_from_the_original_but_should_have_the_same_width_category_as_the_original:
+  create_key_or_plusEquals_to_its_value(  singles, '#', '⋕')   ### EQUAL AND PARALLEL TO
   create_key_or_plusEquals_to_its_value(  singles, '*', "✽✱∗✳")
   create_key_or_plusEquals_to_its_value(  singles, '-', '−𐄐')  ### MINUS SIGN, AEGEAN NUMBER TEN
 
