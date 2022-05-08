@@ -239,6 +239,15 @@ if OK_to_use_mappings_that_are_likely_to_be_visually_distinguishable_from_the_or
   create_key_or_plusEquals_to_its_value(doubles, "in", ['㏌']) ### SQUARE IN
   create_key_or_plusEquals_to_its_value(doubles, "KM", ['㏎']) ### SQUARE KM CAPITAL
   create_key_or_plusEquals_to_its_value(doubles, "kt", ['㏏']) ### SQUARE KT
+  create_key_or_plusEquals_to_its_value(doubles, "lm", ['㏐']) ### SQUARE LM
+  create_key_or_plusEquals_to_its_value(doubles, "ln", ['㏑']) ### SQUARE LN
+  create_key_or_plusEquals_to_its_value(doubles, "lx", ['㏓']) ### SQUARE LX
+  create_key_or_plusEquals_to_its_value(doubles, "mb", ['㏔']) ### SQUARE MB SMALL
+  create_key_or_plusEquals_to_its_value(doubles, "pH", ['㏗']) ### SQUARE PH
+  create_key_or_plusEquals_to_its_value(doubles, "PR", ['㏚']) ### SQUARE PR
+  create_key_or_plusEquals_to_its_value(doubles, "sr", ['㏛']) ### SQUARE SR
+  create_key_or_plusEquals_to_its_value(doubles, "Sv", ['㏜']) ### SQUARE SV
+  create_key_or_plusEquals_to_its_value(doubles, "wb", ['㏝']) ### SQUARE WB
 
 # create_key_or_plusEquals_to_its_value(singles, '_', '_') ###
 # create_key_or_plusEquals_to_its_value(doubles, "__", ['_']) ###
@@ -457,6 +466,7 @@ if not we_are_in_a_monospaced_context:
   create_key_or_plusEquals_to_its_value(triples, "XII", ['Ⅻ']) ### ROMAN NUMERAL TWELVE
 
   create_key_or_plusEquals_to_its_value(  quads, "a.m.", ['㏂']) ### SQUARE AM
+  create_key_or_plusEquals_to_its_value(  quads, "K.K.", ['㏂']) ### SQUARE KK
 
 # create_key_or_plusEquals_to_its_value(doubles, "__", ['_'])  ###
 # create_key_or_plusEquals_to_its_value(triples, "___", ['_'])  ###
