@@ -483,6 +483,9 @@ if not we_are_in_a_monospaced_context:
   create_key_or_plusEquals_to_its_value(  quads, "K.K.", ['㏍']) ### SQUARE KK
 
   create_key_or_plusEquals_to_its_value(doubles, "AA", ['Ꜳ'])   ### LATIN CAPITAL LETTER AA
+# create_key_or_plusEquals_to_its_value(doubles, "AO", ['Ꜵ'])   ### LATIN CAPITAL LETTER AO [disabled b/c its appearance sucks too badly in iTerm2 on MOSX 10.11.6]
+# create_key_or_plusEquals_to_its_value(doubles, "ao", ['ꜵ'])   ### LATIN SMALL   LETTER AO [for search: LATIN SMALL LETTER AO] [disabled b/c its appearance sucks too badly in iTerm2 on MOSX 10.11.6]
+  create_key_or_plusEquals_to_its_value(doubles, "aa", ['ꜳ'])   ### LATIN SMALL   LETTER AA [for search: LATIN SMALL LETTER AA]
 
   create_key_or_plusEquals_to_its_value(singles, 'M', 'ꓟ')  ### LISU LETTER MA [this one came out all funky —— wide and overflowing to the right —— in iTerm2 on MOSX 10.11.6 on my main MBP]
   create_key_or_plusEquals_to_its_value(singles, 'N', 'ꓠ')  ### LISU LETTER NA [this one came out all funky —— wide and overflowing to the right —— in iTerm2 on MOSX 10.11.6 on my main MBP]
