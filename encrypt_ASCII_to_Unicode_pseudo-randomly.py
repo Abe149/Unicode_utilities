@@ -187,6 +187,13 @@ if OK_to_use_mappings_that_are_likely_to_be_visually_distinguishable_from_the_or
   create_key_or_plusEquals_to_its_value(doubles, "AU", ['㍳']) ### SQUARE AU
   create_key_or_plusEquals_to_its_value(doubles, "oV", ['㍵']) ### SQUARE OV
   create_key_or_plusEquals_to_its_value(doubles, "pc", ['㍶']) ### SQUARE PC
+  create_key_or_plusEquals_to_its_value(doubles, "pA", ['㎀']) ### SQUARE PA AMPS
+  create_key_or_plusEquals_to_its_value(doubles, "nA", ['㎁']) ### SQUARE NA
+  create_key_or_plusEquals_to_its_value(doubles, "mA", ['㎃']) ### SQUARE MA
+  create_key_or_plusEquals_to_its_value(doubles, "kA", ['㎄']) ### SQUARE KA ### should I disable this one?  At least on font on MOSX 10.11.6 on my primary MBP incorectly has this looking like “KA”
+  create_key_or_plusEquals_to_its_value(doubles, "KB", ['㎅']) ### SQUARE KB
+  create_key_or_plusEquals_to_its_value(doubles, "MB", ['㎆']) ### SQUARE MB
+  create_key_or_plusEquals_to_its_value(doubles, "GB", ['㎇']) ### SQUARE GB
 
 # create_key_or_plusEquals_to_its_value(singles, '_', '_') ###
 # create_key_or_plusEquals_to_its_value(doubles, "__", ['_']) ###
