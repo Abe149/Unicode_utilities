@@ -168,18 +168,32 @@ if OK_to_use_Unicode_chars_that_are_narrower_than_the_original_in_a_monospaced_c
   create_key_or_plusEquals_to_its_value(doubles, "DZ", ['Ǳ'+padding]) ### LATIN CAPITAL LETTER DZ
   create_key_or_plusEquals_to_its_value(doubles, "Dz", ['ǲ'+padding]) ### LATIN CAPITAL LETTER D WITH SMALL LETTER Z
   create_key_or_plusEquals_to_its_value(doubles, "dz", ['ǳ'+padding]) ### LATIN SMALL LETTER DZ
-  create_key_or_plusEquals_to_its_value(doubles, "II", ['Ⅱ'+padding]) ### ROMAN NUMERAL TWO
-  create_key_or_plusEquals_to_its_value(doubles, "IV", ['Ⅳ'+padding]) ### ROMAN NUMERAL FOUR
-  create_key_or_plusEquals_to_its_value(doubles, "IX", ['Ⅸ'+padding]) ### ROMAN NUMERAL NINE
+
+  create_key_or_plusEquals_to_its_value(doubles, "II", ['Ⅱ'+padding]) ###       ROMAN NUMERAL TWO
+  create_key_or_plusEquals_to_its_value(doubles, "ii", ['ⅱ'+padding]) ### SMALL ROMAN NUMERAL TWO
+
+  create_key_or_plusEquals_to_its_value(doubles, "IV", ['Ⅳ'+padding]) ###       ROMAN NUMERAL FOUR
+  create_key_or_plusEquals_to_its_value(doubles, "iv", ['ⅳ'+padding]) ### SMALL ROMAN NUMERAL FOUR
+
+  create_key_or_plusEquals_to_its_value(doubles, "IX", ['Ⅸ'+padding]) ###       ROMAN NUMERAL NINE
+  create_key_or_plusEquals_to_its_value(doubles, "ix", ['ⅸ'+padding]) ### SMALL ROMAN NUMERAL NINE
+
   create_key_or_plusEquals_to_its_value(doubles, "LJ", ['Ǉ'+padding]) ### LATIN CAPITAL LETTER LJ
   create_key_or_plusEquals_to_its_value(doubles, "Lj", ['ǈ'+padding]) ### LATIN CAPITAL LETTER L WITH SMALL LETTER J
   create_key_or_plusEquals_to_its_value(doubles, "lj", ['ǉ'+padding]) ### LATIN SMALL LETTER LJ
+
   create_key_or_plusEquals_to_its_value(doubles, "NJ", ['Ǌ'+padding]) ### LATIN CAPITAL LETTER NJ
   create_key_or_plusEquals_to_its_value(doubles, "Nj", ['ǋ'+padding]) ### LATIN CAPITAL LETTER N WITH SMALL LETTER J
   create_key_or_plusEquals_to_its_value(doubles, "nj", ['ǌ'+padding]) ### LATIN SMALL LETTER NJ
+
   create_key_or_plusEquals_to_its_value(doubles, "Rs", ['₨'+padding]) ### RUPEE SIGN
-  create_key_or_plusEquals_to_its_value(doubles, "VI", ['Ⅵ'+padding]) ### ROMAN NUMERAL SIX
-  create_key_or_plusEquals_to_its_value(doubles, "XI", ['Ⅺ'+padding]) ### ROMAN NUMERAL ELEVEN
+
+  create_key_or_plusEquals_to_its_value(doubles, "VI", ['Ⅵ'+padding]) ###       ROMAN NUMERAL SIX
+  create_key_or_plusEquals_to_its_value(doubles, "vi", ['ⅵ'+padding]) ### SMALL ROMAN NUMERAL SIX
+
+  create_key_or_plusEquals_to_its_value(doubles, "XI", ['Ⅺ'+padding]) ###       ROMAN NUMERAL ELEVEN
+  create_key_or_plusEquals_to_its_value(doubles, "xi", ['ⅺ'+padding]) ### SMALL ROMAN NUMERAL ELEVEN
+
   create_key_or_plusEquals_to_its_value(doubles, "||", ['‖'+padding]) ### DOUBLE VERTICAL LINE
   create_key_or_plusEquals_to_its_value(doubles, "<<", ['⟪'+padding]) ### MATHEMATICAL  LEFT DOUBLE ANGLE BRACKET [MATHEMATICAL LEFT DOUBLE ANGLE BRACKET]
   create_key_or_plusEquals_to_its_value(doubles, ">>", ['⟫'+padding]) ### MATHEMATICAL RIGHT DOUBLE ANGLE BRACKET
@@ -222,10 +236,19 @@ if not we_are_in_a_monospaced_context:
 
   create_key_or_plusEquals_to_its_value(doubles, "==", '⩵' )  ### TWO   CONSECUTIVE EQUALS SIGNS [for search: TWO CONSECUTIVE EQUALS SIGNS]
   create_key_or_plusEquals_to_its_value(triples, "===", '⩶')  ### THREE CONSECUTIVE EQUALS SIGNS
-  create_key_or_plusEquals_to_its_value(triples, "III", 'Ⅲ')  ### ROMAN NUMERAL THREE
+
+  create_key_or_plusEquals_to_its_value(triples, "III", 'Ⅲ')  ###       ROMAN NUMERAL THREE
+  create_key_or_plusEquals_to_its_value(triples, "iii", 'ⅲ')  ### SMALL ROMAN NUMERAL THREE
+
   create_key_or_plusEquals_to_its_value(triples, "Pts", '₧')  ### peseta(s) sign
-  create_key_or_plusEquals_to_its_value(triples, "VII", 'Ⅶ')  ### ROMAN NUMERAL SEVEN
-  create_key_or_plusEquals_to_its_value(  quads, "VIII", 'Ⅷ') ### ROMAN NUMERAL EIGHT
+
+  create_key_or_plusEquals_to_its_value(triples, "VII", 'Ⅶ')  ###       ROMAN NUMERAL SEVEN
+  create_key_or_plusEquals_to_its_value(triples, "vii", 'ⅶ')  ### SMALL ROMAN NUMERAL SEVEN
+
+  create_key_or_plusEquals_to_its_value(  quads, "VIII", 'Ⅷ') ###       ROMAN NUMERAL EIGHT
+  create_key_or_plusEquals_to_its_value(  quads, "viii", 'ⅷ') ### SMALL ROMAN NUMERAL EIGHT
+
+  create_key_or_plusEquals_to_its_value(triples, "XII", ['Ⅻ'+padding]) ### ROMAN NUMERAL TWELVE
   create_key_or_plusEquals_to_its_value(triples, "XII", ['Ⅻ'+padding]) ### ROMAN NUMERAL TWELVE
 # create_key_or_plusEquals_to_its_value(triples, "___", '_')  ###
 
