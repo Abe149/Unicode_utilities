@@ -100,8 +100,10 @@ singles={' ': ' ',   ### ASCII space ⇒ NBSP
 
 if OK_to_use_mappings_that_are_likely_to_be_visually_distinguishable_from_the_original_but_should_have_the_same_width_category_as_the_original:
   create_key_or_plusEquals_to_its_value(  singles, '#', '⋕')   ### EQUAL AND PARALLEL TO
-  create_key_or_plusEquals_to_its_value(  singles, '*', "✽✱∗✳")
-  create_key_or_plusEquals_to_its_value(  singles, '-', '−𐄐')  ### MINUS SIGN, AEGEAN NUMBER TEN
+  create_key_or_plusEquals_to_its_value(  singles, '*', "✽✱∗✳⁕") ### last one as of this writing: FLOWER PUNCTUATION MARK
+  create_key_or_plusEquals_to_its_value(  singles, '-', "−𐄐")  ### MINUS SIGN, AEGEAN NUMBER TEN
+  create_key_or_plusEquals_to_its_value(  singles, '~', '⁓')   ### SWUNG DASH
+  create_key_or_plusEquals_to_its_value(  singles, '%', '⁒')   ### COMMERCIAL MINUS SIGN
 
   create_key_or_plusEquals_to_its_value(  singles, '0', '𝟢')   ### MATHEMATICAL SANS-SERIF DIGIT ZERO
   if we_are_in_a_monospaced_context:
@@ -147,7 +149,10 @@ if OK_to_use_mappings_that_are_likely_to_be_visually_distinguishable_from_the_or
 
   create_key_or_plusEquals_to_its_value(  singles, '|', '∣')   ### DIVIDES
   create_key_or_plusEquals_to_its_value(  singles, '=', '𐄑')   ### AEGEAN NUMBER TWENTY
+
+  create_key_or_plusEquals_to_its_value(  singles, 'E', '⋿')   ### Z NOTATION BAG MEMBERSHIP
   create_key_or_plusEquals_to_its_value(  singles, 'c', 'ᴄ')   ### small-caps ‘c’: at least sometimes has a different serif on the upper curve terminus
+
   create_key_or_plusEquals_to_its_value(  singles, '/' , '∕')  ### DIVISION SLASH
   create_key_or_plusEquals_to_its_value(  singles, '/' , '╱')  ### BOX DRAWINGS LIGHT DIAGONAL UPPER RIGHT TO LOWER LEFT
   create_key_or_plusEquals_to_its_value(  singles, '\\', '╲')  ### BOX DRAWINGS LIGHT DIAGONAL UPPER  LEFT TO LOWER RIGHT [BOX DRAWINGS LIGHT DIAGONAL UPPER LEFT TO LOWER RIGHT]
@@ -157,8 +162,6 @@ if OK_to_use_mappings_that_are_likely_to_be_visually_distinguishable_from_the_or
   create_key_or_plusEquals_to_its_value(  doubles, '))', ['｠']) ### FULLWIDTH RIGHT WHITE PARENTHESIS
   create_key_or_plusEquals_to_its_value(  doubles, "<<", ['《']) ###  LEFT DOUBLE ANGLE BRACKET
   create_key_or_plusEquals_to_its_value(  doubles, ">>", ['》']) ### RIGHT DOUBLE ANGLE BRACKET
-
-
 
 if OK_to_use_Unicode_chars_that_are_narrower_than_the_original_in_a_monospaced_context:
   padding = ' ' if are_we_in_a_monospaced_context else ""
