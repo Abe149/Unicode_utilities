@@ -179,6 +179,7 @@ if OK_to_use_Unicode_chars_that_are_narrower_than_the_original_in_a_monospaced_c
   create_key_or_plusEquals_to_its_value(doubles, "nj", ['ǌ'+padding]) ### LATIN SMALL LETTER NJ
   create_key_or_plusEquals_to_its_value(doubles, "Rs", ['₨'+padding]) ### RUPEE SIGN
   create_key_or_plusEquals_to_its_value(doubles, "VI", ['Ⅵ'+padding]) ### ROMAN NUMERAL SIX
+  create_key_or_plusEquals_to_its_value(doubles, "XI", ['Ⅺ'+padding]) ### ROMAN NUMERAL ELEVEN
   create_key_or_plusEquals_to_its_value(doubles, "||", ['‖'+padding]) ### DOUBLE VERTICAL LINE
   create_key_or_plusEquals_to_its_value(doubles, "<<", ['⟪'+padding]) ### MATHEMATICAL  LEFT DOUBLE ANGLE BRACKET [MATHEMATICAL LEFT DOUBLE ANGLE BRACKET]
   create_key_or_plusEquals_to_its_value(doubles, ">>", ['⟫'+padding]) ### MATHEMATICAL RIGHT DOUBLE ANGLE BRACKET
@@ -225,6 +226,7 @@ if not we_are_in_a_monospaced_context:
   create_key_or_plusEquals_to_its_value(triples, "Pts", '₧')  ### peseta(s) sign
   create_key_or_plusEquals_to_its_value(triples, "VII", 'Ⅶ')  ### ROMAN NUMERAL SEVEN
   create_key_or_plusEquals_to_its_value(  quads, "VIII", 'Ⅷ') ### ROMAN NUMERAL EIGHT
+  create_key_or_plusEquals_to_its_value(triples, "XII", ['Ⅻ'+padding]) ### ROMAN NUMERAL TWELVE
 # create_key_or_plusEquals_to_its_value(triples, "___", '_')  ###
 
 
