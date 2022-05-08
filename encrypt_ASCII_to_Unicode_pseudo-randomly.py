@@ -187,6 +187,7 @@ if OK_to_use_mappings_that_are_likely_to_be_visually_distinguishable_from_the_or
 # create_key_or_plusEquals_to_its_value(doubles, "__", ['_']) ###
 
 
+
 if OK_to_use_Unicode_chars_that_are_narrower_than_the_original_in_a_monospaced_context:
   padding = ' ' if are_we_in_a_monospaced_context else ""
 
@@ -197,6 +198,10 @@ if OK_to_use_Unicode_chars_that_are_narrower_than_the_original_in_a_monospaced_c
   create_key_or_plusEquals_to_its_value(doubles, "--", ['╌'+padding]) ### BOX DRAWINGS LIGHT DOUBLE DASH HORIZONTAL
   create_key_or_plusEquals_to_its_value(doubles, "--", ['╍'+padding]) ### BOX DRAWINGS HEAVY DOUBLE DASH HORIZONTAL
   create_key_or_plusEquals_to_its_value(doubles, "==", ['𐄓'+padding, '⩵'+padding]) ### AEGEAN NUMBER FORTY, TWO CONSECUTIVE EQUALS SIGNS
+
+  create_key_or_plusEquals_to_its_value(doubles, "((", ['⸨'+padding]) ###  LEFT DOUBLE PARENTHESIS
+  create_key_or_plusEquals_to_its_value(doubles, "))", ['⸩'+padding]) ### RIGHT DOUBLE PARENTHESIS
+
   create_key_or_plusEquals_to_its_value(doubles, "DZ", ['Ǳ'+padding]) ### LATIN CAPITAL LETTER DZ
   create_key_or_plusEquals_to_its_value(doubles, "Dz", ['ǲ'+padding]) ### LATIN CAPITAL LETTER D WITH SMALL LETTER Z
   create_key_or_plusEquals_to_its_value(doubles, "dz", ['ǳ'+padding]) ### LATIN SMALL LETTER DZ
@@ -240,6 +245,10 @@ if OK_to_use_Unicode_chars_that_are_wider_than_the_original:
   create_key_or_plusEquals_to_its_value(singles, '~', '〜') ### WAVE DASH: not in the default/main/primary set for singles b/c the replacement looks to be “fullwidth”, at least in iTerm2 3.1.7 using 18-point Monaco on MOSX 10.11.6
 
   create_key_or_plusEquals_to_its_value(singles, '=', '゠') ### DIGRAM FOR GREATER YANG
+
+  create_key_or_plusEquals_to_its_value(singles, '<', '〈') ###  LEFT ANGLE BRACKET
+  create_key_or_plusEquals_to_its_value(singles, '>', '〉') ### RIGHT ANGLE BRACKET
+
   create_key_or_plusEquals_to_its_value(singles, ',', '﹐') ### SMALL COMMA
   create_key_or_plusEquals_to_its_value(singles, '.', '﹒') ### SMALL FULL STOP
   create_key_or_plusEquals_to_its_value(singles, ';', '﹔') ### SMALL SEMICOLON
@@ -373,6 +382,9 @@ if not we_are_in_a_monospaced_context:
 
   create_key_or_plusEquals_to_its_value(triples, "XII", ['Ⅻ']) ### ROMAN NUMERAL TWELVE
   create_key_or_plusEquals_to_its_value(triples, "XII", ['Ⅻ']) ### ROMAN NUMERAL TWELVE
+
+  create_key_or_plusEquals_to_its_value(triples, "hPa", ['㍱'])  ### SQUARE HPA
+
 # create_key_or_plusEquals_to_its_value(doubles, "__", ['_'])  ###
 # create_key_or_plusEquals_to_its_value(triples, "___", ['_'])  ###
 # create_key_or_plusEquals_to_its_value(  quads, "____", ['_'])  ###
