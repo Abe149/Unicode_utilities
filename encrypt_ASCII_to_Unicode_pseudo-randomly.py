@@ -143,6 +143,7 @@ if OK_to_use_mappings_that_are_likely_to_be_visually_distinguishable_from_the_or
   if we_are_in_a_monospaced_context:
     create_key_or_plusEquals_to_its_value(singles, '9', '𝟿')   ### MATHEMATICAL MONOSPACE  DIGIT NINE [for search: MONOSPACE DIGIT NINE]
 
+  create_key_or_plusEquals_to_its_value(  singles, '|', '∣')   ### DIVIDES
   create_key_or_plusEquals_to_its_value(  singles, '=', '𐄑')   ### AEGEAN NUMBER TWENTY
   create_key_or_plusEquals_to_its_value(  singles, 'c', 'ᴄ')   ### small-caps ‘c’: at least sometimes has a different serif on the upper curve terminus
   create_key_or_plusEquals_to_its_value(  singles, '/' , '∕')  ### DIVISION SLASH
@@ -199,6 +200,8 @@ if OK_to_use_Unicode_chars_that_are_narrower_than_the_original_in_a_monospaced_c
   create_key_or_plusEquals_to_its_value(doubles, "||", ['‖'+padding]) ### DOUBLE VERTICAL LINE
   create_key_or_plusEquals_to_its_value(doubles, "<<", ['⟪'+padding]) ### MATHEMATICAL  LEFT DOUBLE ANGLE BRACKET [MATHEMATICAL LEFT DOUBLE ANGLE BRACKET]
   create_key_or_plusEquals_to_its_value(doubles, ">>", ['⟫'+padding]) ### MATHEMATICAL RIGHT DOUBLE ANGLE BRACKET
+  create_key_or_plusEquals_to_its_value(doubles, "<<", ['≪'+padding]) ### MUCH    LESS-THAN [for search: MUCH LESS-THAN]
+  create_key_or_plusEquals_to_its_value(doubles, ">>", ['≫'+padding]) ### MUCH GREATER-THAN
 # create_key_or_plusEquals_to_its_value(doubles, "__", ['_'+padding])
 
 
