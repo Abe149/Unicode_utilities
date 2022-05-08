@@ -68,20 +68,29 @@ singles={' ': ' ',   ### ASCII space ⇒ NBSP
          'E': "ЕΕ",  ### first Cyrillic, then Greek
          'F': "Ϝꓝ",  ### first Greek, then LISU LETTER TSA
          'G': 'ꓖ',   ### LISU LETTER GA
-         'H': "НΗ",  ### first Cyrillic, then Greek
+         'H': "НΗꓧ", ### first Cyrillic, then Greek, then LISU LETTER XA
          'I': "ІΙⅠ", ### first Cyrillic, then Greek, then Roman
          'J': 'ꓙ',   ### LISU LETTER JA
          'K': "ΚKꓗ", ### Greek, KELVIN SIGN, then LISU LETTER KA [omitting the Cyrillic near-equivalent b/c it looks a _little_ bit different sometimes: a curvy termination of the upper-right stroke]
-         'L': 'Ⅼ',   ### just Roman
+         'L': "Ⅼꓡ",  ### first Roman, then LISU LETTER LA
          'M': "МΜⅯ", ### first Cyrillic, then Greek, then Roman
          'N': 'Ν',   ### just Greek
          'O': "ОΟ",  ### first Cyrillic, then Greek
          'P': "РΡꓑ", ### first Cyrillic, then Greek, then LISU LETTER PA
-         'S': 'Ѕ',   ### just Cyrillic
+         'R': 'ꓣ',   ### LISU LETTER ZHA
+         'S': "Ѕꓢ",  ### first Cyrillic, then LISU LETTER SA
          'T': "ТΤꓔ", ### first Cyrillic, then Greek, then LISU LETTER TA
-         'V': 'Ⅴ',   ### just Roman
+         'V': "Ⅴꓦ",  ### first Roman, then LISU LETTER ZHA
          'X': "ХΧⅩ", ### first Cyrillic, then Greek, then Roman
          'Z': "Ζꓜ",  ### first Greek, then LISU LETTER DZA
+
+ ### test: 'ꓫ'
+ ### test: 'ꓬ'
+ ### test: 'ꓮ'
+ ### test: 'ꓰ'
+ ### test: 'ꓳ'
+ ### test: 'ꓴ'
+
          'a': 'а',   ### just Cyrillic
          'c': "сⅽ",  ### first Cyrillic, then Roman
          'd': 'ⅾ',   ### just Roman
@@ -101,7 +110,6 @@ singles={' ': ' ',   ### ASCII space ⇒ NBSP
 
          '~': '∼'    ### TILDE OPERATOR
         }
-
 
 
 if OK_to_use_mappings_that_are_likely_to_be_visually_distinguishable_from_the_original_but_should_have_the_same_width_category_as_the_original:
