@@ -98,54 +98,57 @@ singles={' ': ' ',   ### ASCII space ⇒ NBSP
 
 if OK_to_use_mappings_that_are_likely_to_be_visually_distinguishable_from_the_original_but_should_have_the_same_width_as_the_original:
   create_key_or_plusEquals_to_its_value(  singles, '*', "✽✱∗✳")
-  create_key_or_plusEquals_to_its_value(  singles, '-', '−𐄐') ### MINUS SIGN, AEGEAN NUMBER TEN
+  create_key_or_plusEquals_to_its_value(  singles, '-', '−𐄐')  ### MINUS SIGN, AEGEAN NUMBER TEN
 
-  create_key_or_plusEquals_to_its_value(  singles, '0', '𝟢')  ### MATHEMATICAL SANS-SERIF DIGIT ZERO
+  create_key_or_plusEquals_to_its_value(  singles, '0', '𝟢')   ### MATHEMATICAL SANS-SERIF DIGIT ZERO
   if we_are_in_a_monospaced_context:
-    create_key_or_plusEquals_to_its_value(singles, '0', '𝟶')  ### MATHEMATICAL MONOSPACE DIGIT ZERO
+    create_key_or_plusEquals_to_its_value(singles, '0', '𝟶')   ### MATHEMATICAL MONOSPACE DIGIT ZERO
 
-  create_key_or_plusEquals_to_its_value(  singles, '1', '𝟣')  ### MATHEMATICAL SANS-SERIF DIGIT ONE
+  create_key_or_plusEquals_to_its_value(  singles, '1', '𝟣')   ### MATHEMATICAL SANS-SERIF DIGIT ONE
   if we_are_in_a_monospaced_context:
-    create_key_or_plusEquals_to_its_value(singles, '1', '𝟷')  ### MATHEMATICAL MONOSPACE DIGIT ONE
+    create_key_or_plusEquals_to_its_value(singles, '1', '𝟷')   ### MATHEMATICAL MONOSPACE DIGIT ONE
 
-  create_key_or_plusEquals_to_its_value(  singles, '2', '𝟤')  ### MATHEMATICAL SANS-SERIF DIGIT TWO
+  create_key_or_plusEquals_to_its_value(  singles, '2', '𝟤')   ### MATHEMATICAL SANS-SERIF DIGIT TWO
   if we_are_in_a_monospaced_context:
-    create_key_or_plusEquals_to_its_value(singles, '2', '𝟸')  ### MATHEMATICAL MONOSPACE DIGIT TWO
+    create_key_or_plusEquals_to_its_value(singles, '2', '𝟸')   ### MATHEMATICAL MONOSPACE DIGIT TWO
 
-  create_key_or_plusEquals_to_its_value(  singles, '3', '𝟥')  ### MATHEMATICAL SANS-SERIF DIGIT THREE
+  create_key_or_plusEquals_to_its_value(  singles, '3', '𝟥')   ### MATHEMATICAL SANS-SERIF DIGIT THREE
   if we_are_in_a_monospaced_context:
-    create_key_or_plusEquals_to_its_value(singles, '3', '𝟹')  ### MATHEMATICAL MONOSPACE DIGIT THREE
+    create_key_or_plusEquals_to_its_value(singles, '3', '𝟹')   ### MATHEMATICAL MONOSPACE DIGIT THREE
 
-  create_key_or_plusEquals_to_its_value(  singles, '4', '𝟦')  ### MATHEMATICAL SANS-SERIF DIGIT FOUR
+  create_key_or_plusEquals_to_its_value(  singles, '4', '𝟦')   ### MATHEMATICAL SANS-SERIF DIGIT FOUR
   if we_are_in_a_monospaced_context:
-    create_key_or_plusEquals_to_its_value(singles, '4', '𝟺')  ### MATHEMATICAL MONOSPACE DIGIT FOUR
+    create_key_or_plusEquals_to_its_value(singles, '4', '𝟺')   ### MATHEMATICAL MONOSPACE DIGIT FOUR
 
-  create_key_or_plusEquals_to_its_value(  singles, '5', 'Ƽ')  ### “Latin” capital “letter” tone five
+  create_key_or_plusEquals_to_its_value(  singles, '5', 'Ƽ')   ### “Latin” capital “letter” tone five
 
-  create_key_or_plusEquals_to_its_value(  singles, '5', '𝟧')  ### MATHEMATICAL SANS-SERIF DIGIT FIVE
+  create_key_or_plusEquals_to_its_value(  singles, '5', '𝟧')   ### MATHEMATICAL SANS-SERIF DIGIT FIVE
   if we_are_in_a_monospaced_context:
-    create_key_or_plusEquals_to_its_value(singles, '5', '𝟻')  ### MATHEMATICAL MONOSPACE DIGIT FIVE
+    create_key_or_plusEquals_to_its_value(singles, '5', '𝟻')   ### MATHEMATICAL MONOSPACE DIGIT FIVE
 
-  create_key_or_plusEquals_to_its_value(  singles, '6', '𝟨')  ### MATHEMATICAL SANS-SERIF DIGIT SIX
+  create_key_or_plusEquals_to_its_value(  singles, '6', '𝟨')   ### MATHEMATICAL SANS-SERIF DIGIT SIX
   if we_are_in_a_monospaced_context:
-    create_key_or_plusEquals_to_its_value(singles, '6', '𝟼')  ### MATHEMATICAL MONOSPACE DIGIT SIX
+    create_key_or_plusEquals_to_its_value(singles, '6', '𝟼')   ### MATHEMATICAL MONOSPACE DIGIT SIX
 
-  create_key_or_plusEquals_to_its_value(  singles, '7', '𝟩')  ### MATHEMATICAL SANS-SERIF DIGIT SEVEN
+  create_key_or_plusEquals_to_its_value(  singles, '7', '𝟩')   ### MATHEMATICAL SANS-SERIF DIGIT SEVEN
   if we_are_in_a_monospaced_context:
-    create_key_or_plusEquals_to_its_value(singles, '7', '𝟽')  ### MATHEMATICAL MONOSPACE DIGIT SEVEN
+    create_key_or_plusEquals_to_its_value(singles, '7', '𝟽')   ### MATHEMATICAL MONOSPACE DIGIT SEVEN
 
-  create_key_or_plusEquals_to_its_value(  singles, '8', '𝟪')  ### MATHEMATICAL SANS-SERIF DIGIT EIGHT
+  create_key_or_plusEquals_to_its_value(  singles, '8', '𝟪')   ### MATHEMATICAL SANS-SERIF DIGIT EIGHT
   if we_are_in_a_monospaced_context:
-    create_key_or_plusEquals_to_its_value(singles, '8', '𝟾')  ### MATHEMATICAL MONOSPACE DIGIT EIGHT
+    create_key_or_plusEquals_to_its_value(singles, '8', '𝟾')   ### MATHEMATICAL MONOSPACE DIGIT EIGHT
 
-  create_key_or_plusEquals_to_its_value(  singles, '9', '𝟫')  ### MATHEMATICAL SANS-SERIF DIGIT NINE
+  create_key_or_plusEquals_to_its_value(  singles, '9', '𝟫')   ### MATHEMATICAL SANS-SERIF DIGIT NINE
   if we_are_in_a_monospaced_context:
-    create_key_or_plusEquals_to_its_value(singles, '9', '𝟿')  ### MATHEMATICAL MONOSPACE DIGIT NINE
+    create_key_or_plusEquals_to_its_value(singles, '9', '𝟿')   ### MATHEMATICAL MONOSPACE DIGIT NINE
 
-  create_key_or_plusEquals_to_its_value(  singles, '=', '𐄑')  ### AEGEAN NUMBER TWENTY
-  create_key_or_plusEquals_to_its_value(  singles, 'c', 'ᴄ')  ### small-caps ‘c’: at least sometimes has a different serif on the upper curve terminus
-  create_key_or_plusEquals_to_its_value(  singles, '/' , '╱') ### BOX DRAWINGS LIGHT DIAGONAL UPPER RIGHT TO LOWER LEFT
-  create_key_or_plusEquals_to_its_value(  singles, '\\', '╲') ### BOX DRAWINGS LIGHT DIAGONAL UPPER LEFT TO LOWER RIGHT
+  create_key_or_plusEquals_to_its_value(  singles, '=', '𐄑')   ### AEGEAN NUMBER TWENTY
+  create_key_or_plusEquals_to_its_value(  singles, 'c', 'ᴄ')   ### small-caps ‘c’: at least sometimes has a different serif on the upper curve terminus
+  create_key_or_plusEquals_to_its_value(  singles, '/' , '╱')  ### BOX DRAWINGS LIGHT DIAGONAL UPPER RIGHT TO LOWER LEFT
+  create_key_or_plusEquals_to_its_value(  singles, '\\', '╲')  ### BOX DRAWINGS LIGHT DIAGONAL UPPER LEFT TO LOWER RIGHT
+
+  create_key_or_plusEquals_to_its_value(  doubles, '((', '｟') ### FULLWIDTH LEFT WHITE PARENTHESIS
+  create_key_or_plusEquals_to_its_value(  doubles, '))', '｠') ### FULLWIDTH RIGHT WHITE PARENTHESIS
 
 
 
