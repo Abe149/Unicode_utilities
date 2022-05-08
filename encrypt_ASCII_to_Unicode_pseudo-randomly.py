@@ -112,7 +112,7 @@ if OK_to_use_mappings_that_are_likely_to_be_visually_distinguishable_from_the_or
   if we_are_in_a_monospaced_context:
     create_key_or_plusEquals_to_its_value(singles, '2', '𝟸')   ### MATHEMATICAL MONOSPACE  DIGIT TWO   [for search: MONOSPACE DIGIT TWO]
 
-  create_key_or_plusEquals_to_its_value(  singles, '3', '𝟥')   ### MATHEMATICAL SANS-SERIF DIGIT THREE
+  create_key_or_plusEquals_to_its_value(  singles, '3', "𝟥З")  ### MATHEMATICAL SANS-SERIF DIGIT THREE, CYRILLIC CAPITAL LETTER ZE
   if we_are_in_a_monospaced_context:
     create_key_or_plusEquals_to_its_value(singles, '3', '𝟹')   ### MATHEMATICAL MONOSPACE  DIGIT THREE [for search: MATHEMATICAL MONOSPACE DIGIT THREE]
 
