@@ -66,7 +66,7 @@ singles={' ': ' ',   ### ASCII space ⇒ NBSP
          'C': "СⅭꓚ", ### first Cyrillic, then Roman, then LISU LETTER CA
          'D': "Ⅾꓓ",  ### first Roman, then LISU LETTER DA
          'E': "ЕΕ",  ### first Cyrillic, then Greek
-         'F': 'Ϝ',   ### just Greek
+         'F': "Ϝꓝ",  ### first Greek, then LISU LETTER TSA
          'G': 'ꓖ',   ### LISU LETTER GA
          'H': "НΗ",  ### first Cyrillic, then Greek
          'I': "ІΙⅠ", ### first Cyrillic, then Greek, then Roman
@@ -81,7 +81,7 @@ singles={' ': ' ',   ### ASCII space ⇒ NBSP
          'T': "ТΤꓔ", ### first Cyrillic, then Greek, then LISU LETTER TA
          'V': 'Ⅴ',   ### just Roman
          'X': "ХΧⅩ", ### first Cyrillic, then Greek, then Roman
-         'Z': 'Ζ',   ### just Greek
+         'Z': "Ζꓜ",  ### first Greek, then LISU LETTER DZA
          'a': 'а',   ### just Cyrillic
          'c': "сⅽ",  ### first Cyrillic, then Roman
          'd': 'ⅾ',   ### just Roman
