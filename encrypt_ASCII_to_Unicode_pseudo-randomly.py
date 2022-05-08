@@ -63,13 +63,15 @@ singles={' ': ' ',   ### ASCII space ⇒ NBSP
          ';': ';',   ### Greek question symbol
          'A': "АΑ",  ### first Cyrillic, then Greek
          'B': "ВΒꓐ", ### first Cyrillic, then Greek, then LISU LETTER BA
-         'C': "СⅭ",  ### first Cyrillic, then Roman
+         'C': "СⅭꓚ", ### first Cyrillic, then Roman, then LISU LETTER CA
          'D': "Ⅾꓓ",  ### first Roman, then LISU LETTER DA
          'E': "ЕΕ",  ### first Cyrillic, then Greek
          'F': 'Ϝ',   ### just Greek
+         'G': 'ꓖ',   ### LISU LETTER GA
          'H': "НΗ",  ### first Cyrillic, then Greek
          'I': "ІΙⅠ", ### first Cyrillic, then Greek, then Roman
-         'K': "ΚK",  ### Greek, KELVIN SIGN [omitting the Cyrillic near-equivalent b/c it looks a _little_ bit different sometimes: a curvy termination of the upper-right stroke]
+         'J': 'ꓙ',   ### LISU LETTER JA
+         'K': "ΚKꓗ", ### Greek, KELVIN SIGN, then LISU LETTER KA [omitting the Cyrillic near-equivalent b/c it looks a _little_ bit different sometimes: a curvy termination of the upper-right stroke]
          'L': 'Ⅼ',   ### just Roman
          'M': "МΜⅯ", ### first Cyrillic, then Greek, then Roman
          'N': 'Ν',   ### just Greek
