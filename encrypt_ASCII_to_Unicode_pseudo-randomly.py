@@ -243,6 +243,8 @@ if not we_are_in_a_monospaced_context:
 
   create_key_or_plusEquals_to_its_value(doubles, "==", '⩵' )  ### TWO   CONSECUTIVE EQUALS SIGNS [for search: TWO CONSECUTIVE EQUALS SIGNS]
   create_key_or_plusEquals_to_its_value(triples, "===", '⩶')  ### THREE CONSECUTIVE EQUALS SIGNS
+# create_key_or_plusEquals_to_its_value(triples, "<<<", '⋘')  ### VERY MUCH    LESS-THAN [for search: VERY MUCH LESS-THAN]
+# create_key_or_plusEquals_to_its_value(triples, ">>>", '⋙')  ### VERY MUCH GREATER-THAN
 
   create_key_or_plusEquals_to_its_value(triples, "III", 'Ⅲ')  ###       ROMAN NUMERAL THREE
   create_key_or_plusEquals_to_its_value(triples, "iii", 'ⅲ')  ### SMALL ROMAN NUMERAL THREE
