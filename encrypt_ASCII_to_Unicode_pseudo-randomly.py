@@ -477,6 +477,11 @@ if not we_are_in_a_monospaced_context:
 
   create_key_or_plusEquals_to_its_value(  quads, "K.K.", ['㏍']) ### SQUARE KK
 
+  create_key_or_plusEquals_to_its_value(singles, 'M', 'ꓟ')  ### LISU LETTER MA [this one came out all funky —— wide and overflowing to the right —— in iTerm2 on MOSX 10.11.6 on my main MBP]
+  create_key_or_plusEquals_to_its_value(singles, 'N', 'ꓠ')  ### LISU LETTER NA [this one came out all funky —— wide and overflowing to the right —— in iTerm2 on MOSX 10.11.6 on my main MBP]
+  create_key_or_plusEquals_to_its_value(singles, 'W', 'ꓪ')  ### LISU LETTER WA [this one came out all funky —— wide and overflowing to the right —— in iTerm2 on MOSX 10.11.6 on my main MBP]
+ ### test: 'ꓲ' ### this one is _really_ shit — I can`t seem to get a serif version of this lame-ass fake capital letter I [“LISU LETTER I”]
+
 # create_key_or_plusEquals_to_its_value(doubles, "__", ['_'])  ###
 # create_key_or_plusEquals_to_its_value(triples, "___", ['_'])  ###
 # create_key_or_plusEquals_to_its_value(  quads, "____", ['_'])  ###
