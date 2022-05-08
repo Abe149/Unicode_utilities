@@ -233,6 +233,13 @@ if OK_to_use_mappings_that_are_likely_to_be_visually_distinguishable_from_the_or
   create_key_or_plusEquals_to_its_value(doubles, "cc", ['㏄']) ### SQUARE CC
   create_key_or_plusEquals_to_its_value(doubles, "cd", ['㏅']) ### SQUARE CD
 
+  create_key_or_plusEquals_to_its_value(doubles, "dB", ['㏈']) ### SQUARE DB
+  create_key_or_plusEquals_to_its_value(doubles, "Gy", ['㏉']) ### SQUARE GY
+  create_key_or_plusEquals_to_its_value(doubles, "ha", ['㏊']) ### SQUARE HA
+  create_key_or_plusEquals_to_its_value(doubles, "in", ['㏌']) ### SQUARE IN
+  create_key_or_plusEquals_to_its_value(doubles, "KM", ['㏎']) ### SQUARE KM CAPITAL
+  create_key_or_plusEquals_to_its_value(doubles, "kt", ['㏏']) ### SQUARE KT
+
 # create_key_or_plusEquals_to_its_value(singles, '_', '_') ###
 # create_key_or_plusEquals_to_its_value(doubles, "__", ['_']) ###
 
@@ -301,6 +308,7 @@ if OK_to_use_Unicode_chars_that_are_narrower_than_the_original_in_a_monospaced_c
   create_key_or_plusEquals_to_its_value(triples, "THz", ['㎔'+padding]) ### SQUARE THZ
 
   create_key_or_plusEquals_to_its_value(triples, "rad", ['㎭'+padding]) ### SQUARE RAD
+# create_key_or_plusEquals_to_its_value(triples, "Co.", ['㏇'+padding]) ### SQUARE CO ### disabled b/c it sometimes looks like “CO.” on 10.11.6 on my main MBP
 
 # create_key_or_plusEquals_to_its_value(doubles, "__", ['_'+padding])
 
