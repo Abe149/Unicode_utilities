@@ -335,6 +335,7 @@ for key in doubles:
   assert len(val) > 0
   for supposed_string in val:
     assert type(supposed_string) == type("")
+    assert len( supposed_string) > 0
 
 for key in triples:
   ### just require some kind of “iterable”, i.e. don`t _insist_ on a _list_ of strings [even though that`s what is expected]
@@ -342,6 +343,7 @@ for key in triples:
   assert len(val) > 0
   for supposed_string in val:
     assert type(supposed_string) == type("")
+    assert len( supposed_string) > 0
 
 if DEBUG>9:
   print ("quads:", quads)
@@ -351,6 +353,7 @@ for key in   quads:
   assert len(val) > 0
   for supposed_string in val:
     assert type(supposed_string) == type("")
+    assert len( supposed_string) > 0
 
 
 
