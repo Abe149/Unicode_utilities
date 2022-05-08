@@ -120,7 +120,7 @@ if OK_to_use_mappings_that_are_likely_to_be_visually_distinguishable_from_the_or
   if we_are_in_a_monospaced_context:
     create_key_or_plusEquals_to_its_value(singles, '4', '𝟺')   ### MATHEMATICAL MONOSPACE DIGIT FOUR
 
-  create_key_or_plusEquals_to_its_value(  singles, '5', 'Ƽ')   ### “Latin” capital “letter” tone five
+# create_key_or_plusEquals_to_its_value(  singles, '5', 'Ƽ')   ### “Latin” capital “letter” tone five ### maybe To Do: re-enable this contextually, when the neither the preceding char. nor the succeeding char. in the original was an ASCII digit [otherwise this too-often sticks out like a sore thumb]
 
   create_key_or_plusEquals_to_its_value(  singles, '5', '𝟧')   ### MATHEMATICAL SANS-SERIF DIGIT FIVE
   if we_are_in_a_monospaced_context:
