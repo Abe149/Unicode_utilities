@@ -61,11 +61,11 @@ singles={' ': ' ',    ### ASCII space ⇒ NBSP
          '-': '‑',    ### non-breaking hyphen
          '.': '․',    ### one-dot leader [for search: ONE DOT LEADER]
          ';': ';',    ### Greek question symbol
-         'A': "АΑ",   ### first Cyrillic, then Greek
+         'A': "АΑꓮ",  ### first Cyrillic, then Greek, then LISU LETTER A
          'B': "ВΒꓐ",  ### first Cyrillic, then Greek, then LISU LETTER BA
          'C': "СⅭꓚ",  ### first Cyrillic, then Roman, then LISU LETTER CA
          'D': "Ⅾꓓ",   ### first Roman, then LISU LETTER DA
-         'E': "ЕΕ",   ### first Cyrillic, then Greek
+         'E': "ЕΕꓰ",  ### first Cyrillic, then Greek, then LISU LETTER E
          'F': "Ϝꓝ",   ### first Greek, then LISU LETTER TSA
          'G': 'ꓖ',    ### LISU LETTER GA
          'H': "НΗꓧ",  ### first Cyrillic, then Greek, then LISU LETTER XA
@@ -75,21 +75,16 @@ singles={' ': ' ',    ### ASCII space ⇒ NBSP
          'L': "Ⅼꓡ",   ### first Roman, then LISU LETTER LA
          'M': "МΜⅯ",  ### first Cyrillic, then Greek, then Roman
          'N': 'Ν',    ### just Greek
-         'O': "ОΟ",   ### first Cyrillic, then Greek
+         'O': "ОΟꓳ",  ### first Cyrillic, then Greek, then LISU LETTER O
          'P': "РΡꓑ",  ### first Cyrillic, then Greek, then LISU LETTER PA
          'R': 'ꓣ',    ### LISU LETTER ZHA
          'S': "Ѕꓢ",   ### first Cyrillic, then LISU LETTER SA
          'T': "ТΤꓔ",  ### first Cyrillic, then Greek, then LISU LETTER TA
+         'U': 'ꓴ',    ### LISU LETTER U
          'V': "Ⅴꓦ",   ### first Roman, then LISU LETTER ZHA
          'X': "ХΧⅩꓫ", ### first Cyrillic, then Greek, then Roman, then LISU LETTER SHA
+         'Y': 'ꓬ',    ### LISU LETTER YA
          'Z': "Ζꓜ",   ### first Greek, then LISU LETTER DZA
-
- ### test: 'ꓫ'
- ### test: 'ꓬ'
- ### test: 'ꓮ'
- ### test: 'ꓰ'
- ### test: 'ꓳ'
- ### test: 'ꓴ'
 
          'a': 'а',   ### just Cyrillic
          'c': "сⅽ",  ### first Cyrillic, then Roman
