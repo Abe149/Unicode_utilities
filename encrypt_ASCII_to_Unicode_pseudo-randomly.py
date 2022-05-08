@@ -152,6 +152,8 @@ if OK_to_use_mappings_that_are_likely_to_be_visually_distinguishable_from_the_or
   create_key_or_plusEquals_to_its_value(  doubles, "<<", ['《']) ###  LEFT DOUBLE ANGLE BRACKET
   create_key_or_plusEquals_to_its_value(  doubles, ">>", ['》']) ### RIGHT DOUBLE ANGLE BRACKET
 
+
+
 if OK_to_use_Unicode_chars_that_are_narrower_than_the_original_in_a_monospaced_context:
   padding = ' ' if are_we_in_a_monospaced_context else ""
 
@@ -162,6 +164,12 @@ if OK_to_use_Unicode_chars_that_are_narrower_than_the_original_in_a_monospaced_c
   create_key_or_plusEquals_to_its_value(doubles, "--", ['╌'+padding]) ### BOX DRAWINGS LIGHT DOUBLE DASH HORIZONTAL
   create_key_or_plusEquals_to_its_value(doubles, "--", ['╍'+padding]) ### BOX DRAWINGS HEAVY DOUBLE DASH HORIZONTAL
   create_key_or_plusEquals_to_its_value(doubles, "==", ['𐄓'+padding, '⩵'+padding]) ### AEGEAN NUMBER FORTY, TWO CONSECUTIVE EQUALS SIGNS
+  create_key_or_plusEquals_to_its_value(doubles, "LJ", ['Ǉ'+padding]) ### LATIN CAPITAL LETTER LJ
+  create_key_or_plusEquals_to_its_value(doubles, "Lj", ['ǈ'+padding]) ### LATIN CAPITAL LETTER L WITH SMALL LETTER J
+  create_key_or_plusEquals_to_its_value(doubles, "lj", ['ǉ'+padding]) ### LATIN SMALL LETTER LJ
+  create_key_or_plusEquals_to_its_value(doubles, "NJ", ['Ǌ'+padding]) ### LATIN CAPITAL LETTER NJ
+  create_key_or_plusEquals_to_its_value(doubles, "Nj", ['ǋ'+padding]) ### LATIN CAPITAL LETTER N WITH SMALL LETTER J
+  create_key_or_plusEquals_to_its_value(doubles, "nj", ['ǌ'+padding]) ### LATIN SMALL LETTER NJ
   create_key_or_plusEquals_to_its_value(doubles, "Rs", ['₨'+padding]) ### RUPEE SIGN
   create_key_or_plusEquals_to_its_value(doubles, "DZ", ['Ǳ'+padding]) ### LATIN CAPITAL LETTER DZ
   create_key_or_plusEquals_to_its_value(doubles, "Dz", ['ǲ'+padding]) ### LATIN CAPITAL LETTER D WITH SMALL LETTER Z
