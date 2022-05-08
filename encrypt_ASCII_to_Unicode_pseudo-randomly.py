@@ -258,6 +258,10 @@ if OK_to_use_Unicode_chars_that_are_wider_than_the_original:
   create_key_or_plusEquals_to_its_value(singles, '%', '﹪') ### SMALL PERCENT SIGN
   create_key_or_plusEquals_to_its_value(singles, '@', '﹫') ### SMALL COMMERCIAL AT
 
+### note: BIG SOLIDUS and BIG REVERSE SOLIDUS seem to be “weird”: in Mac OS X 10.11`s character viewer [now renamed “Emoji and Symbols” :-(], they both seem to be full-width, but in both iTerm2 and TextEdit [using Times New Roman] they are _not_ [albeit in TextEdit they _are_ wider than the respective ASCII char.s]
+  create_key_or_plusEquals_to_its_value(singles, '/' , '⧸') ### BIG         SOLIDUS [for search: BIG SOLIDUS]
+  create_key_or_plusEquals_to_its_value(singles, '\\', '⧹') ### BIG REVERSE SOLIDUS
+
   for c in range(33, 127): ### fullwidth replacements for almost all the ASCII printables [the Unicode committee left out space in this range]
     create_key_or_plusEquals_to_its_value( singles, chr(ord('！')-ord('!')+a) )
 
