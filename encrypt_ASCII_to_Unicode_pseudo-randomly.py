@@ -211,6 +211,10 @@ if OK_to_use_mappings_that_are_likely_to_be_visually_distinguishable_from_the_or
   create_key_or_plusEquals_to_its_value(doubles, "cm", ['㎝']) ### SQUARE CM
   create_key_or_plusEquals_to_its_value(doubles, "km", ['㎞']) ### SQUARE KM
 
+  create_key_or_plusEquals_to_its_value(doubles, "ps", ['㎰']) ### SQUARE PS
+  create_key_or_plusEquals_to_its_value(doubles, "ns", ['㎱']) ### SQUARE NS
+  create_key_or_plusEquals_to_its_value(doubles, "ms", ['㎳']) ### SQUARE MS
+
   create_key_or_plusEquals_to_its_value(doubles, "Pa", ['㎩']) ### SQUARE PA
 
 # create_key_or_plusEquals_to_its_value(singles, '_', '_') ###
@@ -279,6 +283,8 @@ if OK_to_use_Unicode_chars_that_are_narrower_than_the_original_in_a_monospaced_c
   create_key_or_plusEquals_to_its_value(triples, "MHz", ['㎒'+padding]) ### SQUARE MHZ
   create_key_or_plusEquals_to_its_value(triples, "GHz", ['㎓'+padding]) ### SQUARE GHZ
   create_key_or_plusEquals_to_its_value(triples, "THz", ['㎔'+padding]) ### SQUARE THZ
+
+  create_key_or_plusEquals_to_its_value(triples, "rad", ['㎭'+padding]) ### SQUARE RAD
 
 # create_key_or_plusEquals_to_its_value(doubles, "__", ['_'+padding])
 
