@@ -165,7 +165,7 @@ if OK_to_use_mappings_that_are_likely_to_be_visually_distinguishable_from_the_or
   if we_are_in_a_monospaced_context:
     create_key_or_plusEquals_to_its_value(singles, '5', '𝟻')   ### MATHEMATICAL MONOSPACE  DIGIT FIVE [for search: MATHEMATICAL MONOSPACE DIGIT FIVE]
 
-  create_key_or_plusEquals_to_its_value(  singles, '6', '𝟨')   ### MATHEMATICAL SANS-SERIF DIGIT SIX [for search:
+  create_key_or_plusEquals_to_its_value(  singles, '6', '𝟨')   ### MATHEMATICAL SANS-SERIF DIGIT SIX
   if we_are_in_a_monospaced_context:
     create_key_or_plusEquals_to_its_value(singles, '6', '𝟼')   ### MATHEMATICAL MONOSPACE  DIGIT SIX [for search: MATHEMATICAL MONOSPACE DIGIT SIX]
 
