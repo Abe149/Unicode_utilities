@@ -241,6 +241,9 @@ if OK_to_use_Unicode_chars_that_are_narrower_than_the_original_in_a_monospaced_c
   create_key_or_plusEquals_to_its_value(doubles, "<<", ['≪'+padding]) ### MUCH    LESS-THAN [for search: MUCH LESS-THAN]
   create_key_or_plusEquals_to_its_value(doubles, ">>", ['≫'+padding]) ### MUCH GREATER-THAN
   create_key_or_plusEquals_to_its_value(doubles, ">>", ['⨠'+padding]) ### Z NOTATION SCHEMA PIPING
+
+  create_key_or_plusEquals_to_its_value(triples, "bar", ['㍴'+padding]) ### SQUARE BAR
+  create_key_or_plusEquals_to_its_value(triples, "hPa", ['㍱'+padding]) ### SQUARE HPA
 # create_key_or_plusEquals_to_its_value(doubles, "__", ['_'+padding])
 
 
@@ -386,9 +389,6 @@ if not we_are_in_a_monospaced_context:
 
   create_key_or_plusEquals_to_its_value(triples, "XII", ['Ⅻ']) ### ROMAN NUMERAL TWELVE
   create_key_or_plusEquals_to_its_value(triples, "XII", ['Ⅻ']) ### ROMAN NUMERAL TWELVE
-
-  create_key_or_plusEquals_to_its_value(triples, "bar", ['㍴'])  ### SQUARE BAR
-  create_key_or_plusEquals_to_its_value(triples, "hPa", ['㍱'])  ### SQUARE HPA
 
 # create_key_or_plusEquals_to_its_value(doubles, "__", ['_'])  ###
 # create_key_or_plusEquals_to_its_value(triples, "___", ['_'])  ###
