@@ -183,9 +183,10 @@ if OK_to_use_mappings_that_are_likely_to_be_visually_distinguishable_from_the_or
   create_key_or_plusEquals_to_its_value(singles, '{', '❴') ### MEDIUM  LEFT CURLY BRACKET ORNAMENT [for search: MEDIUM LEFT CURLY BRACKET ORNAMENT]
   create_key_or_plusEquals_to_its_value(singles, '}', '❵') ### MEDIUM RIGHT CURLY BRACKET ORNAMENT
 
-# create_key_or_plusEquals_to_its_value(doubles, "__", ['_']) ###
-# create_key_or_plusEquals_to_its_value(doubles, "__", ['_']) ###
-# create_key_or_plusEquals_to_its_value(doubles, "__", ['_']) ###
+  create_key_or_plusEquals_to_its_value(doubles, "da", ['㍲']) ### SQUARE DA
+  create_key_or_plusEquals_to_its_value(doubles, "AU", ['㍳']) ### SQUARE AU
+  create_key_or_plusEquals_to_its_value(doubles, "oV", ['㍵']) ### SQUARE OV
+  create_key_or_plusEquals_to_its_value(doubles, "pc", ['㍶']) ### SQUARE PC
 
 # create_key_or_plusEquals_to_its_value(singles, '_', '_') ###
 # create_key_or_plusEquals_to_its_value(doubles, "__", ['_']) ###
