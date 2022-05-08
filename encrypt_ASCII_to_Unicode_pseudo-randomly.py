@@ -81,7 +81,7 @@ singles={' ': ' ',   ### ASCII space ⇒ NBSP
          'S': "Ѕꓢ",  ### first Cyrillic, then LISU LETTER SA
          'T': "ТΤꓔ", ### first Cyrillic, then Greek, then LISU LETTER TA
          'V': "Ⅴꓦ",  ### first Roman, then LISU LETTER ZHA
-         'X': "ХΧⅩ", ### first Cyrillic, then Greek, then Roman
+         'X': "ХΧⅩꓫ", ### first Cyrillic, then Greek, then Roman, then LISU LETTER SHA
          'Z': "Ζꓜ",  ### first Greek, then LISU LETTER DZA
 
  ### test: 'ꓫ'
