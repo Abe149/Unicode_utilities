@@ -184,8 +184,10 @@ if OK_to_use_mappings_that_are_likely_to_be_visually_distinguishable_from_the_or
     create_key_or_plusEquals_to_its_value(singles, '=', '𐄑')   ### AEGEAN NUMBER TWENTY
 
   create_key_or_plusEquals_to_its_value(  singles, '=', '꞊')   ### MODIFIER LETTER SHORT EQUALS SIGN
-  create_key_or_plusEquals_to_its_value(  singles, '=', '𐆐')   ### ROMAN SEXTANS SIGN
-  create_key_or_plusEquals_to_its_value(  singles, '-', '𐆑')   ### ROMAN UNCIA   SIGN [for search: ROMAN UNCIA SIGN
+
+  if OK_to_use_nonBMP_codepoints:
+    create_key_or_plusEquals_to_its_value(singles, '=', '𐆐')   ### ROMAN SEXTANS SIGN
+    create_key_or_plusEquals_to_its_value(singles, '-', '𐆑')   ### ROMAN UNCIA   SIGN [for search: ROMAN UNCIA SIGN
 
   create_key_or_plusEquals_to_its_value(  singles, 'E', '⋿')   ### Z NOTATION BAG MEMBERSHIP
   create_key_or_plusEquals_to_its_value(  singles, 'c', 'ᴄ')   ### small-caps ‘c’: at least sometimes has a different serif on the upper curve terminus
