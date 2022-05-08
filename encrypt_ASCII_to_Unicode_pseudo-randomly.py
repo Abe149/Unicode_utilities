@@ -194,6 +194,10 @@ if OK_to_use_mappings_that_are_likely_to_be_visually_distinguishable_from_the_or
   create_key_or_plusEquals_to_its_value(doubles, "KB", ['㎅']) ### SQUARE KB
   create_key_or_plusEquals_to_its_value(doubles, "MB", ['㎆']) ### SQUARE MB
   create_key_or_plusEquals_to_its_value(doubles, "GB", ['㎇']) ### SQUARE GB
+  create_key_or_plusEquals_to_its_value(doubles, "pF", ['㎊']) ### SQUARE PF
+  create_key_or_plusEquals_to_its_value(doubles, "nF", ['㎋']) ### SQUARE NF
+  create_key_or_plusEquals_to_its_value(doubles, "mg", ['㎎']) ### SQUARE MG
+  create_key_or_plusEquals_to_its_value(doubles, "kg", ['㎏']) ### SQUARE KG
 
 # create_key_or_plusEquals_to_its_value(singles, '_', '_') ###
 # create_key_or_plusEquals_to_its_value(doubles, "__", ['_']) ###
