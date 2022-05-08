@@ -122,25 +122,25 @@ if OK_to_use_mappings_that_are_likely_to_be_visually_distinguishable_from_the_or
 
   create_key_or_plusEquals_to_its_value(  singles, '5', "Ƽ")  ### “Latin” capital “letter” tone five
 
-  create_key_or_plusEquals_to_its_value(  singles, '5', "𝟧") ### MATHEMATICAL SANS-SERIF DIGIT FIVE
+  create_key_or_plusEquals_to_its_value(  singles, '5', "𝟧")  ### MATHEMATICAL SANS-SERIF DIGIT FIVE
   if we_are_in_a_monospaced_context:
-    create_key_or_plusEquals_to_its_value(singles, '5', "𝟻") ### MATHEMATICAL MONOSPACE DIGIT FIVE
+    create_key_or_plusEquals_to_its_value(singles, '5', "𝟻")  ### MATHEMATICAL MONOSPACE DIGIT FIVE
 
-  create_key_or_plusEquals_to_its_value(  singles, '6', "𝟨") ### MATHEMATICAL SANS-SERIF DIGIT SIX
+  create_key_or_plusEquals_to_its_value(  singles, '6', "𝟨")  ### MATHEMATICAL SANS-SERIF DIGIT SIX
   if we_are_in_a_monospaced_context:
-    create_key_or_plusEquals_to_its_value(singles, '6', "𝟼") ### MATHEMATICAL MONOSPACE DIGIT SIX
+    create_key_or_plusEquals_to_its_value(singles, '6', "𝟼")  ### MATHEMATICAL MONOSPACE DIGIT SIX
 
-  create_key_or_plusEquals_to_its_value(  singles, '7', "𝟩") ### MATHEMATICAL SANS-SERIF DIGIT SEVEN
+  create_key_or_plusEquals_to_its_value(  singles, '7', "𝟩")  ### MATHEMATICAL SANS-SERIF DIGIT SEVEN
   if we_are_in_a_monospaced_context:
-    create_key_or_plusEquals_to_its_value(singles, '7', "𝟽") ### MATHEMATICAL MONOSPACE DIGIT SEVEN
+    create_key_or_plusEquals_to_its_value(singles, '7', "𝟽")  ### MATHEMATICAL MONOSPACE DIGIT SEVEN
 
-  create_key_or_plusEquals_to_its_value(  singles, '8', "𝟪") ### MATHEMATICAL SANS-SERIF DIGIT EIGHT
+  create_key_or_plusEquals_to_its_value(  singles, '8', "𝟪")  ### MATHEMATICAL SANS-SERIF DIGIT EIGHT
   if we_are_in_a_monospaced_context:
-    create_key_or_plusEquals_to_its_value(singles, '8', "𝟾") ### MATHEMATICAL MONOSPACE DIGIT EIGHT
+    create_key_or_plusEquals_to_its_value(singles, '8', "𝟾")  ### MATHEMATICAL MONOSPACE DIGIT EIGHT
 
-  create_key_or_plusEquals_to_its_value(  singles, '9', "𝟫") ### MATHEMATICAL SANS-SERIF DIGIT NINE
+  create_key_or_plusEquals_to_its_value(  singles, '9', "𝟫")  ### MATHEMATICAL SANS-SERIF DIGIT NINE
   if we_are_in_a_monospaced_context:
-    create_key_or_plusEquals_to_its_value(singles, '9', "𝟿") ### MATHEMATICAL MONOSPACE DIGIT NINE
+    create_key_or_plusEquals_to_its_value(singles, '9', "𝟿")  ### MATHEMATICAL MONOSPACE DIGIT NINE
 
   create_key_or_plusEquals_to_its_value(  singles, '=', "𐄑")  ### AEGEAN NUMBER TWENTY
   create_key_or_plusEquals_to_its_value(  singles, 'c', 'ᴄ')  ### small-caps ‘c’: at least sometimes has a different serif on the upper curve terminus
