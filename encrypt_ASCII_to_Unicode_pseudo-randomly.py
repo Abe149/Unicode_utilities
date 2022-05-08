@@ -165,6 +165,7 @@ if OK_to_use_mappings_that_are_likely_to_be_visually_distinguishable_from_the_or
   create_key_or_plusEquals_to_its_value(  singles, '/' , '╱')  ### BOX DRAWINGS LIGHT DIAGONAL UPPER RIGHT TO LOWER LEFT
   create_key_or_plusEquals_to_its_value(  singles, '\\', '╲')  ### BOX DRAWINGS LIGHT DIAGONAL UPPER  LEFT TO LOWER RIGHT [BOX DRAWINGS LIGHT DIAGONAL UPPER LEFT TO LOWER RIGHT]
   create_key_or_plusEquals_to_its_value(  singles, '\\', '∖')  ### SET MINUS
+  create_key_or_plusEquals_to_its_value(  singles, '\\', '⧵')  ### REVERSE SOLIDUS OPERATOR
 
   create_key_or_plusEquals_to_its_value(  doubles, '((', ['｟']) ### FULLWIDTH  LEFT WHITE PARENTHESIS [for search: FULLWIDTH LEFT WHITE PARENTHESIS]
   create_key_or_plusEquals_to_its_value(  doubles, '))', ['｠']) ### FULLWIDTH RIGHT WHITE PARENTHESIS
@@ -175,6 +176,9 @@ if OK_to_use_mappings_that_are_likely_to_be_visually_distinguishable_from_the_or
   create_key_or_plusEquals_to_its_value(singles, ')', '❩') ### MEDIUM RIGHT PARENTHESIS ORNAMENT
   create_key_or_plusEquals_to_its_value(singles, '<', '❮') ### HEAVY  LEFT-POINTING ANGLE QUOTATION MARK ORNAMENT [HEAVY LEFT-POINTING ANGLE QUOTATION MARK ORNAMENT]
   create_key_or_plusEquals_to_its_value(singles, '>', '❯') ### HEAVY RIGHT-POINTING ANGLE QUOTATION MARK ORNAMENT
+
+  create_key_or_plusEquals_to_its_value(singles, '{', '❴') ### MEDIUM  LEFT CURLY BRACKET ORNAMENT [for search: MEDIUM LEFT CURLY BRACKET ORNAMENT]
+  create_key_or_plusEquals_to_its_value(singles, '}', '❵') ### MEDIUM RIGHT CURLY BRACKET ORNAMENT
 
 # create_key_or_plusEquals_to_its_value(singles, '_', '_') ###
 # create_key_or_plusEquals_to_its_value(doubles, "__", ['_']) ###
@@ -260,6 +264,9 @@ if OK_to_use_Unicode_chars_that_are_wider_than_the_original:
 
 
 if not we_are_in_a_monospaced_context:
+# create_key_or_plusEquals_to_its_value(singles, '_', '_') ### 
+  create_key_or_plusEquals_to_its_value(singles, '+', '➕') ### HEAVY  PLUS SIGN [for search: HEAVY PLUS SIGN]
+  create_key_or_plusEquals_to_its_value(singles, '-', '➖') ### HEAVY MINUS SIGN
 
   create_key_or_plusEquals_to_its_value(doubles, "==", ['⩵' ])  ### TWO   CONSECUTIVE EQUALS SIGNS [for search: TWO CONSECUTIVE EQUALS SIGNS]
   create_key_or_plusEquals_to_its_value(triples, "===", ['⩶'])  ### THREE CONSECUTIVE EQUALS SIGNS
