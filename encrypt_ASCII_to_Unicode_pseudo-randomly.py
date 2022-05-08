@@ -254,6 +254,8 @@ if OK_to_use_mappings_that_are_likely_to_be_visually_distinguishable_from_the_or
   create_key_or_plusEquals_to_its_value(doubles, "Sv", ['㏜']) ### SQUARE SV
   create_key_or_plusEquals_to_its_value(doubles, "wb", ['㏝']) ### SQUARE WB
 
+  create_key_or_plusEquals_to_its_value(singles, 's', 'ꜱ')     ### LATIN LETTER SMALL CAPITAL S [moved to the “ghetto” b/c it is forcing a serif view in iTerm2 on my MBP running 10.11.6]
+
 # create_key_or_plusEquals_to_its_value(singles, '_', '_') ###
 # create_key_or_plusEquals_to_its_value(doubles, "__", ['_']) ###
 
@@ -479,6 +481,8 @@ if not we_are_in_a_monospaced_context:
   create_key_or_plusEquals_to_its_value(  quads, "p.m.", ['㏘']) ### SQUARE PM
 
   create_key_or_plusEquals_to_its_value(  quads, "K.K.", ['㏍']) ### SQUARE KK
+
+  create_key_or_plusEquals_to_its_value(doubles, "AA", ['Ꜳ'])   ### LATIN CAPITAL LETTER AA
 
   create_key_or_plusEquals_to_its_value(singles, 'M', 'ꓟ')  ### LISU LETTER MA [this one came out all funky —— wide and overflowing to the right —— in iTerm2 on MOSX 10.11.6 on my main MBP]
   create_key_or_plusEquals_to_its_value(singles, 'N', 'ꓠ')  ### LISU LETTER NA [this one came out all funky —— wide and overflowing to the right —— in iTerm2 on MOSX 10.11.6 on my main MBP]
