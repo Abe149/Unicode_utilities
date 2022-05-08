@@ -62,15 +62,17 @@ singles={' ': ' ',    ### ASCII space ⇒ NBSP
          '.': '․',    ### one-dot leader [for search: ONE DOT LEADER]
          ':': '꞉',    ### MODIFIER LETTER COLON
          ';': ';',    ### Greek question symbol
+         "'": '𐄇',    ### AEGEAN NUMBER ONE
+         '"': '𐄈',    ### AEGEAN NUMBER TWO
          'A': "АΑꓮ",  ### first Cyrillic, then Greek, then LISU LETTER A
          'B': "ВΒꓐ",  ### first Cyrillic, then Greek, then LISU LETTER BA
          'C': "СⅭꓚ",  ### first Cyrillic, then Roman, then LISU LETTER CA
          'D': "Ⅾꓓ",   ### first Roman, then LISU LETTER DA
-         'E': "ЕΕꓰ",  ### first Cyrillic, then Greek, then LISU LETTER E
-         'F': "Ϝꓝ",   ### first Greek, then LISU LETTER TSA
+         'E': "ЕΕꓰ𐊆", ### first Cyrillic, then Greek, then LISU LETTER E, then LYCIAN LETTER I
+         'F': "Ϝꓝ𐊇",  ### first Greek, then LISU LETTER TSA, then LYCIAN LETTER W
          'G': 'ꓖ',    ### LISU LETTER GA
          'H': "НΗꓧ",  ### first Cyrillic, then Greek, then LISU LETTER XA
-         'I': "ІΙⅠ",  ### first Cyrillic, then Greek, then Roman
+         'I': "ІΙⅠ𐊈", ### first Cyrillic, then Greek, then Roman, then LYCIAN LETTER Z
          'J': 'ꓙ',    ### LISU LETTER JA
          'K': "ΚKꓗ",  ### Greek, KELVIN SIGN, then LISU LETTER KA [omitting the Cyrillic near-equivalent b/c it looks a _little_ bit different sometimes: a curvy termination of the upper-right stroke]
          'L': "Ⅼꓡ",   ### first Roman, then LISU LETTER LA
@@ -166,6 +168,8 @@ if OK_to_use_mappings_that_are_likely_to_be_visually_distinguishable_from_the_or
 
   create_key_or_plusEquals_to_its_value(  singles, '=', '𐄑')   ### AEGEAN NUMBER TWENTY
   create_key_or_plusEquals_to_its_value(  singles, '=', '꞊')   ### MODIFIER LETTER SHORT EQUALS SIGN
+  create_key_or_plusEquals_to_its_value(  singles, '=', '𐆐')   ### ROMAN SEXTANS SIGN
+  create_key_or_plusEquals_to_its_value(  singles, '-', '𐆑')   ### ROMAN UNCIA   SIGN [for search: ROMAN UNCIA SIGN
 
   create_key_or_plusEquals_to_its_value(  singles, 'E', '⋿')   ### Z NOTATION BAG MEMBERSHIP
   create_key_or_plusEquals_to_its_value(  singles, 'c', 'ᴄ')   ### small-caps ‘c’: at least sometimes has a different serif on the upper curve terminus
@@ -631,5 +635,3 @@ for input_line in stdin.readlines():
       input_line = input_line[1:]
 
   print (output_line, end="")
-  
-  
