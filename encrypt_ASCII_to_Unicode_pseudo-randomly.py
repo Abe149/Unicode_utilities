@@ -161,6 +161,9 @@ if OK_to_use_mappings_that_are_likely_to_be_visually_distinguishable_from_the_or
   create_key_or_plusEquals_to_its_value(  singles, 'E', '⋿')   ### Z NOTATION BAG MEMBERSHIP
   create_key_or_plusEquals_to_its_value(  singles, 'c', 'ᴄ')   ### small-caps ‘c’: at least sometimes has a different serif on the upper curve terminus
 
+  ### to maybe re-enable later, gated by a flag that promises that the output will be viewed in a sans-serif font
+  # create_key_or_plusEquals_to_its_value(  singles, 'x', '⨉')   ### N-ARY TIMES OPERATOR
+
   create_key_or_plusEquals_to_its_value(  singles, '/' , '∕')  ### DIVISION SLASH
   create_key_or_plusEquals_to_its_value(  singles, '/' , '╱')  ### BOX DRAWINGS LIGHT DIAGONAL UPPER RIGHT TO LOWER LEFT
   create_key_or_plusEquals_to_its_value(  singles, '\\', '╲')  ### BOX DRAWINGS LIGHT DIAGONAL UPPER  LEFT TO LOWER RIGHT [BOX DRAWINGS LIGHT DIAGONAL UPPER LEFT TO LOWER RIGHT]
@@ -228,6 +231,7 @@ if OK_to_use_Unicode_chars_that_are_narrower_than_the_original_in_a_monospaced_c
   create_key_or_plusEquals_to_its_value(doubles, ">>", ['⟫'+padding]) ### MATHEMATICAL RIGHT DOUBLE ANGLE BRACKET
   create_key_or_plusEquals_to_its_value(doubles, "<<", ['≪'+padding]) ### MUCH    LESS-THAN [for search: MUCH LESS-THAN]
   create_key_or_plusEquals_to_its_value(doubles, ">>", ['≫'+padding]) ### MUCH GREATER-THAN
+  create_key_or_plusEquals_to_its_value(doubles, ">>", ['⨠'+padding]) ### Z NOTATION SCHEMA PIPING
 # create_key_or_plusEquals_to_its_value(doubles, "__", ['_'+padding])
 
 
@@ -262,7 +266,8 @@ if OK_to_use_Unicode_chars_that_are_wider_than_the_original:
   create_key_or_plusEquals_to_its_value(singles, '/' , '⧸') ### BIG         SOLIDUS [for search: BIG SOLIDUS]
   create_key_or_plusEquals_to_its_value(singles, '\\', '⧹') ### BIG REVERSE SOLIDUS
 
-  for c in range(33, 127): ### fullwidth replacements for almost all the ASCII printables [the Unicode committee left out space in this range]
+  ### fullwidth replacements for almost all the ASCII printables [the Unicode committee left out space in this range]
+  for c in range(33, 127):
     create_key_or_plusEquals_to_its_value( singles, chr(ord('！')-ord('!')+a) )
 
 
@@ -272,10 +277,13 @@ if not we_are_in_a_monospaced_context:
   create_key_or_plusEquals_to_its_value(singles, '+', '➕') ### HEAVY  PLUS SIGN [for search: HEAVY PLUS SIGN]
   create_key_or_plusEquals_to_its_value(singles, '-', '➖') ### HEAVY MINUS SIGN
 
+  create_key_or_plusEquals_to_its_value(doubles, "><", ['⪥' ])  ### GREATER-THAN BESIDE LESS-THAN
+
   create_key_or_plusEquals_to_its_value(doubles, "==", ['⩵' ])  ### TWO   CONSECUTIVE EQUALS SIGNS [for search: TWO CONSECUTIVE EQUALS SIGNS]
   create_key_or_plusEquals_to_its_value(triples, "===", ['⩶'])  ### THREE CONSECUTIVE EQUALS SIGNS
   create_key_or_plusEquals_to_its_value(triples, "<<<", '⋘')    ### VERY MUCH    LESS-THAN [for search: VERY MUCH LESS-THAN]
   create_key_or_plusEquals_to_its_value(triples, ">>>", '⋙')    ### VERY MUCH GREATER-THAN
+  create_key_or_plusEquals_to_its_value(triples, "::=", '⩴')    ### DOUBLE COLON EQUAL
 
   create_key_or_plusEquals_to_its_value(triples, "(a)", ['⒜'])  ### PARENTHESIZED LATIN SMALL LETTER A
   create_key_or_plusEquals_to_its_value(triples, "(b)", ['⒝'])  ### PARENTHESIZED LATIN SMALL LETTER B
