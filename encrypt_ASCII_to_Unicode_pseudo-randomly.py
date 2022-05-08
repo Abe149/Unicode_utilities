@@ -264,6 +264,18 @@ if not we_are_in_a_monospaced_context:
   create_key_or_plusEquals_to_its_value(triples, "(8)", '⑻')  ### PARENTHESIZED DIGIT EIGHT
   create_key_or_plusEquals_to_its_value(triples, "(9)", '⑼')  ### PARENTHESIZED DIGIT NINE
 
+  create_key_or_plusEquals_to_its_value(  quads, "(10)", '⑽') ### PARENTHESIZED NUMBER TEN
+  create_key_or_plusEquals_to_its_value(  quads, "(11)", '⑾') ### PARENTHESIZED NUMBER ELEVEN
+  create_key_or_plusEquals_to_its_value(  quads, "(12)", '⑿') ### PARENTHESIZED NUMBER TWELVE
+  create_key_or_plusEquals_to_its_value(  quads, "(13)", '⒀') ### PARENTHESIZED NUMBER THIRTEEN
+  create_key_or_plusEquals_to_its_value(  quads, "(14)", '⒁') ### PARENTHESIZED NUMBER FOURTEEN
+  create_key_or_plusEquals_to_its_value(  quads, "(15)", '⒂') ### PARENTHESIZED NUMBER FIFTEEN
+  create_key_or_plusEquals_to_its_value(  quads, "(16)", '⒃') ### PARENTHESIZED NUMBER SIXTEEN
+  create_key_or_plusEquals_to_its_value(  quads, "(17)", '⒄') ### PARENTHESIZED NUMBER SEVENTEEN
+  create_key_or_plusEquals_to_its_value(  quads, "(18)", '⒅') ### PARENTHESIZED NUMBER EIGHTEEN
+  create_key_or_plusEquals_to_its_value(  quads, "(19)", '⒆') ### PARENTHESIZED NUMBER NINETEEN
+  create_key_or_plusEquals_to_its_value(  quads, "(20)", '⒇') ### PARENTHESIZED NUMBER TWENTY
+
   create_key_or_plusEquals_to_its_value(triples, "III", 'Ⅲ')  ###       ROMAN NUMERAL THREE
   create_key_or_plusEquals_to_its_value(triples, "iii", 'ⅲ')  ### SMALL ROMAN NUMERAL THREE
 
