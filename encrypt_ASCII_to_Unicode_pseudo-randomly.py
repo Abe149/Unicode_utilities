@@ -317,6 +317,11 @@ if OK_to_use_Unicode_chars_that_are_narrower_than_the_original_in_a_monospaced_c
   create_key_or_plusEquals_to_its_value(triples, "THz", ['㎔'+padding]) ### SQUARE THZ
 
   create_key_or_plusEquals_to_its_value(triples, "rad", ['㎭'+padding]) ### SQUARE RAD
+  create_key_or_plusEquals_to_its_value(triples, "log", ['㏒'+padding]) ### SQUARE LOG
+  create_key_or_plusEquals_to_its_value(triples, "mil", ['㏕'+padding]) ### SQUARE MIL
+  create_key_or_plusEquals_to_its_value(triples, "mol", ['㏖'+padding]) ### SQUARE MOL
+  create_key_or_plusEquals_to_its_value(triples, "PPM", ['㏙'+padding]) ### SQUARE PPM
+
 # create_key_or_plusEquals_to_its_value(triples, "Co.", ['㏇'+padding]) ### SQUARE CO ### disabled b/c it sometimes looks like “CO.” on 10.11.6 on my main MBP
 
 # create_key_or_plusEquals_to_its_value(doubles, "__", ['_'+padding])
@@ -466,7 +471,9 @@ if not we_are_in_a_monospaced_context:
   create_key_or_plusEquals_to_its_value(triples, "XII", ['Ⅻ']) ### ROMAN NUMERAL TWELVE
 
   create_key_or_plusEquals_to_its_value(  quads, "a.m.", ['㏂']) ### SQUARE AM
-  create_key_or_plusEquals_to_its_value(  quads, "K.K.", ['㏂']) ### SQUARE KK
+  create_key_or_plusEquals_to_its_value(  quads, "p.m.", ['㏘']) ### SQUARE PM
+
+  create_key_or_plusEquals_to_its_value(  quads, "K.K.", ['㏍']) ### SQUARE KK
 
 # create_key_or_plusEquals_to_its_value(doubles, "__", ['_'])  ###
 # create_key_or_plusEquals_to_its_value(triples, "___", ['_'])  ###
