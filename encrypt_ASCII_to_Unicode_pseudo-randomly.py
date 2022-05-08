@@ -383,7 +383,7 @@ if OK_to_use_Unicode_chars_that_are_wider_than_the_original:
 
   ### fullwidth replacements for almost all the ASCII printables [the Unicode committee left out space in this range]
   for c in range(33, 127):
-    create_key_or_plusEquals_to_its_value( singles, chr(ord('！')-ord('!')+a) )
+    create_key_or_plusEquals_to_its_value( singles, chr(ord('！')-ord('!')+c) )
 
 
 
