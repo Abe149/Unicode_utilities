@@ -8,7 +8,7 @@ from sys    import stdin, stdout
 import argparse, sys
 
 parser = argparse.ArgumentParser()
-parser.add_argument("--OK_to_use_mappings_that_are_likely_to_be_visually_distinguishable_from_the_original_but_should_have_the_same_width_as_the_original", action="store_true")
+parser.add_argument("--OK_to_use_mappings_that_are_likely_to_be_visually_distinguishable_from_the_original_but_should_have_the_same_width_category_as_the_original", action="store_true")
 
 args = parser.parse_args() ### sys.argv is the default input source
 
@@ -23,11 +23,11 @@ we_are_in_a_monospaced_context = True
 
 
 ### NON-hardcoded flags
-OK_to_use_mappings_that_are_likely_to_be_visually_distinguishable_from_the_original_but_should_have_the_same_width_as_the_original = False
-if args.OK_to_use_mappings_that_are_likely_to_be_visually_distinguishable_from_the_original_but_should_have_the_same_width_as_the_original:
-  OK_to_use_mappings_that_are_likely_to_be_visually_distinguishable_from_the_original_but_should_have_the_same_width_as_the_original = True
+OK_to_use_mappings_that_are_likely_to_be_visually_distinguishable_from_the_original_but_should_have_the_same_width_category_as_the_original = False
+if args.OK_to_use_mappings_that_are_likely_to_be_visually_distinguishable_from_the_original_but_should_have_the_same_width_category_as_the_original:
+  OK_to_use_mappings_that_are_likely_to_be_visually_distinguishable_from_the_original_but_should_have_the_same_width_category_as_the_original = True
   if DEBUG:
-    print ("DEBUG [stderr]: set “OK_to_use_mappings_that_are_likely_to_be_visually_distinguishable_from_the_original_but_should_have_the_same_width_as_the_original” to", OK_to_use_mappings_that_are_likely_to_be_visually_distinguishable_from_the_original_but_should_have_the_same_width_as_the_original, file = sys.stderr)
+    print ("DEBUG [stderr]: set “OK_to_use_mappings_that_are_likely_to_be_visually_distinguishable_from_the_original_but_should_have_the_same_width_category_as_the_original” to", OK_to_use_mappings_that_are_likely_to_be_visually_distinguishable_from_the_original_but_should_have_the_same_width_category_as_the_original, file = sys.stderr)
 
 
 # def create_key_or_append_to_its_list_value(the_dict, the_key, the_value):
@@ -96,7 +96,7 @@ singles={' ': ' ',   ### ASCII space ⇒ NBSP
 
 
 
-if OK_to_use_mappings_that_are_likely_to_be_visually_distinguishable_from_the_original_but_should_have_the_same_width_as_the_original:
+if OK_to_use_mappings_that_are_likely_to_be_visually_distinguishable_from_the_original_but_should_have_the_same_width_category_as_the_original:
   create_key_or_plusEquals_to_its_value(  singles, '*', "✽✱∗✳")
   create_key_or_plusEquals_to_its_value(  singles, '-', '−𐄐')  ### MINUS SIGN, AEGEAN NUMBER TEN
 
