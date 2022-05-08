@@ -199,6 +199,11 @@ if OK_to_use_mappings_that_are_likely_to_be_visually_distinguishable_from_the_or
   create_key_or_plusEquals_to_its_value(doubles, "mg", ['㎎']) ### SQUARE MG
   create_key_or_plusEquals_to_its_value(doubles, "kg", ['㎏']) ### SQUARE KG
   create_key_or_plusEquals_to_its_value(doubles, "Hz", ['㎐']) ### SQUARE HZ
+  create_key_or_plusEquals_to_its_value(doubles, "fm", ['㎙']) ### SQUARE FM
+  create_key_or_plusEquals_to_its_value(doubles, "nm", ['㎚']) ### SQUARE NM
+  create_key_or_plusEquals_to_its_value(doubles, "mm", ['㎜']) ### SQUARE MM
+  create_key_or_plusEquals_to_its_value(doubles, "cm", ['㎝']) ### SQUARE CM
+  create_key_or_plusEquals_to_its_value(doubles, "km", ['㎞']) ### SQUARE KM
 
 # create_key_or_plusEquals_to_its_value(singles, '_', '_') ###
 # create_key_or_plusEquals_to_its_value(doubles, "__", ['_']) ###
