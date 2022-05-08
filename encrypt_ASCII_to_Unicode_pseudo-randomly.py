@@ -56,33 +56,33 @@ def create_key_or_plusEquals_to_its_value(the_dict, the_key, the_value): ### use
 quads  ={}
 triples={}
 doubles={"  ": ["  ", "　"]}
-singles={' ': ' ',   ### ASCII space ⇒ NBSP
-         ',': '‚',   ### single low-9 quotation symbol
-         '-': '‑',   ### non-breaking hyphen
-         '.': '․',   ### one-dot leader [for search: ONE DOT LEADER]
-         ';': ';',   ### Greek question symbol
-         'A': "АΑ",  ### first Cyrillic, then Greek
-         'B': "ВΒꓐ", ### first Cyrillic, then Greek, then LISU LETTER BA
-         'C': "СⅭꓚ", ### first Cyrillic, then Roman, then LISU LETTER CA
-         'D': "Ⅾꓓ",  ### first Roman, then LISU LETTER DA
-         'E': "ЕΕ",  ### first Cyrillic, then Greek
-         'F': "Ϝꓝ",  ### first Greek, then LISU LETTER TSA
-         'G': 'ꓖ',   ### LISU LETTER GA
-         'H': "НΗꓧ", ### first Cyrillic, then Greek, then LISU LETTER XA
-         'I': "ІΙⅠ", ### first Cyrillic, then Greek, then Roman
-         'J': 'ꓙ',   ### LISU LETTER JA
-         'K': "ΚKꓗ", ### Greek, KELVIN SIGN, then LISU LETTER KA [omitting the Cyrillic near-equivalent b/c it looks a _little_ bit different sometimes: a curvy termination of the upper-right stroke]
-         'L': "Ⅼꓡ",  ### first Roman, then LISU LETTER LA
-         'M': "МΜⅯ", ### first Cyrillic, then Greek, then Roman
-         'N': 'Ν',   ### just Greek
-         'O': "ОΟ",  ### first Cyrillic, then Greek
-         'P': "РΡꓑ", ### first Cyrillic, then Greek, then LISU LETTER PA
-         'R': 'ꓣ',   ### LISU LETTER ZHA
-         'S': "Ѕꓢ",  ### first Cyrillic, then LISU LETTER SA
-         'T': "ТΤꓔ", ### first Cyrillic, then Greek, then LISU LETTER TA
-         'V': "Ⅴꓦ",  ### first Roman, then LISU LETTER ZHA
+singles={' ': ' ',    ### ASCII space ⇒ NBSP
+         ',': '‚',    ### single low-9 quotation symbol
+         '-': '‑',    ### non-breaking hyphen
+         '.': '․',    ### one-dot leader [for search: ONE DOT LEADER]
+         ';': ';',    ### Greek question symbol
+         'A': "АΑ",   ### first Cyrillic, then Greek
+         'B': "ВΒꓐ",  ### first Cyrillic, then Greek, then LISU LETTER BA
+         'C': "СⅭꓚ",  ### first Cyrillic, then Roman, then LISU LETTER CA
+         'D': "Ⅾꓓ",   ### first Roman, then LISU LETTER DA
+         'E': "ЕΕ",   ### first Cyrillic, then Greek
+         'F': "Ϝꓝ",   ### first Greek, then LISU LETTER TSA
+         'G': 'ꓖ',    ### LISU LETTER GA
+         'H': "НΗꓧ",  ### first Cyrillic, then Greek, then LISU LETTER XA
+         'I': "ІΙⅠ",  ### first Cyrillic, then Greek, then Roman
+         'J': 'ꓙ',    ### LISU LETTER JA
+         'K': "ΚKꓗ",  ### Greek, KELVIN SIGN, then LISU LETTER KA [omitting the Cyrillic near-equivalent b/c it looks a _little_ bit different sometimes: a curvy termination of the upper-right stroke]
+         'L': "Ⅼꓡ",   ### first Roman, then LISU LETTER LA
+         'M': "МΜⅯ",  ### first Cyrillic, then Greek, then Roman
+         'N': 'Ν',    ### just Greek
+         'O': "ОΟ",   ### first Cyrillic, then Greek
+         'P': "РΡꓑ",  ### first Cyrillic, then Greek, then LISU LETTER PA
+         'R': 'ꓣ',    ### LISU LETTER ZHA
+         'S': "Ѕꓢ",   ### first Cyrillic, then LISU LETTER SA
+         'T': "ТΤꓔ",  ### first Cyrillic, then Greek, then LISU LETTER TA
+         'V': "Ⅴꓦ",   ### first Roman, then LISU LETTER ZHA
          'X': "ХΧⅩꓫ", ### first Cyrillic, then Greek, then Roman, then LISU LETTER SHA
-         'Z': "Ζꓜ",  ### first Greek, then LISU LETTER DZA
+         'Z': "Ζꓜ",   ### first Greek, then LISU LETTER DZA
 
  ### test: 'ꓫ'
  ### test: 'ꓬ'
