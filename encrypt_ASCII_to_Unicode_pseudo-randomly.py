@@ -257,6 +257,33 @@ if not we_are_in_a_monospaced_context:
   create_key_or_plusEquals_to_its_value(triples, "<<<", '⋘')    ### VERY MUCH    LESS-THAN [for search: VERY MUCH LESS-THAN]
   create_key_or_plusEquals_to_its_value(triples, ">>>", '⋙')    ### VERY MUCH GREATER-THAN
 
+  create_key_or_plusEquals_to_its_value(triples, "(a)", ['⒜'])  ### PARENTHESIZED LATIN SMALL LETTER A
+  create_key_or_plusEquals_to_its_value(triples, "(b)", ['⒝'])  ### PARENTHESIZED LATIN SMALL LETTER B
+  create_key_or_plusEquals_to_its_value(triples, "(c)", ['⒞'])  ### PARENTHESIZED LATIN SMALL LETTER C
+  create_key_or_plusEquals_to_its_value(triples, "(d)", ['⒟'])  ### PARENTHESIZED LATIN SMALL LETTER D
+  create_key_or_plusEquals_to_its_value(triples, "(e)", ['⒠'])  ### PARENTHESIZED LATIN SMALL LETTER E
+  create_key_or_plusEquals_to_its_value(triples, "(f)", ['⒡'])  ### PARENTHESIZED LATIN SMALL LETTER F
+  create_key_or_plusEquals_to_its_value(triples, "(g)", ['⒢'])  ### PARENTHESIZED LATIN SMALL LETTER G
+  create_key_or_plusEquals_to_its_value(triples, "(h)", ['⒣'])  ### PARENTHESIZED LATIN SMALL LETTER H
+  create_key_or_plusEquals_to_its_value(triples, "(i)", ['⒤'])  ### PARENTHESIZED LATIN SMALL LETTER I
+  create_key_or_plusEquals_to_its_value(triples, "(j)", ['⒥'])  ### PARENTHESIZED LATIN SMALL LETTER J
+  create_key_or_plusEquals_to_its_value(triples, "(k)", ['⒦'])  ### PARENTHESIZED LATIN SMALL LETTER K
+  create_key_or_plusEquals_to_its_value(triples, "(l)", ['⒧'])  ### PARENTHESIZED LATIN SMALL LETTER L
+  create_key_or_plusEquals_to_its_value(triples, "(m)", ['⒨'])  ### PARENTHESIZED LATIN SMALL LETTER M
+  create_key_or_plusEquals_to_its_value(triples, "(n)", ['⒩'])  ### PARENTHESIZED LATIN SMALL LETTER N
+  create_key_or_plusEquals_to_its_value(triples, "(o)", ['⒪'])  ### PARENTHESIZED LATIN SMALL LETTER O
+  create_key_or_plusEquals_to_its_value(triples, "(p)", ['⒫'])  ### PARENTHESIZED LATIN SMALL LETTER P
+  create_key_or_plusEquals_to_its_value(triples, "(q)", ['⒬'])  ### PARENTHESIZED LATIN SMALL LETTER Q
+  create_key_or_plusEquals_to_its_value(triples, "(r)", ['⒭'])  ### PARENTHESIZED LATIN SMALL LETTER R
+  create_key_or_plusEquals_to_its_value(triples, "(s)", ['⒮'])  ### PARENTHESIZED LATIN SMALL LETTER S
+  create_key_or_plusEquals_to_its_value(triples, "(t)", ['⒯'])  ### PARENTHESIZED LATIN SMALL LETTER T
+  create_key_or_plusEquals_to_its_value(triples, "(u)", ['⒰'])  ### PARENTHESIZED LATIN SMALL LETTER U
+  create_key_or_plusEquals_to_its_value(triples, "(v)", ['⒱'])  ### PARENTHESIZED LATIN SMALL LETTER V
+  create_key_or_plusEquals_to_its_value(triples, "(w)", ['⒲'])  ### PARENTHESIZED LATIN SMALL LETTER W
+  create_key_or_plusEquals_to_its_value(triples, "(x)", ['⒳'])  ### PARENTHESIZED LATIN SMALL LETTER X
+  create_key_or_plusEquals_to_its_value(triples, "(y)", ['⒴'])  ### PARENTHESIZED LATIN SMALL LETTER Y
+  create_key_or_plusEquals_to_its_value(triples, "(z)", ['⒵'])  ### PARENTHESIZED LATIN SMALL LETTER Z
+
   create_key_or_plusEquals_to_its_value(triples, "(1)", ['⑴'])  ### PARENTHESIZED DIGIT ONE
   create_key_or_plusEquals_to_its_value(triples, "(2)", ['⑵'])  ### PARENTHESIZED DIGIT TWO
   create_key_or_plusEquals_to_its_value(triples, "(3)", ['⑶'])  ### PARENTHESIZED DIGIT THREE
