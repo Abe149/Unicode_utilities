@@ -54,7 +54,6 @@ quads  ={}
 triples={}
 doubles={"  ": ["  ", "　"]}
 singles={' ': ' ',   ### ASCII space ⇒ NBSP
-         '#': '𐄹',   ### AEGEAN WEIGHT SECOND SUBUNIT
          ',': '‚',   ### single low-9 quotation symbol
          '-': '‑',   ### non-breaking hyphen
          '.': '․',   ### one-dot leader [for search: ONE DOT LEADER]
@@ -102,6 +101,7 @@ singles={' ': ' ',   ### ASCII space ⇒ NBSP
 
 if OK_to_use_mappings_that_are_likely_to_be_visually_distinguishable_from_the_original_but_should_have_the_same_width_category_as_the_original:
   create_key_or_plusEquals_to_its_value(  singles, '#', '⋕')   ### EQUAL AND PARALLEL TO
+  create_key_or_plusEquals_to_its_value(  singles, '#', '𐄹')   ### AEGEAN WEIGHT SECOND SUBUNIT
   create_key_or_plusEquals_to_its_value(  singles, '*', "✽✱∗✳⁕") ### last one as of this writing: FLOWER PUNCTUATION MARK
   create_key_or_plusEquals_to_its_value(  singles, '-', "−𐄐")  ### MINUS SIGN, AEGEAN NUMBER TEN
   create_key_or_plusEquals_to_its_value(  singles, '~', '⁓')   ### SWUNG DASH
