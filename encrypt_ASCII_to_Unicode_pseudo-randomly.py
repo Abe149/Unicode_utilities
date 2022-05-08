@@ -39,7 +39,10 @@ if args.OK_to_use_mappings_that_are_likely_to_be_visually_distinguishable_from_t
 
 def create_key_or_plusEquals_to_its_value(the_dict, the_key, the_value): ### use either a string or a list_of_strings for “the_value”
   if not the_key in the_dict:
-    the_dict[the_key] = []
+    if the_dict is singles:
+      the_dict[the_key] = ""
+    else:
+      the_dict[the_key] = []
   the_dict[the_key] += the_value
 
 
@@ -314,6 +317,40 @@ if not we_are_in_a_monospaced_context:
 # create_key_or_plusEquals_to_its_value(doubles, "__", ['_'])  ###
 # create_key_or_plusEquals_to_its_value(triples, "___", ['_'])  ###
 # create_key_or_plusEquals_to_its_value(  quads, "____", ['_'])  ###
+
+
+
+### validate data structures
+
+if DEBUG>9:
+  print ("singles:", singles)
+for key in singles:
+  val = singles[key]
+  assert type(val) == type("")
+  assert len(val) > 0
+
+for key in doubles:
+  ### just require some kind of “iterable”, i.e. don`t _insist_ on a _list_ of strings [even though that`s what is expected]
+  val = doubles[key]
+  assert len(val) > 0
+  for supposed_string in val:
+    assert type(supposed_string) == type("")
+
+for key in triples:
+  ### just require some kind of “iterable”, i.e. don`t _insist_ on a _list_ of strings [even though that`s what is expected]
+  val = triples[key]
+  assert len(val) > 0
+  for supposed_string in val:
+    assert type(supposed_string) == type("")
+
+if DEBUG>9:
+  print ("quads:", quads)
+for key in   quads:
+  ### just require some kind of “iterable”, i.e. don`t _insist_ on a _list_ of strings [even though that`s what is expected]
+  val =   quads[key]
+  assert len(val) > 0
+  for supposed_string in val:
+    assert type(supposed_string) == type("")
 
 
 
