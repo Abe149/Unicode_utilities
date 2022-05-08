@@ -63,8 +63,6 @@ singles={' ': ' ',    ### ASCII space ⇒ NBSP
          '.': '․',    ### one-dot leader [for search: ONE DOT LEADER]
          ':': '꞉',    ### MODIFIER LETTER COLON
          ';': ';',    ### Greek question symbol
-         "'": '𐄇',    ### AEGEAN NUMBER ONE
-         '"': '𐄈',    ### AEGEAN NUMBER TWO
          'A': "АΑꓮ",  ### first Cyrillic, then Greek, then LISU LETTER A
          'B': "ВΒꓐ",  ### first Cyrillic, then Greek, then LISU LETTER BA
          'C': "СⅭꓚ",  ### first Cyrillic, then Roman, then LISU LETTER CA
@@ -113,18 +111,26 @@ singles={' ': ' ',    ### ASCII space ⇒ NBSP
 
 
 if OK_to_use_nonBMP_codepoints:
-  create_key_or_plusEquals_to_its_value(  singles, 'E', '𐊆')   ### LYCIAN LETTER I
-  create_key_or_plusEquals_to_its_value(  singles, 'F', '𐊇')   ### LYCIAN LETTER W
-  create_key_or_plusEquals_to_its_value(  singles, 'I', '𐊈')   ### LYCIAN LETTER Z
+  create_key_or_plusEquals_to_its_value(singles, 'E', '𐊆') ### LYCIAN LETTER I
+  create_key_or_plusEquals_to_its_value(singles, 'F', '𐊇') ### LYCIAN LETTER W
+  create_key_or_plusEquals_to_its_value(singles, 'I', '𐊈') ### LYCIAN LETTER Z
+  create_key_or_plusEquals_to_its_value(singles, "'", '𐄇') ### AEGEAN NUMBER ONE
+  create_key_or_plusEquals_to_its_value(singles, '"', '𐄈') ### AEGEAN NUMBER TWO
 
 
 
 if OK_to_use_mappings_that_are_likely_to_be_visually_distinguishable_from_the_original_but_should_have_the_same_width_category_as_the_original:
 
   create_key_or_plusEquals_to_its_value(  singles, '#', '⋕')   ### EQUAL AND PARALLEL TO
-  create_key_or_plusEquals_to_its_value(  singles, '#', '𐄹')   ### AEGEAN WEIGHT SECOND SUBUNIT
+  if OK_to_use_nonBMP_codepoints:
+    create_key_or_plusEquals_to_its_value(singles, '#', '𐄹')   ### AEGEAN WEIGHT SECOND SUBUNIT
+
   create_key_or_plusEquals_to_its_value(  singles, '*', "✽✱∗✳⁕") ### last one as of this writing: FLOWER PUNCTUATION MARK
-  create_key_or_plusEquals_to_its_value(  singles, '-', "−𐄐")  ### MINUS SIGN, AEGEAN NUMBER TEN
+
+  create_key_or_plusEquals_to_its_value(  singles, '-', "−")   ### MINUS SIGN
+  if OK_to_use_nonBMP_codepoints:
+    create_key_or_plusEquals_to_its_value(singles, '-', "𐄐")   ### AEGEAN NUMBER TEN
+
   create_key_or_plusEquals_to_its_value(  singles, '~', '⁓')   ### SWUNG DASH
   create_key_or_plusEquals_to_its_value(  singles, '%', '⁒')   ### COMMERCIAL MINUS SIGN
 
@@ -174,7 +180,9 @@ if OK_to_use_mappings_that_are_likely_to_be_visually_distinguishable_from_the_or
   create_key_or_plusEquals_to_its_value(  singles, '|', '│')   ### BOX DRAWINGS LIGHT VERTICAL
   create_key_or_plusEquals_to_its_value(  singles, '|', '┃')   ### BOX DRAWINGS HEAVY VERTICAL
 
-  create_key_or_plusEquals_to_its_value(  singles, '=', '𐄑')   ### AEGEAN NUMBER TWENTY
+  if OK_to_use_nonBMP_codepoints:
+    create_key_or_plusEquals_to_its_value(singles, '=', '𐄑')   ### AEGEAN NUMBER TWENTY
+
   create_key_or_plusEquals_to_its_value(  singles, '=', '꞊')   ### MODIFIER LETTER SHORT EQUALS SIGN
   create_key_or_plusEquals_to_its_value(  singles, '=', '𐆐')   ### ROMAN SEXTANS SIGN
   create_key_or_plusEquals_to_its_value(  singles, '-', '𐆑')   ### ROMAN UNCIA   SIGN [for search: ROMAN UNCIA SIGN
@@ -287,7 +295,10 @@ if OK_to_use_Unicode_chars_that_are_narrower_than_the_original_in_a_monospaced_c
   create_key_or_plusEquals_to_its_value(doubles, "!?", ['⁉'+padding]) ### EXCLAMATION QUESTION MARK
   create_key_or_plusEquals_to_its_value(doubles, "--", ['╌'+padding]) ### BOX DRAWINGS LIGHT DOUBLE DASH HORIZONTAL
   create_key_or_plusEquals_to_its_value(doubles, "--", ['╍'+padding]) ### BOX DRAWINGS HEAVY DOUBLE DASH HORIZONTAL
-  create_key_or_plusEquals_to_its_value(doubles, "==", ['𐄓'+padding, '⩵'+padding]) ### AEGEAN NUMBER FORTY, TWO CONSECUTIVE EQUALS SIGNS
+
+  create_key_or_plusEquals_to_its_value(  doubles, "==", ['⩵'+padding]) ### TWO CONSECUTIVE EQUALS SIGNS
+  if OK_to_use_nonBMP_codepoints:
+    create_key_or_plusEquals_to_its_value(doubles, "==", ['𐄓'+padding]) ### AEGEAN NUMBER FORTY
 
   create_key_or_plusEquals_to_its_value(doubles, "((", ['⸨'+padding]) ###  LEFT DOUBLE PARENTHESIS
   create_key_or_plusEquals_to_its_value(doubles, "))", ['⸩'+padding]) ### RIGHT DOUBLE PARENTHESIS
