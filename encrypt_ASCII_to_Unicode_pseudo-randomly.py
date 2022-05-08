@@ -187,23 +187,31 @@ if OK_to_use_mappings_that_are_likely_to_be_visually_distinguishable_from_the_or
   create_key_or_plusEquals_to_its_value(doubles, "AU", ['㍳']) ### SQUARE AU
   create_key_or_plusEquals_to_its_value(doubles, "oV", ['㍵']) ### SQUARE OV
   create_key_or_plusEquals_to_its_value(doubles, "pc", ['㍶']) ### SQUARE PC
+
   create_key_or_plusEquals_to_its_value(doubles, "pA", ['㎀']) ### SQUARE PA AMPS
   create_key_or_plusEquals_to_its_value(doubles, "nA", ['㎁']) ### SQUARE NA
   create_key_or_plusEquals_to_its_value(doubles, "mA", ['㎃']) ### SQUARE MA
   create_key_or_plusEquals_to_its_value(doubles, "kA", ['㎄']) ### SQUARE KA ### should I disable this one?  At least on font on MOSX 10.11.6 on my primary MBP incorectly has this looking like “KA”
+
   create_key_or_plusEquals_to_its_value(doubles, "KB", ['㎅']) ### SQUARE KB
   create_key_or_plusEquals_to_its_value(doubles, "MB", ['㎆']) ### SQUARE MB
   create_key_or_plusEquals_to_its_value(doubles, "GB", ['㎇']) ### SQUARE GB
+
   create_key_or_plusEquals_to_its_value(doubles, "pF", ['㎊']) ### SQUARE PF
   create_key_or_plusEquals_to_its_value(doubles, "nF", ['㎋']) ### SQUARE NF
+
   create_key_or_plusEquals_to_its_value(doubles, "mg", ['㎎']) ### SQUARE MG
   create_key_or_plusEquals_to_its_value(doubles, "kg", ['㎏']) ### SQUARE KG
+
   create_key_or_plusEquals_to_its_value(doubles, "Hz", ['㎐']) ### SQUARE HZ
+
   create_key_or_plusEquals_to_its_value(doubles, "fm", ['㎙']) ### SQUARE FM
   create_key_or_plusEquals_to_its_value(doubles, "nm", ['㎚']) ### SQUARE NM
   create_key_or_plusEquals_to_its_value(doubles, "mm", ['㎜']) ### SQUARE MM
   create_key_or_plusEquals_to_its_value(doubles, "cm", ['㎝']) ### SQUARE CM
   create_key_or_plusEquals_to_its_value(doubles, "km", ['㎞']) ### SQUARE KM
+
+  create_key_or_plusEquals_to_its_value(doubles, "Pa", ['㎩']) ### SQUARE PA
 
 # create_key_or_plusEquals_to_its_value(singles, '_', '_') ###
 # create_key_or_plusEquals_to_its_value(doubles, "__", ['_']) ###
@@ -261,7 +269,11 @@ if OK_to_use_Unicode_chars_that_are_narrower_than_the_original_in_a_monospaced_c
   create_key_or_plusEquals_to_its_value(doubles, ">>", ['⨠'+padding]) ### Z NOTATION SCHEMA PIPING
 
   create_key_or_plusEquals_to_its_value(triples, "bar", ['㍴'+padding]) ### SQUARE BAR
+
   create_key_or_plusEquals_to_its_value(triples, "hPa", ['㍱'+padding]) ### SQUARE HPA
+  create_key_or_plusEquals_to_its_value(triples, "kPa", ['㎪'+padding]) ### SQUARE KPA
+  create_key_or_plusEquals_to_its_value(triples, "MPa", ['㎫'+padding]) ### SQUARE MPA
+  create_key_or_plusEquals_to_its_value(triples, "GPa", ['㎬'+padding]) ### SQUARE GPA
 
   create_key_or_plusEquals_to_its_value(triples, "KHz", ['㎑'+padding]) ### SQUARE KHZ
   create_key_or_plusEquals_to_its_value(triples, "MHz", ['㎒'+padding]) ### SQUARE MHZ
