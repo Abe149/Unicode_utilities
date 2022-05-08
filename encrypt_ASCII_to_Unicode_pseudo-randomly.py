@@ -65,7 +65,7 @@ singles={' ': ' ',   ### ASCII space ⇒ NBSP
          'F': 'Ϝ',   ### just Greek
          'H': "НΗ",  ### first Cyrillic, then Greek
          'I': "ІΙⅠ", ### first Cyrillic, then Greek, then Roman
-         'K': 'Κ',   ### just the Greek, because the Cyrillic equivalent looks a _little_ bit different sometimes [a curvy termination of the upper-right stroke]
+         'K': "ΚK",  ### Greek, KELVIN SIGN [omitting the Cyrillic near-equivalent b/c it looks a _little_ bit different sometimes: a curvy termination of the upper-right stroke]
          'L': 'Ⅼ',   ### just Roman
          'M': "МΜⅯ", ### first Cyrillic, then Greek, then Roman
          'N': 'Ν',   ### just Greek
@@ -145,8 +145,10 @@ if OK_to_use_mappings_that_are_likely_to_be_visually_distinguishable_from_the_or
 
   create_key_or_plusEquals_to_its_value(  singles, '=', '𐄑')   ### AEGEAN NUMBER TWENTY
   create_key_or_plusEquals_to_its_value(  singles, 'c', 'ᴄ')   ### small-caps ‘c’: at least sometimes has a different serif on the upper curve terminus
+  create_key_or_plusEquals_to_its_value(  singles, '/' , '∕')  ### DIVISION SLASH
   create_key_or_plusEquals_to_its_value(  singles, '/' , '╱')  ### BOX DRAWINGS LIGHT DIAGONAL UPPER RIGHT TO LOWER LEFT
   create_key_or_plusEquals_to_its_value(  singles, '\\', '╲')  ### BOX DRAWINGS LIGHT DIAGONAL UPPER  LEFT TO LOWER RIGHT [BOX DRAWINGS LIGHT DIAGONAL UPPER LEFT TO LOWER RIGHT]
+  create_key_or_plusEquals_to_its_value(  singles, '\\', '∖')  ### SET MINUS
 
   create_key_or_plusEquals_to_its_value(  doubles, '((', ['｟']) ### FULLWIDTH  LEFT WHITE PARENTHESIS [for search: FULLWIDTH LEFT WHITE PARENTHESIS]
   create_key_or_plusEquals_to_its_value(  doubles, '))', ['｠']) ### FULLWIDTH RIGHT WHITE PARENTHESIS
