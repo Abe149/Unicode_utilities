@@ -217,6 +217,12 @@ if OK_to_use_mappings_that_are_likely_to_be_visually_distinguishable_from_the_or
 
   create_key_or_plusEquals_to_its_value(doubles, "Pa", ['㎩']) ### SQUARE PA
 
+  create_key_or_plusEquals_to_its_value(doubles, "pV", ['㎴']) ### SQUARE pV
+  create_key_or_plusEquals_to_its_value(doubles, "nV", ['㎵']) ### SQUARE nV
+  create_key_or_plusEquals_to_its_value(doubles, "mV", ['㎷']) ### SQUARE nV
+  create_key_or_plusEquals_to_its_value(doubles, "kV", ['㎸']) ### SQUARE KV ### should I disable this one?  At least on font on MOSX 10.11.6 on my primary MBP incorectly has this looking like “KV”
+  create_key_or_plusEquals_to_its_value(doubles, "MV", ['㎹']) ### SQUARE MV
+
 # create_key_or_plusEquals_to_its_value(singles, '_', '_') ###
 # create_key_or_plusEquals_to_its_value(doubles, "__", ['_']) ###
 
