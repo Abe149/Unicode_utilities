@@ -60,6 +60,7 @@ singles={' ': ' ',    ### ASCII space ⇒ NBSP
          ',': '‚',    ### single low-9 quotation symbol
          '-': '‑',    ### non-breaking hyphen
          '.': '․',    ### one-dot leader [for search: ONE DOT LEADER]
+         ':': '꞉',    ### MODIFIER LETTER COLON
          ';': ';',    ### Greek question symbol
          'A': "АΑꓮ",  ### first Cyrillic, then Greek, then LISU LETTER A
          'B': "ВΒꓐ",  ### first Cyrillic, then Greek, then LISU LETTER BA
@@ -88,7 +89,7 @@ singles={' ': ' ',    ### ASCII space ⇒ NBSP
 
          'a': 'а',   ### just Cyrillic
          'c': "сⅽ",  ### first Cyrillic, then Roman
-         'd': 'ⅾ',   ### just Roman
+         'd': "ⅾꝱ",  ### first Roman, then LATIN SMALL LETTER DUM
          'e': 'е',   ### just Cyrillic
          'i': "іⅰ",  ### first Cyrillic, then Roman
          'j': 'ј',   ### just Cyrillic
@@ -107,7 +108,9 @@ singles={' ': ' ',    ### ASCII space ⇒ NBSP
         }
 
 
+
 if OK_to_use_mappings_that_are_likely_to_be_visually_distinguishable_from_the_original_but_should_have_the_same_width_category_as_the_original:
+
   create_key_or_plusEquals_to_its_value(  singles, '#', '⋕')   ### EQUAL AND PARALLEL TO
   create_key_or_plusEquals_to_its_value(  singles, '#', '𐄹')   ### AEGEAN WEIGHT SECOND SUBUNIT
   create_key_or_plusEquals_to_its_value(  singles, '*', "✽✱∗✳⁕") ### last one as of this writing: FLOWER PUNCTUATION MARK
@@ -162,6 +165,7 @@ if OK_to_use_mappings_that_are_likely_to_be_visually_distinguishable_from_the_or
   create_key_or_plusEquals_to_its_value(  singles, '|', '┃')   ### BOX DRAWINGS HEAVY VERTICAL
 
   create_key_or_plusEquals_to_its_value(  singles, '=', '𐄑')   ### AEGEAN NUMBER TWENTY
+  create_key_or_plusEquals_to_its_value(  singles, '=', '꞊')   ### MODIFIER LETTER SHORT EQUALS SIGN
 
   create_key_or_plusEquals_to_its_value(  singles, 'E', '⋿')   ### Z NOTATION BAG MEMBERSHIP
   create_key_or_plusEquals_to_its_value(  singles, 'c', 'ᴄ')   ### small-caps ‘c’: at least sometimes has a different serif on the upper curve terminus
