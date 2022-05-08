@@ -62,9 +62,9 @@ singles={' ': ' ',   ### ASCII space ⇒ NBSP
          '.': '․',   ### one-dot leader [for search: ONE DOT LEADER]
          ';': ';',   ### Greek question symbol
          'A': "АΑ",  ### first Cyrillic, then Greek
-         'B': "ВΒ",  ### first Cyrillic, then Greek
-         'C': 'СⅭ',  ### first Cyrillic, then Roman
-         'D': 'Ⅾ',   ### just Roman
+         'B': "ВΒꓐ", ### first Cyrillic, then Greek, then LISU LETTER BA
+         'C': "СⅭ",  ### first Cyrillic, then Roman
+         'D': "Ⅾꓓ",  ### first Roman, then LISU LETTER DA
          'E': "ЕΕ",  ### first Cyrillic, then Greek
          'F': 'Ϝ',   ### just Greek
          'H': "НΗ",  ### first Cyrillic, then Greek
@@ -74,17 +74,17 @@ singles={' ': ' ',   ### ASCII space ⇒ NBSP
          'M': "МΜⅯ", ### first Cyrillic, then Greek, then Roman
          'N': 'Ν',   ### just Greek
          'O': "ОΟ",  ### first Cyrillic, then Greek
-         'P': "РΡ",  ### first Cyrillic, then Greek
+         'P': "РΡꓑ", ### first Cyrillic, then Greek, then LISU LETTER PA
          'S': 'Ѕ',   ### just Cyrillic
-         'T': "ТΤ",  ### first Cyrillic, then Greek
+         'T': "ТΤꓔ", ### first Cyrillic, then Greek, then LISU LETTER TA
          'V': 'Ⅴ',   ### just Roman
          'X': "ХΧⅩ", ### first Cyrillic, then Greek, then Roman
          'Z': 'Ζ',   ### just Greek
          'a': 'а',   ### just Cyrillic
-         'c': 'сⅽ',  ### first Cyrillic, then Roman
+         'c': "сⅽ",  ### first Cyrillic, then Roman
          'd': 'ⅾ',   ### just Roman
          'e': 'е',   ### just Cyrillic
-         'i': 'іⅰ',  ### first Cyrillic, then Roman
+         'i': "іⅰ",  ### first Cyrillic, then Roman
          'j': 'ј',   ### just Cyrillic
          'l': 'ⅼ',   ### just Roman
          'm': 'ⅿ',   ### just Roman
@@ -93,7 +93,7 @@ singles={' ': ' ',   ### ASCII space ⇒ NBSP
          's': 'ѕ',   ### just Cyrillic
          'v': "ⅴᴠ",  ### first Roman, then “Latin” small caps
          'w': 'ᴡ',   ### just “Latin” small caps
-         'x': 'хⅹ',  ### first Cyrillic, then Roman
+         'x': "хⅹ",  ### first Cyrillic, then Roman
          'y': 'у',   ### just Cyrillic
          'z': 'ᴢ',   ### just “Latin” small caps
 
