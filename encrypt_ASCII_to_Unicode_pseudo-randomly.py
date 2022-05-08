@@ -198,6 +198,7 @@ if OK_to_use_mappings_that_are_likely_to_be_visually_distinguishable_from_the_or
   create_key_or_plusEquals_to_its_value(doubles, "nF", ['㎋']) ### SQUARE NF
   create_key_or_plusEquals_to_its_value(doubles, "mg", ['㎎']) ### SQUARE MG
   create_key_or_plusEquals_to_its_value(doubles, "kg", ['㎏']) ### SQUARE KG
+  create_key_or_plusEquals_to_its_value(doubles, "Hz", ['㎐']) ### SQUARE HZ
 
 # create_key_or_plusEquals_to_its_value(singles, '_', '_') ###
 # create_key_or_plusEquals_to_its_value(doubles, "__", ['_']) ###
@@ -256,6 +257,12 @@ if OK_to_use_Unicode_chars_that_are_narrower_than_the_original_in_a_monospaced_c
 
   create_key_or_plusEquals_to_its_value(triples, "bar", ['㍴'+padding]) ### SQUARE BAR
   create_key_or_plusEquals_to_its_value(triples, "hPa", ['㍱'+padding]) ### SQUARE HPA
+
+  create_key_or_plusEquals_to_its_value(triples, "KHz", ['㎑'+padding]) ### SQUARE KHZ
+  create_key_or_plusEquals_to_its_value(triples, "MHz", ['㎒'+padding]) ### SQUARE MHZ
+  create_key_or_plusEquals_to_its_value(triples, "GHz", ['㎓'+padding]) ### SQUARE GHZ
+  create_key_or_plusEquals_to_its_value(triples, "THz", ['㎔'+padding]) ### SQUARE THZ
+
 # create_key_or_plusEquals_to_its_value(doubles, "__", ['_'+padding])
 
 
