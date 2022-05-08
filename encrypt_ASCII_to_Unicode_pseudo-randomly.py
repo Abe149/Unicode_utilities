@@ -254,6 +254,16 @@ if not we_are_in_a_monospaced_context:
 # create_key_or_plusEquals_to_its_value(triples, "<<<", '⋘')  ### VERY MUCH    LESS-THAN [for search: VERY MUCH LESS-THAN]
 # create_key_or_plusEquals_to_its_value(triples, ">>>", '⋙')  ### VERY MUCH GREATER-THAN
 
+  create_key_or_plusEquals_to_its_value(triples, "(1)", '⑴')  ### PARENTHESIZED DIGIT ONE
+  create_key_or_plusEquals_to_its_value(triples, "(2)", '⑵')  ### PARENTHESIZED DIGIT TWO
+  create_key_or_plusEquals_to_its_value(triples, "(3)", '⑶')  ### PARENTHESIZED DIGIT THREE
+  create_key_or_plusEquals_to_its_value(triples, "(4)", '⑷')  ### PARENTHESIZED DIGIT FOUR
+  create_key_or_plusEquals_to_its_value(triples, "(5)", '⑸')  ### PARENTHESIZED DIGIT FIVE
+  create_key_or_plusEquals_to_its_value(triples, "(6)", '⑹')  ### PARENTHESIZED DIGIT SIX
+  create_key_or_plusEquals_to_its_value(triples, "(7)", '⑺')  ### PARENTHESIZED DIGIT SEVEN
+  create_key_or_plusEquals_to_its_value(triples, "(8)", '⑻')  ### PARENTHESIZED DIGIT EIGHT
+  create_key_or_plusEquals_to_its_value(triples, "(9)", '⑼')  ### PARENTHESIZED DIGIT NINE
+
   create_key_or_plusEquals_to_its_value(triples, "III", 'Ⅲ')  ###       ROMAN NUMERAL THREE
   create_key_or_plusEquals_to_its_value(triples, "iii", 'ⅲ')  ### SMALL ROMAN NUMERAL THREE
 
