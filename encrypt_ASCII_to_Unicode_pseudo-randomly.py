@@ -48,6 +48,7 @@ def create_key_or_plusEquals_to_its_value(the_dict, the_key, the_value): ### use
 
 ### triples: dict [map] from {strings of length 1} to list of string
 
+quads  ={}
 triples={}
 doubles={"  ": ["  ", "　"]}
 singles={' ': ' ',   ### ASCII space ⇒ NBSP
@@ -169,6 +170,7 @@ if OK_to_use_Unicode_chars_that_are_narrower_than_the_original_in_a_monospaced_c
   create_key_or_plusEquals_to_its_value(doubles, "dz", ['ǳ'+padding]) ### LATIN SMALL LETTER DZ
   create_key_or_plusEquals_to_its_value(doubles, "II", ['Ⅱ'+padding]) ### ROMAN NUMERAL TWO
   create_key_or_plusEquals_to_its_value(doubles, "IV", ['Ⅳ'+padding]) ### ROMAN NUMERAL FOUR
+  create_key_or_plusEquals_to_its_value(doubles, "IX", ['Ⅸ'+padding]) ### ROMAN NUMERAL NINE
   create_key_or_plusEquals_to_its_value(doubles, "LJ", ['Ǉ'+padding]) ### LATIN CAPITAL LETTER LJ
   create_key_or_plusEquals_to_its_value(doubles, "Lj", ['ǈ'+padding]) ### LATIN CAPITAL LETTER L WITH SMALL LETTER J
   create_key_or_plusEquals_to_its_value(doubles, "lj", ['ǉ'+padding]) ### LATIN SMALL LETTER LJ
@@ -216,12 +218,14 @@ if OK_to_use_Unicode_chars_that_are_wider_than_the_original:
 
 
 if not we_are_in_a_monospaced_context:
-  create_key_or_plusEquals_to_its_value(triples, "Pts", '₧') ### peseta(s) sign
 
-  create_key_or_plusEquals_to_its_value(doubles, "==", '⩵' ) ### TWO   CONSECUTIVE EQUALS SIGNS [for search: TWO CONSECUTIVE EQUALS SIGNS]
-  create_key_or_plusEquals_to_its_value(triples, "===", '⩶') ### THREE CONSECUTIVE EQUALS SIGNS
-  create_key_or_plusEquals_to_its_value(triples, "III", 'Ⅲ') ### ROMAN NUMERAL THREE
-# create_key_or_plusEquals_to_its_value(triples, "___", '_') ###
+  create_key_or_plusEquals_to_its_value(doubles, "==", '⩵' )  ### TWO   CONSECUTIVE EQUALS SIGNS [for search: TWO CONSECUTIVE EQUALS SIGNS]
+  create_key_or_plusEquals_to_its_value(triples, "===", '⩶')  ### THREE CONSECUTIVE EQUALS SIGNS
+  create_key_or_plusEquals_to_its_value(triples, "III", 'Ⅲ')  ### ROMAN NUMERAL THREE
+  create_key_or_plusEquals_to_its_value(triples, "Pts", '₧')  ### peseta(s) sign
+  create_key_or_plusEquals_to_its_value(triples, "VII", 'Ⅶ')  ### ROMAN NUMERAL SEVEN
+  create_key_or_plusEquals_to_its_value(  quads, "VIII", 'Ⅷ') ### ROMAN NUMERAL EIGHT
+# create_key_or_plusEquals_to_its_value(triples, "___", '_')  ###
 
 
 
