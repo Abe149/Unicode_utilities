@@ -276,15 +276,27 @@ if not we_are_in_a_monospaced_context:
   create_key_or_plusEquals_to_its_value(  quads, "(19)", '⒆') ### PARENTHESIZED NUMBER NINETEEN
   create_key_or_plusEquals_to_its_value(  quads, "(20)", '⒇') ### PARENTHESIZED NUMBER TWENTY
 
-  create_key_or_plusEquals_to_its_value(doubles, "1.", '⒈')   ### DIGIT ONE   FULL STOP [for search: ONE FULL STOP]
-  create_key_or_plusEquals_to_its_value(doubles, "2.", '⒉')   ### DIGIT TWO   FULL STOP [for search: TWO FULL STOP]
+  create_key_or_plusEquals_to_its_value(doubles, "1.", '⒈')   ### DIGIT ONE   FULL STOP [for search: DIGIT ONE FULL STOP]
+  create_key_or_plusEquals_to_its_value(doubles, "2.", '⒉')   ### DIGIT TWO   FULL STOP [for search: DIGIT TWO FULL STOP]
   create_key_or_plusEquals_to_its_value(doubles, "3.", '⒊')   ### DIGIT THREE FULL STOP
-  create_key_or_plusEquals_to_its_value(doubles, "4.", '⒋')   ### DIGIT FOUR  FULL STOP [for search: FOUR FULL STOP]
+  create_key_or_plusEquals_to_its_value(doubles, "4.", '⒋')   ### DIGIT FOUR  FULL STOP [for search: DIGIT FOUR FULL STOP]
   create_key_or_plusEquals_to_its_value(doubles, "5.", '⒌')   ### DIGIT FIVE  FULL STOP [for search: DIGIT FIVE FULL STOP]
   create_key_or_plusEquals_to_its_value(doubles, "6.", '⒍')   ### DIGIT SIX   FULL STOP [for search: DIGIT SIX FULL STOP]
   create_key_or_plusEquals_to_its_value(doubles, "7.", '⒎')   ### DIGIT SEVEN FULL STOP
   create_key_or_plusEquals_to_its_value(doubles, "8.", '⒏')   ### DIGIT EIGHT FULL STOP
   create_key_or_plusEquals_to_its_value(doubles, "9.", '⒐')   ### DIGIT NINE  FULL STOP [for search: DIGIT NINE FULL STOP]
+
+  create_key_or_plusEquals_to_its_value(triples, "10.", '⒑')  ### NUMBER TEN       FULL STOP [for search: NUMBER TEN FULL STOP]
+  create_key_or_plusEquals_to_its_value(triples, "11.", '⒒')  ### NUMBER ELEVEN    FULL STOP [for search: NUMBER ELEVEN FULL STOP]
+  create_key_or_plusEquals_to_its_value(triples, "12.", '⒓')  ### NUMBER TWELVE    FULL STOP [for search: NUMBER TWELVE FULL STOP]
+  create_key_or_plusEquals_to_its_value(triples, "13.", '⒔')  ### NUMBER THIRTEEN  FULL STOP [for search: NUMBER THIRTEEN FULL STOP]
+  create_key_or_plusEquals_to_its_value(triples, "14.", '⒕')  ### NUMBER FOURTEEN  FULL STOP [for search: NUMBER FOURTEEN FULL STOP]
+  create_key_or_plusEquals_to_its_value(triples, "15.", '⒖')  ### NUMBER FIFTEEN   FULL STOP [for search: NUMBER FIFTEEN FULL STOP]
+  create_key_or_plusEquals_to_its_value(triples, "16.", '⒗')  ### NUMBER SIXTEEN   FULL STOP [for search: NUMBER SIXTEEN FULL STOP]
+  create_key_or_plusEquals_to_its_value(triples, "17.", '⒘')  ### NUMBER SEVENTEEN FULL STOP
+  create_key_or_plusEquals_to_its_value(triples, "18.", '⒙')  ### NUMBER EIGHTEEN  FULL STOP [for search: NUMBER EIGHTEEN FULL STOP]
+  create_key_or_plusEquals_to_its_value(triples, "19.", '⒚')  ### NUMBER NINETEEN  FULL STOP [for search: NUMBER NINETEEN FULL STOP]
+  create_key_or_plusEquals_to_its_value(triples, "20.", '⒛')  ### NUMBER TWENTY    FULL STOP [for search: NUMBER TWENTY FULL STOP]
 
   create_key_or_plusEquals_to_its_value(triples, "III", 'Ⅲ')  ###       ROMAN NUMERAL THREE
   create_key_or_plusEquals_to_its_value(triples, "iii", 'ⅲ')  ### SMALL ROMAN NUMERAL THREE
