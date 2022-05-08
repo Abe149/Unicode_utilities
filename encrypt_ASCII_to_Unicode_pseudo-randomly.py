@@ -152,7 +152,7 @@ if OK_to_use_mappings_that_are_likely_to_be_visually_distinguishable_from_the_or
   if we_are_in_a_monospaced_context:
     create_key_or_plusEquals_to_its_value(singles, '9', '𝟿')   ### MATHEMATICAL MONOSPACE  DIGIT NINE [for search: MONOSPACE DIGIT NINE]
 
-  create_key_or_plusEquals_to_its_value(  singles, '|', "∣⎮")  ### DIVIDES, INTEGRAL EXTENSION
+  create_key_or_plusEquals_to_its_value(  singles, '|', "∣⎮❘") ### DIVIDES, INTEGRAL EXTENSION, LIGHT VERTICAL BAR
   create_key_or_plusEquals_to_its_value(  singles, '|', '│')   ### BOX DRAWINGS LIGHT VERTICAL
   create_key_or_plusEquals_to_its_value(  singles, '|', '┃')   ### BOX DRAWINGS HEAVY VERTICAL
 
@@ -170,6 +170,15 @@ if OK_to_use_mappings_that_are_likely_to_be_visually_distinguishable_from_the_or
   create_key_or_plusEquals_to_its_value(  doubles, '))', ['｠']) ### FULLWIDTH RIGHT WHITE PARENTHESIS
   create_key_or_plusEquals_to_its_value(  doubles, "<<", ['《']) ###  LEFT DOUBLE ANGLE BRACKET
   create_key_or_plusEquals_to_its_value(  doubles, ">>", ['》']) ### RIGHT DOUBLE ANGLE BRACKET
+
+  create_key_or_plusEquals_to_its_value(singles, '(', '❨') ### MEDIUM  LEFT PARENTHESIS ORNAMENT [for search: MEDIUM LEFT PARENTHESIS ORNAMENT]
+  create_key_or_plusEquals_to_its_value(singles, ')', '❩') ### MEDIUM RIGHT PARENTHESIS ORNAMENT
+  create_key_or_plusEquals_to_its_value(singles, '<', '❮') ### HEAVY  LEFT-POINTING ANGLE QUOTATION MARK ORNAMENT [HEAVY LEFT-POINTING ANGLE QUOTATION MARK ORNAMENT]
+  create_key_or_plusEquals_to_its_value(singles, '>', '❯') ### HEAVY RIGHT-POINTING ANGLE QUOTATION MARK ORNAMENT
+
+# create_key_or_plusEquals_to_its_value(singles, '_', '_') ###
+# create_key_or_plusEquals_to_its_value(doubles, "__", ['_']) ###
+
 
 if OK_to_use_Unicode_chars_that_are_narrower_than_the_original_in_a_monospaced_context:
   padding = ' ' if are_we_in_a_monospaced_context else ""
