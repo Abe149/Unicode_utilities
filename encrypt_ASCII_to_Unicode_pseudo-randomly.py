@@ -21,6 +21,7 @@ OK_to_use_Unicode_chars_that_are_narrower_than_the_original_in_a_monospaced_cont
 OK_to_use_Unicode_chars_that_are_wider_than_the_original    = False
 add_spacing_to_try_to_make_multiLines_text_still_line_up    = True
 we_are_in_a_monospaced_context = True
+OK_to_use_nonBMP_codepoints = False
 
 
 
@@ -68,11 +69,11 @@ singles={' ': ' ',    ### ASCII space ⇒ NBSP
          'B': "ВΒꓐ",  ### first Cyrillic, then Greek, then LISU LETTER BA
          'C': "СⅭꓚ",  ### first Cyrillic, then Roman, then LISU LETTER CA
          'D': "Ⅾꓓ",   ### first Roman, then LISU LETTER DA
-         'E': "ЕΕꓰ𐊆", ### first Cyrillic, then Greek, then LISU LETTER E, then LYCIAN LETTER I
-         'F': "Ϝꓝ𐊇",  ### first Greek, then LISU LETTER TSA, then LYCIAN LETTER W
+         'E': "ЕΕꓰ",  ### first Cyrillic, then Greek, then LISU LETTER E
+         'F': "Ϝꓝ𐊇",  ### first Greek, then LISU LETTER TSA
          'G': 'ꓖ',    ### LISU LETTER GA
          'H': "НΗꓧ",  ### first Cyrillic, then Greek, then LISU LETTER XA
-         'I': "ІΙⅠ𐊈", ### first Cyrillic, then Greek, then Roman, then LYCIAN LETTER Z
+         'I': "ІΙⅠ",  ### first Cyrillic, then Greek, then Roman
          'J': 'ꓙ',    ### LISU LETTER JA
          'K': "ΚKꓗ",  ### Greek, KELVIN SIGN, then LISU LETTER KA [omitting the Cyrillic near-equivalent b/c it looks a _little_ bit different sometimes: a curvy termination of the upper-right stroke]
          'L': "Ⅼꓡ",   ### first Roman, then LISU LETTER LA
@@ -108,6 +109,13 @@ singles={' ': ' ',    ### ASCII space ⇒ NBSP
 
          '~': '∼'    ### TILDE OPERATOR
         }
+
+
+
+if OK_to_use_nonBMP_codepoints:
+  create_key_or_plusEquals_to_its_value(  singles, 'E', '𐊆')   ### LYCIAN LETTER I
+  create_key_or_plusEquals_to_its_value(  singles, 'F', '𐊇')   ### LYCIAN LETTER W
+  create_key_or_plusEquals_to_its_value(  singles, 'I', '𐊈')   ### LYCIAN LETTER Z
 
 
 
