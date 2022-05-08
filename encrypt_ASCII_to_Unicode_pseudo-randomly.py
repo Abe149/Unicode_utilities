@@ -111,11 +111,16 @@ singles={' ': ' ',    ### ASCII space ⇒ NBSP
 
 
 if OK_to_use_nonBMP_codepoints:
+  create_key_or_plusEquals_to_its_value(singles, "'", '𐄇') ### AEGEAN NUMBER ONE
+  create_key_or_plusEquals_to_its_value(singles, '"', '𐄈') ### AEGEAN NUMBER TWO
+
   create_key_or_plusEquals_to_its_value(singles, 'E', '𐊆') ### LYCIAN LETTER I
   create_key_or_plusEquals_to_its_value(singles, 'F', '𐊇') ### LYCIAN LETTER W
   create_key_or_plusEquals_to_its_value(singles, 'I', '𐊈') ### LYCIAN LETTER Z
-  create_key_or_plusEquals_to_its_value(singles, "'", '𐄇') ### AEGEAN NUMBER ONE
-  create_key_or_plusEquals_to_its_value(singles, '"', '𐄈') ### AEGEAN NUMBER TWO
+  create_key_or_plusEquals_to_its_value(singles, 'O', '𐊒') ### LYCIAN LETTER U
+  create_key_or_plusEquals_to_its_value(singles, 'P', '𐊕') ### LYCIAN LETTER R
+  create_key_or_plusEquals_to_its_value(singles, 'T', '𐊗') ### LYCIAN LETTER T
+  create_key_or_plusEquals_to_its_value(singles, 'X', '𐊐') ### LYCIAN LETTER MM
 
 
 
