@@ -10,6 +10,8 @@ import argparse, sys
 parser = argparse.ArgumentParser()
 parser.add_argument("--OK_to_use_mappings_that_are_likely_to_be_visually_distinguishable_from_the_original_but_should_have_the_same_width_category_as_the_original", action="store_true")
 
+parser.add_argument("--output_all_variations_of", type=str)
+
 args = parser.parse_args() ### sys.argv is the default input source
 
 
@@ -263,6 +265,47 @@ if not we_are_in_a_monospaced_context:
   create_key_or_plusEquals_to_its_value(triples, "XII", ['Ⅻ'+padding]) ### ROMAN NUMERAL TWELVE
   create_key_or_plusEquals_to_its_value(triples, "XII", ['Ⅻ'+padding]) ### ROMAN NUMERAL TWELVE
 # create_key_or_plusEquals_to_its_value(triples, "___", '_')  ###
+
+
+
+def output_all_variations_of(prefix, body): ### the input better be at least string-𝒍𝒊𝒌𝒆, or expect all hell to break loose
+  assert len(body) >= 0
+
+  if (len(body)>3) and (body[:4] in quads):
+    for head in quads[body[:4]]:
+      output_all_variations_of(prefix + head, body[4:])
+
+  if (len(body)>2) and (body[:3] in triples):
+    for head in triples[body[:3]]:
+      output_all_variations_of(prefix + head, body[3:])
+
+  if (len(body)>1) and (body[:2] in doubles):
+    for head in singles[body[:2]]:
+      output_all_variations_of(prefix + head, body[2:])
+
+  if 1 == len(body):
+    if (body[0] in singles):
+      for head in singles[body[0]]:
+        print (prefix + head)
+    else: ### can`t replace/translate it at all, so just output the first char. verbatim
+        print (prefix + body)
+  elif len(body) > 0:
+    if (body[0] in singles):
+      for head in singles[body[0]]:
+        output_all_variations_of(prefix + head, body[1:])
+    else: ### can`t replace/translate it at all, so just output the first char. verbatim
+      output_all_variations_of(prefix + body[0], body[1:])
+
+
+
+if type(args.output_all_variations_of) == type(""):
+  if len(args.output_all_variations_of) < 1:
+    print ("ERROR: empty input to “output_all_variations_of”.", file = sys.stderr)
+    sys.exit(-1)
+
+  output_all_variations_of("", args.output_all_variations_of)
+
+  sys.exit(0)
 
 
 
