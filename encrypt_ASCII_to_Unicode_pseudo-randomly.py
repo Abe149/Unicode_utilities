@@ -266,6 +266,7 @@ if OK_to_use_mappings_that_are_likely_to_be_visually_distinguishable_from_the_or
 
 
 if OK_to_use_Unicode_chars_that_are_narrower_than_the_original_in_a_monospaced_context:
+
   padding = ' ' if are_we_in_a_monospaced_context else ""
 
   create_key_or_plusEquals_to_its_value(doubles, "!!", ['‼'+padding]) ### DOUBLE EXCLAMATION MARK
@@ -340,6 +341,7 @@ if OK_to_use_Unicode_chars_that_are_narrower_than_the_original_in_a_monospaced_c
 
 
 if OK_to_use_Unicode_chars_that_are_wider_than_the_original:
+
   create_key_or_plusEquals_to_its_value(singles, '~', '〜') ### WAVE DASH: not in the default/main/primary set for singles b/c the replacement looks to be “fullwidth”, at least in iTerm2 3.1.7 using 18-point Monaco on MOSX 10.11.6
 
   create_key_or_plusEquals_to_its_value(singles, '=', '゠') ### DIGRAM FOR GREATER YANG
@@ -372,6 +374,12 @@ if OK_to_use_Unicode_chars_that_are_wider_than_the_original:
 ### note: BIG SOLIDUS and BIG REVERSE SOLIDUS seem to be “weird”: in Mac OS X 10.11`s character viewer [now renamed “Emoji and Symbols” :-(], they both seem to be full-width, but in both iTerm2 and TextEdit [using Times New Roman] they are _not_ [albeit in TextEdit they _are_ wider than the respective ASCII char.s]
   create_key_or_plusEquals_to_its_value(singles, '/' , '⧸') ### BIG         SOLIDUS [for search: BIG SOLIDUS]
   create_key_or_plusEquals_to_its_value(singles, '\\', '⧹') ### BIG REVERSE SOLIDUS
+
+  create_key_or_plusEquals_to_its_value(singles, ':' , '︰') ### PRESENTATION FORM FOR VERTICAL TWO DOT LEADER
+  create_key_or_plusEquals_to_its_value(singles, ':' , '︓') ### PRESENTATION FORM FOR VERTICAL     COLON [PRESENTATION FORM FOR VERTICAL COLON]
+  create_key_or_plusEquals_to_its_value(singles, ';' , '︔') ### PRESENTATION FORM FOR VERTICAL SEMICOLON
+  create_key_or_plusEquals_to_its_value(singles, '!' , '︕') ### PRESENTATION FORM FOR VERTICAL EXCLAMATION MARK
+  create_key_or_plusEquals_to_its_value(singles, '?' , '︖') ### PRESENTATION FORM FOR VERTICAL QUESTION    MARK [PRESENTATION FORM FOR VERTICAL QUESTION MARK]
 
   ### fullwidth replacements for almost all the ASCII printables [the Unicode committee left out space in this range]
   for c in range(33, 127):
