@@ -302,6 +302,7 @@ if OK_to_use_Unicode_chars_that_are_narrower_than_the_original_in_a_monospaced_c
   create_key_or_plusEquals_to_its_value(doubles, "!?", ['⁉'+padding]) ### EXCLAMATION QUESTION MARK
   create_key_or_plusEquals_to_its_value(doubles, "--", ['╌'+padding]) ### BOX DRAWINGS LIGHT DOUBLE DASH HORIZONTAL
   create_key_or_plusEquals_to_its_value(doubles, "--", ['╍'+padding]) ### BOX DRAWINGS HEAVY DOUBLE DASH HORIZONTAL
+  create_key_or_plusEquals_to_its_value(doubles, "..", ['‥'+padding]) ### TWO DOT LEADER
 
   create_key_or_plusEquals_to_its_value(  doubles, "==", ['⩵'+padding]) ### TWO CONSECUTIVE EQUALS SIGNS
   if OK_to_use_nonBMP_codepoints:
@@ -418,9 +419,11 @@ if OK_to_use_Unicode_chars_that_are_wider_than_the_original:
 
 
 if not we_are_in_a_monospaced_context:
-# create_key_or_plusEquals_to_its_value(singles, '_', '_') ### 
-  create_key_or_plusEquals_to_its_value(singles, '+', '➕') ### HEAVY  PLUS SIGN [for search: HEAVY PLUS SIGN]
-  create_key_or_plusEquals_to_its_value(singles, '-', '➖') ### HEAVY MINUS SIGN
+
+# create_key_or_plusEquals_to_its_value(singles, '_', '_')      ### 
+  create_key_or_plusEquals_to_its_value(singles, '+', '➕')      ### HEAVY  PLUS SIGN [for search: HEAVY PLUS SIGN]
+  create_key_or_plusEquals_to_its_value(singles, '-', '➖')      ### HEAVY MINUS SIGN
+  create_key_or_plusEquals_to_its_value(triples, "...", ['…'])  ### HORIZONTAL ELLIPSIS
 
   create_key_or_plusEquals_to_its_value(doubles, "><", ['⪥' ])  ### GREATER-THAN BESIDE LESS-THAN
 
