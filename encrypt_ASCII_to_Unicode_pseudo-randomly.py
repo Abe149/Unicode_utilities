@@ -93,7 +93,7 @@ singles={' ': ' ',    ### ASCII space ⇒ NBSP
          'd': "ⅾꝱ",  ### first Roman, then LATIN SMALL LETTER DUM
          'e': 'е',   ### just Cyrillic
          'i': "іⅰ",  ### first Cyrillic, then Roman
-         'j': 'ј',   ### just Cyrillic
+         'j': "јϳ",  ### first Cyrillic, then GREEK LETTER YOT
          'l': 'ⅼ',   ### just Roman
          'm': 'ⅿ',   ### just Roman
          'o': "оοᴏ", ### first Cyrillic, then Greek, then “Latin” small caps
