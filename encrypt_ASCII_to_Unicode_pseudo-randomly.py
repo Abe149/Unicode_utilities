@@ -589,7 +589,7 @@ def output_all_variations_of(prefix, body): ### the input better be at least str
       output_all_variations_of(prefix + head, body[3:])
 
   if (len(body)>1) and (body[:2] in doubles):
-    for head in singles[body[:2]]:
+    for head in doubles[body[:2]]:
       output_all_variations_of(prefix + head, body[2:])
 
   if 1 == len(body):
