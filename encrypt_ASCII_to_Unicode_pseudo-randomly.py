@@ -58,6 +58,7 @@ quads  ={}
 triples={}
 doubles={"  ": ["  ", "　"]}
 singles={' ': ' ',    ### ASCII space ⇒ NBSP
+         '!': 'ǃ',    ### LATIN LETTER RETROFLEX CLICK
          ',': '‚',    ### single low-9 quotation symbol
          '-': '‑',    ### non-breaking hyphen
          '.': '․',    ### one-dot leader [for search: ONE DOT LEADER]
