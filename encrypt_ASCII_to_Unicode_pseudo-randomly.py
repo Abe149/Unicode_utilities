@@ -577,7 +577,7 @@ for key in   quads:
 
 
 
-def output_all_variations_of(prefix, body): ### the input better be at least string-𝒍𝒊𝒌𝒆, or expect all hell to break loose
+def output_all_variations_of(prefix, body): ### the inputs better be at least string-𝒍𝒊𝒌𝒆, or expect all hell to break loose
   assert len(body) >= 0
 
   if (len(body)>3) and (body[:4] in quads):
@@ -592,18 +592,18 @@ def output_all_variations_of(prefix, body): ### the input better be at least str
     for head in doubles[body[:2]]:
       output_all_variations_of(prefix + head, body[2:])
 
-  if 1 == len(body):
-    if (body[0] in singles):
-      for head in singles[body[0]]:
-        print (prefix + head)
-    else: ### can`t replace/translate it at all, so just output the first char. verbatim
-        print (prefix + body)
-  elif len(body) > 0:
+
+  if len(body) > 0:
     if (body[0] in singles):
       for head in singles[body[0]]:
         output_all_variations_of(prefix + head, body[1:])
     else: ### can`t replace/translate it at all, so just output the first char. verbatim
       output_all_variations_of(prefix + body[0], body[1:])
+  else: ### body is of length 0; this is essentially the base case of the recursion
+    assert len(prefix) > 0 ### this should always be the case here, b/c the only non-recursive caller of this recursive method never tries to output all variations of the empty string
+    assert 0 is len(body) ### belt and suspenders
+    print (prefix)
+
 
 
 
