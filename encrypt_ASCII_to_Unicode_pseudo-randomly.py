@@ -294,6 +294,26 @@ if OK_to_use_mappings_that_are_likely_to_be_visually_distinguishable_from_the_or
 # create_key_or_plusEquals_to_its_value(singles, '_', '_') ###
 # create_key_or_plusEquals_to_its_value(doubles, "__", ['_']) ###
 
+  create_key_or_plusEquals_to_its_value(singles, 'D' , 'Ꭰ')  ### CHEROKEE LETTER A
+  create_key_or_plusEquals_to_its_value(singles, 'R' , 'Ꭱ')  ### CHEROKEE LETTER E
+# create_key_or_plusEquals_to_its_value(singles, 'R' , 'Ꮢ')  ### CHEROKEE LETTER SV ### intentionally inactive
+  create_key_or_plusEquals_to_its_value(singles, 'T' , 'Ꭲ')  ### CHEROKEE LETTER I
+  create_key_or_plusEquals_to_its_value(singles, 'A' , 'Ꭺ')  ### CHEROKEE LETTER GO
+  create_key_or_plusEquals_to_its_value(singles, 'J' , 'Ꭻ')  ### CHEROKEE LETTER GU
+  create_key_or_plusEquals_to_its_value(singles, 'E' , 'Ꭼ')  ### CHEROKEE LETTER GV
+# create_key_or_plusEquals_to_its_value(singles, 'W' , 'Ꮃ')  ### CHEROKEE LETTER LA ### intentionally inactive here, copied active to the “if not we_are_in_a_monospaced_context” section
+  create_key_or_plusEquals_to_its_value(singles, 'M' , 'Ꮇ')  ### CHEROKEE LETTER LU
+  create_key_or_plusEquals_to_its_value(singles, 'H' , 'Ꮋ')  ### CHEROKEE LETTER MI
+  create_key_or_plusEquals_to_its_value(singles, 'G' , 'Ꮐ')  ### CHEROKEE LETTER NAH
+  create_key_or_plusEquals_to_its_value(singles, 'Z' , 'Ꮓ')  ### CHEROKEE LETTER NO
+  create_key_or_plusEquals_to_its_value(singles, 'V' , 'Ꮩ')  ### CHEROKEE LETTER DO
+  create_key_or_plusEquals_to_its_value(singles, 'S' , 'Ꮪ')  ### CHEROKEE LETTER DU
+  create_key_or_plusEquals_to_its_value(singles, 'L' , 'Ꮮ')  ### CHEROKEE LETTER TLE
+  create_key_or_plusEquals_to_its_value(singles, 'C' , 'Ꮯ')  ### CHEROKEE LETTER TLI
+  create_key_or_plusEquals_to_its_value(singles, 'P' , 'Ꮲ')  ### CHEROKEE LETTER TLV
+  create_key_or_plusEquals_to_its_value(singles, 'K' , 'Ꮶ')  ### CHEROKEE LETTER TSO
+  create_key_or_plusEquals_to_its_value(singles, 'B' , 'Ᏼ')  ### CHEROKEE LETTER YV
+
 ### end if OK_to_use_mappings_that_are_likely_to_be_visually_distinguishable_from_the_original_but_should_have_the_same_width_category_as_the_original
 
 
@@ -546,6 +566,8 @@ if not we_are_in_a_monospaced_context:
   create_key_or_plusEquals_to_its_value(singles, 'N', 'ꓠ')  ### LISU LETTER NA [this one came out all funky —— wide and overflowing to the right —— in iTerm2 on MOSX 10.11.6 on my main MBP]
   create_key_or_plusEquals_to_its_value(singles, 'W', 'ꓪ')  ### LISU LETTER WA [this one came out all funky —— wide and overflowing to the right —— in iTerm2 on MOSX 10.11.6 on my main MBP]
  ### test: 'ꓲ' ### this one is _really_ shit — I can`t seem to get a serif version of this lame-ass fake capital letter I [“LISU LETTER I”]
+
+  create_key_or_plusEquals_to_its_value(singles, 'W' , 'Ꮃ')  ### CHEROKEE LETTER LA
 
 # create_key_or_plusEquals_to_its_value(doubles, "__", ['_'])  ###
 # create_key_or_plusEquals_to_its_value(triples, "___", ['_'])  ###
