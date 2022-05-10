@@ -130,189 +130,188 @@ if OK_to_use_nonBMP_codepoints:
 
 if OK_to_use_mappings_that_are_likely_to_be_visually_distinguishable_from_the_original_but_should_have_the_same_width_category_as_the_original:
 
-  create_key_or_plusEquals_to_its_value(  singles, '#', '⋕')   ### EQUAL AND PARALLEL TO
+  create_key_or_plusEquals_to_its_value  (singles, '#', '⋕')   ### EQUAL AND PARALLEL TO
   if OK_to_use_nonBMP_codepoints:
     create_key_or_plusEquals_to_its_value(singles, '#', '𐄹')   ### AEGEAN WEIGHT SECOND SUBUNIT
 
-  create_key_or_plusEquals_to_its_value(  singles, '*', "✽✱∗✳⁕") ### last one as of this writing: FLOWER PUNCTUATION MARK
+  create_key_or_plusEquals_to_its_value  (singles, '*', "✽✱∗✳⁕") ### last one as of this writing: FLOWER PUNCTUATION MARK
 
-  create_key_or_plusEquals_to_its_value(  singles, '-', "−")   ### MINUS SIGN
+  create_key_or_plusEquals_to_its_value  (singles, '-', "−")   ### MINUS SIGN
   if OK_to_use_nonBMP_codepoints:
     create_key_or_plusEquals_to_its_value(singles, '-', "𐄐")   ### AEGEAN NUMBER TEN
 
-  create_key_or_plusEquals_to_its_value(  singles, '~', '⁓')   ### SWUNG DASH
-  create_key_or_plusEquals_to_its_value(  singles, '%', '⁒')   ### COMMERCIAL MINUS SIGN
+  create_key_or_plusEquals_to_its_value  (singles, '~', '⁓')   ### SWUNG DASH
+  create_key_or_plusEquals_to_its_value  (singles, '%', '⁒')   ### COMMERCIAL MINUS SIGN
 
-  create_key_or_plusEquals_to_its_value(  singles, '0', '𝟢')   ### MATHEMATICAL SANS-SERIF DIGIT ZERO
+  create_key_or_plusEquals_to_its_value  (singles, '0', '𝟢')   ### MATHEMATICAL SANS-SERIF DIGIT ZERO
   if we_are_in_a_monospaced_context:
     create_key_or_plusEquals_to_its_value(singles, '0', '𝟶')   ### MATHEMATICAL MONOSPACE  DIGIT ZERO  [for search: MATHEMATICAL MONOSPACE DIGIT ZERO]
 
-  create_key_or_plusEquals_to_its_value(  singles, '1', '𝟣')   ### MATHEMATICAL SANS-SERIF DIGIT ONE
+  create_key_or_plusEquals_to_its_value  (singles, '1', '𝟣')   ### MATHEMATICAL SANS-SERIF DIGIT ONE
   if we_are_in_a_monospaced_context:
     create_key_or_plusEquals_to_its_value(singles, '1', '𝟷')   ### MATHEMATICAL MONOSPACE  DIGIT ONE   [for search: MATHEMATICAL MONOSPACE DIGIT ONE]
 
-  create_key_or_plusEquals_to_its_value(  singles, '2', '𝟤')   ### MATHEMATICAL SANS-SERIF DIGIT TWO
+  create_key_or_plusEquals_to_its_value  (singles, '2', '𝟤')   ### MATHEMATICAL SANS-SERIF DIGIT TWO
   if we_are_in_a_monospaced_context:
     create_key_or_plusEquals_to_its_value(singles, '2', '𝟸')   ### MATHEMATICAL MONOSPACE  DIGIT TWO   [for search: MONOSPACE DIGIT TWO]
 
-  create_key_or_plusEquals_to_its_value(  singles, '3', "𝟥З")  ### MATHEMATICAL SANS-SERIF DIGIT THREE, CYRILLIC CAPITAL LETTER ZE
+  create_key_or_plusEquals_to_its_value  (singles, '3', "𝟥З")  ### MATHEMATICAL SANS-SERIF DIGIT THREE, CYRILLIC CAPITAL LETTER ZE
   if we_are_in_a_monospaced_context:
     create_key_or_plusEquals_to_its_value(singles, '3', '𝟹')   ### MATHEMATICAL MONOSPACE  DIGIT THREE [for search: MATHEMATICAL MONOSPACE DIGIT THREE]
 
-  create_key_or_plusEquals_to_its_value(  singles, '4', '𝟦')   ### MATHEMATICAL SANS-SERIF DIGIT FOUR
+  create_key_or_plusEquals_to_its_value  (singles, '4', '𝟦')   ### MATHEMATICAL SANS-SERIF DIGIT FOUR
   if we_are_in_a_monospaced_context:
     create_key_or_plusEquals_to_its_value(singles, '4', '𝟺')   ### MATHEMATICAL MONOSPACE  DIGIT FOUR  [for search: MATHEMATICAL MONOSPACE DIGIT FOUR]
 
 # create_key_or_plusEquals_to_its_value(  singles, '5', 'Ƽ')   ### “Latin” capital “letter” tone five ### maybe To Do: re-enable this replacement _contextually_, where neither the preceding char. nor the succeeding char. in the original was an ASCII digit [otherwise this too-often sticks out like a sore thumb]
 
-  create_key_or_plusEquals_to_its_value(  singles, '5', '𝟧')   ### MATHEMATICAL SANS-SERIF DIGIT FIVE
+  create_key_or_plusEquals_to_its_value  (singles, '5', '𝟧')   ### MATHEMATICAL SANS-SERIF DIGIT FIVE
   if we_are_in_a_monospaced_context:
     create_key_or_plusEquals_to_its_value(singles, '5', '𝟻')   ### MATHEMATICAL MONOSPACE  DIGIT FIVE [for search: MATHEMATICAL MONOSPACE DIGIT FIVE]
 
-  create_key_or_plusEquals_to_its_value(  singles, '6', '𝟨')   ### MATHEMATICAL SANS-SERIF DIGIT SIX
+  create_key_or_plusEquals_to_its_value  (singles, '6', '𝟨')   ### MATHEMATICAL SANS-SERIF DIGIT SIX
   if we_are_in_a_monospaced_context:
     create_key_or_plusEquals_to_its_value(singles, '6', '𝟼')   ### MATHEMATICAL MONOSPACE  DIGIT SIX [for search: MATHEMATICAL MONOSPACE DIGIT SIX]
 
-  create_key_or_plusEquals_to_its_value(  singles, '7', '𝟩')   ### MATHEMATICAL SANS-SERIF DIGIT SEVEN
+  create_key_or_plusEquals_to_its_value  (singles, '7', '𝟩')   ### MATHEMATICAL SANS-SERIF DIGIT SEVEN
   if we_are_in_a_monospaced_context:
     create_key_or_plusEquals_to_its_value(singles, '7', '𝟽')   ### MATHEMATICAL MONOSPACE  DIGIT SEVEN [for search: MONOSPACE DIGIT SEVEN]
 
-  create_key_or_plusEquals_to_its_value(  singles, '8', '𝟪')   ### MATHEMATICAL SANS-SERIF DIGIT EIGHT
+  create_key_or_plusEquals_to_its_value  (singles, '8', '𝟪')   ### MATHEMATICAL SANS-SERIF DIGIT EIGHT
   if we_are_in_a_monospaced_context:
     create_key_or_plusEquals_to_its_value(singles, '8', '𝟾')   ### MATHEMATICAL MONOSPACE  DIGIT EIGHT [for search: MONOSPACE DIGIT EIGHT]
 
-  create_key_or_plusEquals_to_its_value(  singles, '9', '𝟫')   ### MATHEMATICAL SANS-SERIF DIGIT NINE
+  create_key_or_plusEquals_to_its_value  (singles, '9', '𝟫')   ### MATHEMATICAL SANS-SERIF DIGIT NINE
   if we_are_in_a_monospaced_context:
     create_key_or_plusEquals_to_its_value(singles, '9', '𝟿')   ### MATHEMATICAL MONOSPACE  DIGIT NINE [for search: MONOSPACE DIGIT NINE]
 
-  create_key_or_plusEquals_to_its_value(  singles, '|', "∣⎮❘") ### DIVIDES, INTEGRAL EXTENSION, LIGHT VERTICAL BAR
-  create_key_or_plusEquals_to_its_value(  singles, '|', '│')   ### BOX DRAWINGS LIGHT VERTICAL
-  create_key_or_plusEquals_to_its_value(  singles, '|', '┃')   ### BOX DRAWINGS HEAVY VERTICAL
+  create_key_or_plusEquals_to_its_value  (singles, '|', "∣⎮❘") ### DIVIDES, INTEGRAL EXTENSION, LIGHT VERTICAL BAR
+  create_key_or_plusEquals_to_its_value  (singles, '|', '│')   ### BOX DRAWINGS LIGHT VERTICAL
+  create_key_or_plusEquals_to_its_value  (singles, '|', '┃')   ### BOX DRAWINGS HEAVY VERTICAL
 
   if OK_to_use_nonBMP_codepoints:
     create_key_or_plusEquals_to_its_value(singles, '=', '𐄑')   ### AEGEAN NUMBER TWENTY
 
-  create_key_or_plusEquals_to_its_value(  singles, '=', '꞊')   ### MODIFIER LETTER SHORT EQUALS SIGN
+  create_key_or_plusEquals_to_its_value  (singles, '=', '꞊')   ### MODIFIER LETTER SHORT EQUALS SIGN
 
   if OK_to_use_nonBMP_codepoints:
     create_key_or_plusEquals_to_its_value(singles, '=', '𐆐')   ### ROMAN SEXTANS SIGN
     create_key_or_plusEquals_to_its_value(singles, '-', '𐆑')   ### ROMAN UNCIA   SIGN [for search: ROMAN UNCIA SIGN
 
-  create_key_or_plusEquals_to_its_value(  singles, 'E', '⋿')   ### Z NOTATION BAG MEMBERSHIP
-  create_key_or_plusEquals_to_its_value(  singles, 'c', 'ᴄ')   ### small-caps ‘c’: at least sometimes has a different serif on the upper curve terminus
+  create_key_or_plusEquals_to_its_value  (singles, 'E', '⋿')   ### Z NOTATION BAG MEMBERSHIP
+  create_key_or_plusEquals_to_its_value  (singles, 'c', 'ᴄ')   ### small-caps ‘c’: at least sometimes has a different serif on the upper curve terminus
 
   ### to maybe re-enable later, gated by a flag that promises that the output will be viewed in a sans-serif font
-  # create_key_or_plusEquals_to_its_value(  singles, 'x', '⨉')   ### N-ARY TIMES OPERATOR
+  # create_key_or_plusEquals_to_its_value(singles, 'x', '⨉')   ### N-ARY TIMES OPERATOR
 
-  create_key_or_plusEquals_to_its_value(  singles, '/' , '∕')  ### DIVISION SLASH
-  create_key_or_plusEquals_to_its_value(  singles, '/' , '╱')  ### BOX DRAWINGS LIGHT DIAGONAL UPPER RIGHT TO LOWER LEFT
-  create_key_or_plusEquals_to_its_value(  singles, '\\', '╲')  ### BOX DRAWINGS LIGHT DIAGONAL UPPER  LEFT TO LOWER RIGHT [BOX DRAWINGS LIGHT DIAGONAL UPPER LEFT TO LOWER RIGHT]
-  create_key_or_plusEquals_to_its_value(  singles, '\\', '∖')  ### SET MINUS
-  create_key_or_plusEquals_to_its_value(  singles, '\\', '⧵')  ### REVERSE SOLIDUS OPERATOR
+  create_key_or_plusEquals_to_its_value  (singles, '/' , '∕')    ### DIVISION SLASH
+  create_key_or_plusEquals_to_its_value  (singles, '/' , '╱')    ### BOX DRAWINGS LIGHT DIAGONAL UPPER RIGHT TO LOWER LEFT
+  create_key_or_plusEquals_to_its_value  (singles, '\\', '╲')    ### BOX DRAWINGS LIGHT DIAGONAL UPPER  LEFT TO LOWER RIGHT [BOX DRAWINGS LIGHT DIAGONAL UPPER LEFT TO LOWER RIGHT]
+  create_key_or_plusEquals_to_its_value  (singles, '\\', '∖')    ### SET MINUS
+  create_key_or_plusEquals_to_its_value  (singles, '\\', '⧵')    ### REVERSE SOLIDUS OPERATOR
 
-  create_key_or_plusEquals_to_its_value(  doubles, '((', ['｟']) ### FULLWIDTH  LEFT WHITE PARENTHESIS [for search: FULLWIDTH LEFT WHITE PARENTHESIS]
-  create_key_or_plusEquals_to_its_value(  doubles, '))', ['｠']) ### FULLWIDTH RIGHT WHITE PARENTHESIS
-  create_key_or_plusEquals_to_its_value(  doubles, "<<", ['《']) ###  LEFT DOUBLE ANGLE BRACKET
-  create_key_or_plusEquals_to_its_value(  doubles, ">>", ['》']) ### RIGHT DOUBLE ANGLE BRACKET
+  create_key_or_plusEquals_to_its_value  (doubles, '((', ['｟']) ### FULLWIDTH  LEFT WHITE PARENTHESIS [for search: FULLWIDTH LEFT WHITE PARENTHESIS]
+  create_key_or_plusEquals_to_its_value  (doubles, '))', ['｠']) ### FULLWIDTH RIGHT WHITE PARENTHESIS
+  create_key_or_plusEquals_to_its_value  (doubles, "<<", ['《']) ###  LEFT DOUBLE ANGLE BRACKET
+  create_key_or_plusEquals_to_its_value  (doubles, ">>", ['》']) ### RIGHT DOUBLE ANGLE BRACKET
 
-  create_key_or_plusEquals_to_its_value(singles, '(', '❨') ### MEDIUM  LEFT PARENTHESIS ORNAMENT [for search: MEDIUM LEFT PARENTHESIS ORNAMENT]
-  create_key_or_plusEquals_to_its_value(singles, ')', '❩') ### MEDIUM RIGHT PARENTHESIS ORNAMENT
-  create_key_or_plusEquals_to_its_value(singles, '<', '❮') ### HEAVY  LEFT-POINTING ANGLE QUOTATION MARK ORNAMENT [HEAVY LEFT-POINTING ANGLE QUOTATION MARK ORNAMENT]
-  create_key_or_plusEquals_to_its_value(singles, '>', '❯') ### HEAVY RIGHT-POINTING ANGLE QUOTATION MARK ORNAMENT
+  create_key_or_plusEquals_to_its_value  (singles, '(', '❨')     ### MEDIUM  LEFT PARENTHESIS ORNAMENT [for search: MEDIUM LEFT PARENTHESIS ORNAMENT]
+  create_key_or_plusEquals_to_its_value  (singles, ')', '❩')     ### MEDIUM RIGHT PARENTHESIS ORNAMENT
+  create_key_or_plusEquals_to_its_value  (singles, '<', '❮')     ### HEAVY  LEFT-POINTING ANGLE QUOTATION MARK ORNAMENT [HEAVY LEFT-POINTING ANGLE QUOTATION MARK ORNAMENT]
+  create_key_or_plusEquals_to_its_value  (singles, '>', '❯')     ### HEAVY RIGHT-POINTING ANGLE QUOTATION MARK ORNAMENT
 
-  create_key_or_plusEquals_to_its_value(singles, '{', '❴') ### MEDIUM  LEFT CURLY BRACKET ORNAMENT [for search: MEDIUM LEFT CURLY BRACKET ORNAMENT]
-  create_key_or_plusEquals_to_its_value(singles, '}', '❵') ### MEDIUM RIGHT CURLY BRACKET ORNAMENT
+  create_key_or_plusEquals_to_its_value  (singles, '{', '❴')     ### MEDIUM  LEFT CURLY BRACKET ORNAMENT [for search: MEDIUM LEFT CURLY BRACKET ORNAMENT]
+  create_key_or_plusEquals_to_its_value  (singles, '}', '❵')     ### MEDIUM RIGHT CURLY BRACKET ORNAMENT
 
-  create_key_or_plusEquals_to_its_value(doubles, "da", ['㍲']) ### SQUARE DA
-  create_key_or_plusEquals_to_its_value(doubles, "AU", ['㍳']) ### SQUARE AU
-  create_key_or_plusEquals_to_its_value(doubles, "oV", ['㍵']) ### SQUARE OV
-  create_key_or_plusEquals_to_its_value(doubles, "pc", ['㍶']) ### SQUARE PC
+  create_key_or_plusEquals_to_its_value  (doubles, "da", ['㍲']) ### SQUARE DA
+  create_key_or_plusEquals_to_its_value  (doubles, "AU", ['㍳']) ### SQUARE AU
+  create_key_or_plusEquals_to_its_value  (doubles, "oV", ['㍵']) ### SQUARE OV
+  create_key_or_plusEquals_to_its_value  (doubles, "pc", ['㍶']) ### SQUARE PC
 
-  create_key_or_plusEquals_to_its_value(doubles, "pA", ['㎀']) ### SQUARE PA AMPS
-  create_key_or_plusEquals_to_its_value(doubles, "nA", ['㎁']) ### SQUARE NA
-  create_key_or_plusEquals_to_its_value(doubles, "mA", ['㎃']) ### SQUARE MA
-  create_key_or_plusEquals_to_its_value(doubles, "kA", ['㎄']) ### SQUARE KA ### should I disable this one?  At least on font on MOSX 10.11.6 on my primary MBP incorectly has this looking like “KA”
+  create_key_or_plusEquals_to_its_value  (doubles, "pA", ['㎀']) ### SQUARE PA AMPS
+  create_key_or_plusEquals_to_its_value  (doubles, "nA", ['㎁']) ### SQUARE NA
+  create_key_or_plusEquals_to_its_value  (doubles, "mA", ['㎃']) ### SQUARE MA
+  create_key_or_plusEquals_to_its_value  (doubles, "kA", ['㎄']) ### SQUARE KA ### should I disable this one?  At least on font on MOSX 10.11.6 on my primary MBP incorectly has this looking like “KA”
 
-  create_key_or_plusEquals_to_its_value(doubles, "KB", ['㎅']) ### SQUARE KB
-  create_key_or_plusEquals_to_its_value(doubles, "MB", ['㎆']) ### SQUARE MB
-  create_key_or_plusEquals_to_its_value(doubles, "GB", ['㎇']) ### SQUARE GB
+  create_key_or_plusEquals_to_its_value  (doubles, "KB", ['㎅']) ### SQUARE KB
+  create_key_or_plusEquals_to_its_value  (doubles, "MB", ['㎆']) ### SQUARE MB
+  create_key_or_plusEquals_to_its_value  (doubles, "GB", ['㎇']) ### SQUARE GB
 
-  create_key_or_plusEquals_to_its_value(doubles, "pF", ['㎊']) ### SQUARE PF
-  create_key_or_plusEquals_to_its_value(doubles, "nF", ['㎋']) ### SQUARE NF
+  create_key_or_plusEquals_to_its_value  (doubles, "pF", ['㎊']) ### SQUARE PF
+  create_key_or_plusEquals_to_its_value  (doubles, "nF", ['㎋']) ### SQUARE NF
 
-  create_key_or_plusEquals_to_its_value(doubles, "mg", ['㎎']) ### SQUARE MG
-  create_key_or_plusEquals_to_its_value(doubles, "kg", ['㎏']) ### SQUARE KG
+  create_key_or_plusEquals_to_its_value  (doubles, "mg", ['㎎']) ### SQUARE MG
+  create_key_or_plusEquals_to_its_value  (doubles, "kg", ['㎏']) ### SQUARE KG
 
-  create_key_or_plusEquals_to_its_value(doubles, "Hz", ['㎐']) ### SQUARE HZ
+  create_key_or_plusEquals_to_its_value  (doubles, "Hz", ['㎐']) ### SQUARE HZ
 
-  create_key_or_plusEquals_to_its_value(doubles, "fm", ['㎙']) ### SQUARE FM
-  create_key_or_plusEquals_to_its_value(doubles, "nm", ['㎚']) ### SQUARE NM
-  create_key_or_plusEquals_to_its_value(doubles, "mm", ['㎜']) ### SQUARE MM
-  create_key_or_plusEquals_to_its_value(doubles, "cm", ['㎝']) ### SQUARE CM
-  create_key_or_plusEquals_to_its_value(doubles, "km", ['㎞']) ### SQUARE KM
+  create_key_or_plusEquals_to_its_value  (doubles, "fm", ['㎙']) ### SQUARE FM
+  create_key_or_plusEquals_to_its_value  (doubles, "nm", ['㎚']) ### SQUARE NM
+  create_key_or_plusEquals_to_its_value  (doubles, "mm", ['㎜']) ### SQUARE MM
+  create_key_or_plusEquals_to_its_value  (doubles, "cm", ['㎝']) ### SQUARE CM
+  create_key_or_plusEquals_to_its_value  (doubles, "km", ['㎞']) ### SQUARE KM
 
-  create_key_or_plusEquals_to_its_value(doubles, "ps", ['㎰']) ### SQUARE PS
-  create_key_or_plusEquals_to_its_value(doubles, "ns", ['㎱']) ### SQUARE NS
-  create_key_or_plusEquals_to_its_value(doubles, "ms", ['㎳']) ### SQUARE MS
+  create_key_or_plusEquals_to_its_value  (doubles, "ps", ['㎰']) ### SQUARE PS
+  create_key_or_plusEquals_to_its_value  (doubles, "ns", ['㎱']) ### SQUARE NS
+  create_key_or_plusEquals_to_its_value  (doubles, "ms", ['㎳']) ### SQUARE MS
 
-  create_key_or_plusEquals_to_its_value(doubles, "Pa", ['㎩']) ### SQUARE PA
+  create_key_or_plusEquals_to_its_value  (doubles, "Pa", ['㎩']) ### SQUARE PA
 
-  create_key_or_plusEquals_to_its_value(doubles, "pV", ['㎴']) ### SQUARE pV
-  create_key_or_plusEquals_to_its_value(doubles, "nV", ['㎵']) ### SQUARE nV
-  create_key_or_plusEquals_to_its_value(doubles, "mV", ['㎷']) ### SQUARE nV
-  create_key_or_plusEquals_to_its_value(doubles, "kV", ['㎸']) ### SQUARE KV ### should I disable this one?  At least on font on MOSX 10.11.6 on my primary MBP incorectly has this looking like “KV”
-  create_key_or_plusEquals_to_its_value(doubles, "MV", ['㎹']) ### SQUARE MV
+  create_key_or_plusEquals_to_its_value  (doubles, "pV", ['㎴']) ### SQUARE pV
+  create_key_or_plusEquals_to_its_value  (doubles, "nV", ['㎵']) ### SQUARE nV
+  create_key_or_plusEquals_to_its_value  (doubles, "mV", ['㎷']) ### SQUARE nV
+  create_key_or_plusEquals_to_its_value  (doubles, "kV", ['㎸']) ### SQUARE KV ### should I disable this one?  At least one font on MOSX 10.11.6 on my primary MBP incorectly has this looking like “KV”
+  create_key_or_plusEquals_to_its_value  (doubles, "MV", ['㎹']) ### SQUARE MV
 
-  create_key_or_plusEquals_to_its_value(doubles, "pW", ['㎺']) ### SQUARE pW
-  create_key_or_plusEquals_to_its_value(doubles, "nW", ['㎻']) ### SQUARE nW
-  create_key_or_plusEquals_to_its_value(doubles, "mW", ['㎽']) ### SQUARE nW
-  create_key_or_plusEquals_to_its_value(doubles, "kW", ['㎾']) ### SQUARE KW ### should I disable this one?  At least on font on MOSX 10.11.6 on my primary MBP incorectly has this looking like “KV”
-  create_key_or_plusEquals_to_its_value(doubles, "MW", ['㎿']) ### SQUARE MW
+  create_key_or_plusEquals_to_its_value  (doubles, "pW", ['㎺']) ### SQUARE pW
+  create_key_or_plusEquals_to_its_value  (doubles, "nW", ['㎻']) ### SQUARE nW
+  create_key_or_plusEquals_to_its_value  (doubles, "mW", ['㎽']) ### SQUARE nW
+  create_key_or_plusEquals_to_its_value  (doubles, "kW", ['㎾']) ### SQUARE KW ### should I disable this one?  At least one font on MOSX 10.11.6 on my primary MBP incorectly has this looking like “KV”
+  create_key_or_plusEquals_to_its_value  (doubles, "MW", ['㎿']) ### SQUARE MW
 
-  create_key_or_plusEquals_to_its_value(doubles, "Bq", ['㏃']) ### SQUARE BQ
-  create_key_or_plusEquals_to_its_value(doubles, "cc", ['㏄']) ### SQUARE CC
-  create_key_or_plusEquals_to_its_value(doubles, "cd", ['㏅']) ### SQUARE CD
+  create_key_or_plusEquals_to_its_value  (doubles, "Bq", ['㏃']) ### SQUARE BQ
+  create_key_or_plusEquals_to_its_value  (doubles, "cc", ['㏄']) ### SQUARE CC
+  create_key_or_plusEquals_to_its_value  (doubles, "cd", ['㏅']) ### SQUARE CD
+  create_key_or_plusEquals_to_its_value  (doubles, "dB", ['㏈']) ### SQUARE DB
+  create_key_or_plusEquals_to_its_value  (doubles, "Gy", ['㏉']) ### SQUARE GY
+  create_key_or_plusEquals_to_its_value  (doubles, "ha", ['㏊']) ### SQUARE HA
+  create_key_or_plusEquals_to_its_value  (doubles, "in", ['㏌']) ### SQUARE IN
+  create_key_or_plusEquals_to_its_value  (doubles, "KM", ['㏎']) ### SQUARE KM CAPITAL
+  create_key_or_plusEquals_to_its_value  (doubles, "kt", ['㏏']) ### SQUARE KT
+  create_key_or_plusEquals_to_its_value  (doubles, "lm", ['㏐']) ### SQUARE LM
+  create_key_or_plusEquals_to_its_value  (doubles, "ln", ['㏑']) ### SQUARE LN
+  create_key_or_plusEquals_to_its_value  (doubles, "lx", ['㏓']) ### SQUARE LX
+  create_key_or_plusEquals_to_its_value  (doubles, "mb", ['㏔']) ### SQUARE MB SMALL
+  create_key_or_plusEquals_to_its_value  (doubles, "pH", ['㏗']) ### SQUARE PH
+  create_key_or_plusEquals_to_its_value  (doubles, "PR", ['㏚']) ### SQUARE PR
+  create_key_or_plusEquals_to_its_value  (doubles, "sr", ['㏛']) ### SQUARE SR
+  create_key_or_plusEquals_to_its_value  (doubles, "Sv", ['㏜']) ### SQUARE SV
+  create_key_or_plusEquals_to_its_value  (doubles, "wb", ['㏝']) ### SQUARE WB
 
-  create_key_or_plusEquals_to_its_value(doubles, "dB", ['㏈']) ### SQUARE DB
-  create_key_or_plusEquals_to_its_value(doubles, "Gy", ['㏉']) ### SQUARE GY
-  create_key_or_plusEquals_to_its_value(doubles, "ha", ['㏊']) ### SQUARE HA
-  create_key_or_plusEquals_to_its_value(doubles, "in", ['㏌']) ### SQUARE IN
-  create_key_or_plusEquals_to_its_value(doubles, "KM", ['㏎']) ### SQUARE KM CAPITAL
-  create_key_or_plusEquals_to_its_value(doubles, "kt", ['㏏']) ### SQUARE KT
-  create_key_or_plusEquals_to_its_value(doubles, "lm", ['㏐']) ### SQUARE LM
-  create_key_or_plusEquals_to_its_value(doubles, "ln", ['㏑']) ### SQUARE LN
-  create_key_or_plusEquals_to_its_value(doubles, "lx", ['㏓']) ### SQUARE LX
-  create_key_or_plusEquals_to_its_value(doubles, "mb", ['㏔']) ### SQUARE MB SMALL
-  create_key_or_plusEquals_to_its_value(doubles, "pH", ['㏗']) ### SQUARE PH
-  create_key_or_plusEquals_to_its_value(doubles, "PR", ['㏚']) ### SQUARE PR
-  create_key_or_plusEquals_to_its_value(doubles, "sr", ['㏛']) ### SQUARE SR
-  create_key_or_plusEquals_to_its_value(doubles, "Sv", ['㏜']) ### SQUARE SV
-  create_key_or_plusEquals_to_its_value(doubles, "wb", ['㏝']) ### SQUARE WB
+  create_key_or_plusEquals_to_its_value  (singles, 's', 'ꜱ')     ### LATIN LETTER SMALL CAPITAL S [moved to the “ghetto” b/c it is forcing a serif view in iTerm2 on my MBP running 10.11.6]
 
-  create_key_or_plusEquals_to_its_value(singles, 's', 'ꜱ')     ### LATIN LETTER SMALL CAPITAL S [moved to the “ghetto” b/c it is forcing a serif view in iTerm2 on my MBP running 10.11.6]
+  create_key_or_plusEquals_to_its_value  (singles, 'D' , 'Ꭰ')    ### CHEROKEE LETTER A
+  create_key_or_plusEquals_to_its_value  (singles, 'R' , 'Ꭱ')    ### CHEROKEE LETTER E
+# create_key_or_plusEquals_to_its_value  (singles, 'R' , 'Ꮢ')    ### CHEROKEE LETTER SV ### intentionally inactive
+  create_key_or_plusEquals_to_its_value  (singles, 'T' , 'Ꭲ')    ### CHEROKEE LETTER I
+  create_key_or_plusEquals_to_its_value  (singles, 'A' , 'Ꭺ')    ### CHEROKEE LETTER GO
+  create_key_or_plusEquals_to_its_value  (singles, 'J' , 'Ꭻ')    ### CHEROKEE LETTER GU
+  create_key_or_plusEquals_to_its_value  (singles, 'E' , 'Ꭼ')    ### CHEROKEE LETTER GV
+# create_key_or_plusEquals_to_its_value  (singles, 'W' , 'Ꮃ')    ### CHEROKEE LETTER LA ### intentionally inactive here, copied active to the “if not we_are_in_a_monospaced_context” section
+  create_key_or_plusEquals_to_its_value  (singles, 'M' , 'Ꮇ')    ### CHEROKEE LETTER LU
+  create_key_or_plusEquals_to_its_value  (singles, 'H' , 'Ꮋ')    ### CHEROKEE LETTER MI
+  create_key_or_plusEquals_to_its_value  (singles, 'G' , 'Ꮐ')    ### CHEROKEE LETTER NAH
+  create_key_or_plusEquals_to_its_value  (singles, 'Z' , 'Ꮓ')    ### CHEROKEE LETTER NO
+  create_key_or_plusEquals_to_its_value  (singles, 'V' , 'Ꮩ')    ### CHEROKEE LETTER DO
+  create_key_or_plusEquals_to_its_value  (singles, 'S' , 'Ꮪ')    ### CHEROKEE LETTER DU
+  create_key_or_plusEquals_to_its_value  (singles, 'L' , 'Ꮮ')    ### CHEROKEE LETTER TLE
+  create_key_or_plusEquals_to_its_value  (singles, 'C' , 'Ꮯ')    ### CHEROKEE LETTER TLI
+  create_key_or_plusEquals_to_its_value  (singles, 'P' , 'Ꮲ')    ### CHEROKEE LETTER TLV
+  create_key_or_plusEquals_to_its_value  (singles, 'K' , 'Ꮶ')    ### CHEROKEE LETTER TSO
+  create_key_or_plusEquals_to_its_value  (singles, 'B' , 'Ᏼ')    ### CHEROKEE LETTER YV
 
 # create_key_or_plusEquals_to_its_value(singles, '_', '_') ###
 # create_key_or_plusEquals_to_its_value(doubles, "__", ['_']) ###
-
-  create_key_or_plusEquals_to_its_value(singles, 'D' , 'Ꭰ')  ### CHEROKEE LETTER A
-  create_key_or_plusEquals_to_its_value(singles, 'R' , 'Ꭱ')  ### CHEROKEE LETTER E
-# create_key_or_plusEquals_to_its_value(singles, 'R' , 'Ꮢ')  ### CHEROKEE LETTER SV ### intentionally inactive
-  create_key_or_plusEquals_to_its_value(singles, 'T' , 'Ꭲ')  ### CHEROKEE LETTER I
-  create_key_or_plusEquals_to_its_value(singles, 'A' , 'Ꭺ')  ### CHEROKEE LETTER GO
-  create_key_or_plusEquals_to_its_value(singles, 'J' , 'Ꭻ')  ### CHEROKEE LETTER GU
-  create_key_or_plusEquals_to_its_value(singles, 'E' , 'Ꭼ')  ### CHEROKEE LETTER GV
-# create_key_or_plusEquals_to_its_value(singles, 'W' , 'Ꮃ')  ### CHEROKEE LETTER LA ### intentionally inactive here, copied active to the “if not we_are_in_a_monospaced_context” section
-  create_key_or_plusEquals_to_its_value(singles, 'M' , 'Ꮇ')  ### CHEROKEE LETTER LU
-  create_key_or_plusEquals_to_its_value(singles, 'H' , 'Ꮋ')  ### CHEROKEE LETTER MI
-  create_key_or_plusEquals_to_its_value(singles, 'G' , 'Ꮐ')  ### CHEROKEE LETTER NAH
-  create_key_or_plusEquals_to_its_value(singles, 'Z' , 'Ꮓ')  ### CHEROKEE LETTER NO
-  create_key_or_plusEquals_to_its_value(singles, 'V' , 'Ꮩ')  ### CHEROKEE LETTER DO
-  create_key_or_plusEquals_to_its_value(singles, 'S' , 'Ꮪ')  ### CHEROKEE LETTER DU
-  create_key_or_plusEquals_to_its_value(singles, 'L' , 'Ꮮ')  ### CHEROKEE LETTER TLE
-  create_key_or_plusEquals_to_its_value(singles, 'C' , 'Ꮯ')  ### CHEROKEE LETTER TLI
-  create_key_or_plusEquals_to_its_value(singles, 'P' , 'Ꮲ')  ### CHEROKEE LETTER TLV
-  create_key_or_plusEquals_to_its_value(singles, 'K' , 'Ꮶ')  ### CHEROKEE LETTER TSO
-  create_key_or_plusEquals_to_its_value(singles, 'B' , 'Ᏼ')  ### CHEROKEE LETTER YV
 
 ### end if OK_to_use_mappings_that_are_likely_to_be_visually_distinguishable_from_the_original_but_should_have_the_same_width_category_as_the_original
 
@@ -322,56 +321,56 @@ if OK_to_use_Unicode_chars_that_are_narrower_than_the_original_in_a_monospaced_c
 
   padding = ' ' if are_we_in_a_monospaced_context else ""
 
-  create_key_or_plusEquals_to_its_value(doubles, "!!", ['‼'+padding]) ### DOUBLE EXCLAMATION MARK
-  create_key_or_plusEquals_to_its_value(doubles, "??", ['⁇'+padding]) ### DOUBLE QUESTION MARK
-  create_key_or_plusEquals_to_its_value(doubles, "?!", ['⁈'+padding]) ### QUESTION EXCLAMATION MARK
-  create_key_or_plusEquals_to_its_value(doubles, "!?", ['⁉'+padding]) ### EXCLAMATION QUESTION MARK
-  create_key_or_plusEquals_to_its_value(doubles, "--", ['╌'+padding]) ### BOX DRAWINGS LIGHT DOUBLE DASH HORIZONTAL
-  create_key_or_plusEquals_to_its_value(doubles, "--", ['╍'+padding]) ### BOX DRAWINGS HEAVY DOUBLE DASH HORIZONTAL
-  create_key_or_plusEquals_to_its_value(doubles, "..", ['‥'+padding]) ### TWO DOT LEADER
+  create_key_or_plusEquals_to_its_value(doubles, "!!", ['‼'+padding])   ### DOUBLE EXCLAMATION MARK
+  create_key_or_plusEquals_to_its_value(doubles, "??", ['⁇'+padding])   ### DOUBLE QUESTION MARK
+  create_key_or_plusEquals_to_its_value(doubles, "?!", ['⁈'+padding])   ### QUESTION EXCLAMATION MARK
+  create_key_or_plusEquals_to_its_value(doubles, "!?", ['⁉'+padding])   ### EXCLAMATION QUESTION MARK
+  create_key_or_plusEquals_to_its_value(doubles, "--", ['╌'+padding])   ### BOX DRAWINGS LIGHT DOUBLE DASH HORIZONTAL
+  create_key_or_plusEquals_to_its_value(doubles, "--", ['╍'+padding])   ### BOX DRAWINGS HEAVY DOUBLE DASH HORIZONTAL
+  create_key_or_plusEquals_to_its_value(doubles, "..", ['‥'+padding])   ### TWO DOT LEADER
 
   create_key_or_plusEquals_to_its_value(  doubles, "==", ['⩵'+padding]) ### TWO CONSECUTIVE EQUALS SIGNS
   if OK_to_use_nonBMP_codepoints:
     create_key_or_plusEquals_to_its_value(doubles, "==", ['𐄓'+padding]) ### AEGEAN NUMBER FORTY
 
-  create_key_or_plusEquals_to_its_value(doubles, "((", ['⸨'+padding]) ###  LEFT DOUBLE PARENTHESIS
-  create_key_or_plusEquals_to_its_value(doubles, "))", ['⸩'+padding]) ### RIGHT DOUBLE PARENTHESIS
+  create_key_or_plusEquals_to_its_value(doubles, "((", ['⸨'+padding])   ###  LEFT DOUBLE PARENTHESIS
+  create_key_or_plusEquals_to_its_value(doubles, "))", ['⸩'+padding])   ### RIGHT DOUBLE PARENTHESIS
 
-  create_key_or_plusEquals_to_its_value(doubles, "DZ", ['Ǳ'+padding]) ### LATIN CAPITAL LETTER DZ
-  create_key_or_plusEquals_to_its_value(doubles, "Dz", ['ǲ'+padding]) ### LATIN CAPITAL LETTER D WITH SMALL LETTER Z
-  create_key_or_plusEquals_to_its_value(doubles, "dz", ['ǳ'+padding]) ### LATIN SMALL LETTER DZ
+  create_key_or_plusEquals_to_its_value(doubles, "DZ", ['Ǳ'+padding])   ### LATIN CAPITAL LETTER DZ
+  create_key_or_plusEquals_to_its_value(doubles, "Dz", ['ǲ'+padding])   ### LATIN CAPITAL LETTER D WITH SMALL LETTER Z
+  create_key_or_plusEquals_to_its_value(doubles, "dz", ['ǳ'+padding])   ### LATIN SMALL LETTER DZ
 
-  create_key_or_plusEquals_to_its_value(doubles, "II", ['Ⅱ'+padding]) ###       ROMAN NUMERAL TWO
-  create_key_or_plusEquals_to_its_value(doubles, "ii", ['ⅱ'+padding]) ### SMALL ROMAN NUMERAL TWO
+  create_key_or_plusEquals_to_its_value(doubles, "II", ['Ⅱ'+padding])   ###       ROMAN NUMERAL TWO
+  create_key_or_plusEquals_to_its_value(doubles, "ii", ['ⅱ'+padding])   ### SMALL ROMAN NUMERAL TWO
 
-  create_key_or_plusEquals_to_its_value(doubles, "IV", ['Ⅳ'+padding]) ###       ROMAN NUMERAL FOUR
-  create_key_or_plusEquals_to_its_value(doubles, "iv", ['ⅳ'+padding]) ### SMALL ROMAN NUMERAL FOUR
+  create_key_or_plusEquals_to_its_value(doubles, "IV", ['Ⅳ'+padding])   ###       ROMAN NUMERAL FOUR
+  create_key_or_plusEquals_to_its_value(doubles, "iv", ['ⅳ'+padding])   ### SMALL ROMAN NUMERAL FOUR
 
-  create_key_or_plusEquals_to_its_value(doubles, "IX", ['Ⅸ'+padding]) ###       ROMAN NUMERAL NINE
-  create_key_or_plusEquals_to_its_value(doubles, "ix", ['ⅸ'+padding]) ### SMALL ROMAN NUMERAL NINE
+  create_key_or_plusEquals_to_its_value(doubles, "IX", ['Ⅸ'+padding])   ###       ROMAN NUMERAL NINE
+  create_key_or_plusEquals_to_its_value(doubles, "ix", ['ⅸ'+padding])   ### SMALL ROMAN NUMERAL NINE
 
-  create_key_or_plusEquals_to_its_value(doubles, "LJ", ['Ǉ'+padding]) ### LATIN CAPITAL LETTER LJ
-  create_key_or_plusEquals_to_its_value(doubles, "Lj", ['ǈ'+padding]) ### LATIN CAPITAL LETTER L WITH SMALL LETTER J
-  create_key_or_plusEquals_to_its_value(doubles, "lj", ['ǉ'+padding]) ### LATIN SMALL LETTER LJ
+  create_key_or_plusEquals_to_its_value(doubles, "LJ", ['Ǉ'+padding])   ### LATIN CAPITAL LETTER LJ
+  create_key_or_plusEquals_to_its_value(doubles, "Lj", ['ǈ'+padding])   ### LATIN CAPITAL LETTER L WITH SMALL LETTER J
+  create_key_or_plusEquals_to_its_value(doubles, "lj", ['ǉ'+padding])   ### LATIN SMALL LETTER LJ
 
-  create_key_or_plusEquals_to_its_value(doubles, "NJ", ['Ǌ'+padding]) ### LATIN CAPITAL LETTER NJ
-  create_key_or_plusEquals_to_its_value(doubles, "Nj", ['ǋ'+padding]) ### LATIN CAPITAL LETTER N WITH SMALL LETTER J
-  create_key_or_plusEquals_to_its_value(doubles, "nj", ['ǌ'+padding]) ### LATIN SMALL LETTER NJ
+  create_key_or_plusEquals_to_its_value(doubles, "NJ", ['Ǌ'+padding])   ### LATIN CAPITAL LETTER NJ
+  create_key_or_plusEquals_to_its_value(doubles, "Nj", ['ǋ'+padding])   ### LATIN CAPITAL LETTER N WITH SMALL LETTER J
+  create_key_or_plusEquals_to_its_value(doubles, "nj", ['ǌ'+padding])   ### LATIN SMALL LETTER NJ
 
-  create_key_or_plusEquals_to_its_value(doubles, "Rs", ['₨'+padding]) ### RUPEE SIGN
+  create_key_or_plusEquals_to_its_value(doubles, "Rs", ['₨'+padding])   ### RUPEE SIGN
 
-  create_key_or_plusEquals_to_its_value(doubles, "VI", ['Ⅵ'+padding]) ###       ROMAN NUMERAL SIX
-  create_key_or_plusEquals_to_its_value(doubles, "vi", ['ⅵ'+padding]) ### SMALL ROMAN NUMERAL SIX
+  create_key_or_plusEquals_to_its_value(doubles, "VI", ['Ⅵ'+padding])   ###       ROMAN NUMERAL SIX
+  create_key_or_plusEquals_to_its_value(doubles, "vi", ['ⅵ'+padding])   ### SMALL ROMAN NUMERAL SIX
 
-  create_key_or_plusEquals_to_its_value(doubles, "XI", ['Ⅺ'+padding]) ###       ROMAN NUMERAL ELEVEN
-  create_key_or_plusEquals_to_its_value(doubles, "xi", ['ⅺ'+padding]) ### SMALL ROMAN NUMERAL ELEVEN
+  create_key_or_plusEquals_to_its_value(doubles, "XI", ['Ⅺ'+padding])   ###       ROMAN NUMERAL ELEVEN
+  create_key_or_plusEquals_to_its_value(doubles, "xi", ['ⅺ'+padding])   ### SMALL ROMAN NUMERAL ELEVEN
 
-  create_key_or_plusEquals_to_its_value(doubles, "||", ['‖'+padding]) ### DOUBLE VERTICAL LINE
-  create_key_or_plusEquals_to_its_value(doubles, "<<", ['⟪'+padding]) ### MATHEMATICAL  LEFT DOUBLE ANGLE BRACKET [MATHEMATICAL LEFT DOUBLE ANGLE BRACKET]
-  create_key_or_plusEquals_to_its_value(doubles, ">>", ['⟫'+padding]) ### MATHEMATICAL RIGHT DOUBLE ANGLE BRACKET
-  create_key_or_plusEquals_to_its_value(doubles, "<<", ['≪'+padding]) ### MUCH    LESS-THAN [for search: MUCH LESS-THAN]
-  create_key_or_plusEquals_to_its_value(doubles, ">>", ['≫'+padding]) ### MUCH GREATER-THAN
-  create_key_or_plusEquals_to_its_value(doubles, ">>", ['⨠'+padding]) ### Z NOTATION SCHEMA PIPING
+  create_key_or_plusEquals_to_its_value(doubles, "||", ['‖'+padding])   ### DOUBLE VERTICAL LINE
+  create_key_or_plusEquals_to_its_value(doubles, "<<", ['⟪'+padding])   ### MATHEMATICAL  LEFT DOUBLE ANGLE BRACKET [MATHEMATICAL LEFT DOUBLE ANGLE BRACKET]
+  create_key_or_plusEquals_to_its_value(doubles, ">>", ['⟫'+padding])   ### MATHEMATICAL RIGHT DOUBLE ANGLE BRACKET
+  create_key_or_plusEquals_to_its_value(doubles, "<<", ['≪'+padding])   ### MUCH    LESS-THAN [for search: MUCH LESS-THAN]
+  create_key_or_plusEquals_to_its_value(doubles, ">>", ['≫'+padding])   ### MUCH GREATER-THAN
+  create_key_or_plusEquals_to_its_value(doubles, ">>", ['⨠'+padding])   ### Z NOTATION SCHEMA PIPING
 
   create_key_or_plusEquals_to_its_value(triples, "bar", ['㍴'+padding]) ### SQUARE BAR
 
