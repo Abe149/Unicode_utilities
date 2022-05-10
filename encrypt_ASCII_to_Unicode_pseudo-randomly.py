@@ -124,6 +124,20 @@ if OK_to_use_nonBMP_codepoints:
   create_key_or_plusEquals_to_its_value(singles, 'T', '𐊗') ### LYCIAN LETTER T
   create_key_or_plusEquals_to_its_value(singles, 'X', '𐊐') ### LYCIAN LETTER MM
 
+  if not we_are_in_a_monospaced_context:
+    create_key_or_plusEquals_to_its_value(doubles, "0.", ['🄀']) ### DIGIT ZERO FULL STOP
+
+    create_key_or_plusEquals_to_its_value(doubles, "0,", ['🄁']) ### DIGIT ZERO  COMMA [for search: DIGIT ZERO COMMA]
+    create_key_or_plusEquals_to_its_value(doubles, "1,", ['🄂']) ### DIGIT ONE   COMMA [for search: DIGIT ONE COMMA]
+    create_key_or_plusEquals_to_its_value(doubles, "2,", ['🄃']) ### DIGIT TWO   COMMA [for search: DIGIT TWO COMMA]
+    create_key_or_plusEquals_to_its_value(doubles, "3,", ['🄄']) ### DIGIT THREE COMMA
+    create_key_or_plusEquals_to_its_value(doubles, "4,", ['🄅']) ### DIGIT FOUR  COMMA [for search: DIGIT FOUR COMMA]
+    create_key_or_plusEquals_to_its_value(doubles, "5,", ['🄆']) ### DIGIT FIVE  COMMA [for search: DIGIT FIVE COMMA]
+    create_key_or_plusEquals_to_its_value(doubles, "6,", ['🄇']) ### DIGIT SIX   COMMA [for search: DIGIT SIX COMMA]
+    create_key_or_plusEquals_to_its_value(doubles, "7,", ['🄈']) ### DIGIT SEVEN COMMA
+    create_key_or_plusEquals_to_its_value(doubles, "8,", ['🄉']) ### DIGIT EIGHT COMMA
+    create_key_or_plusEquals_to_its_value(doubles, "9,", ['🄊']) ### DIGIT NINE  COMMA [for search: DIGIT NINE COMMA]
+
 ### end if OK_to_use_nonBMP_codepoints
 
 
