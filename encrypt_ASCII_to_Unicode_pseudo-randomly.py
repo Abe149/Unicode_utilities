@@ -112,6 +112,7 @@ singles={' ': ' ',    ### ASCII space ⇒ NBSP
 
 
 if OK_to_use_nonBMP_codepoints:
+
   create_key_or_plusEquals_to_its_value(singles, "'", '𐄇') ### AEGEAN NUMBER ONE
   create_key_or_plusEquals_to_its_value(singles, '"', '𐄈') ### AEGEAN NUMBER TWO
 
@@ -122,6 +123,8 @@ if OK_to_use_nonBMP_codepoints:
   create_key_or_plusEquals_to_its_value(singles, 'P', '𐊕') ### LYCIAN LETTER R
   create_key_or_plusEquals_to_its_value(singles, 'T', '𐊗') ### LYCIAN LETTER T
   create_key_or_plusEquals_to_its_value(singles, 'X', '𐊐') ### LYCIAN LETTER MM
+
+### end if OK_to_use_nonBMP_codepoints
 
 
 
@@ -291,6 +294,8 @@ if OK_to_use_mappings_that_are_likely_to_be_visually_distinguishable_from_the_or
 # create_key_or_plusEquals_to_its_value(singles, '_', '_') ###
 # create_key_or_plusEquals_to_its_value(doubles, "__", ['_']) ###
 
+### end if OK_to_use_mappings_that_are_likely_to_be_visually_distinguishable_from_the_original_but_should_have_the_same_width_category_as_the_original
+
 
 
 if OK_to_use_Unicode_chars_that_are_narrower_than_the_original_in_a_monospaced_context:
@@ -370,6 +375,8 @@ if OK_to_use_Unicode_chars_that_are_narrower_than_the_original_in_a_monospaced_c
 
 # create_key_or_plusEquals_to_its_value(doubles, "__", ['_'+padding])
 
+### end if OK_to_use_Unicode_chars_that_are_narrower_than_the_original_in_a_monospaced_context
+
 
 
 if OK_to_use_Unicode_chars_that_are_wider_than_the_original:
@@ -416,6 +423,8 @@ if OK_to_use_Unicode_chars_that_are_wider_than_the_original:
   ### fullwidth replacements for almost all the ASCII printables [the Unicode committee left out space in this range]
   for c in range(33, 127):
     create_key_or_plusEquals_to_its_value( singles, chr(ord('！')-ord('!')+c) )
+
+### end if OK_to_use_Unicode_chars_that_are_wider_than_the_original
 
 
 
@@ -541,6 +550,8 @@ if not we_are_in_a_monospaced_context:
 # create_key_or_plusEquals_to_its_value(doubles, "__", ['_'])  ###
 # create_key_or_plusEquals_to_its_value(triples, "___", ['_'])  ###
 # create_key_or_plusEquals_to_its_value(  quads, "____", ['_'])  ###
+
+### end if not we_are_in_a_monospaced_context
 
 
 
