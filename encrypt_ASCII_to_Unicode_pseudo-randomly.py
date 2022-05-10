@@ -400,38 +400,38 @@ if OK_to_use_Unicode_chars_that_are_narrower_than_the_original_in_a_monospaced_c
 
 if OK_to_use_Unicode_chars_that_are_wider_than_the_original:
 
-  create_key_or_plusEquals_to_its_value(singles, '~', '〜') ### WAVE DASH: not in the default/main/primary set for singles b/c the replacement looks to be “fullwidth”, at least in iTerm2 3.1.7 using 18-point Monaco on MOSX 10.11.6
+  create_key_or_plusEquals_to_its_value(singles, '~', '〜')  ### WAVE DASH: not in the default/main/primary set for singles b/c the replacement looks to be “fullwidth”, at least in iTerm2 3.1.7 using 18-point Monaco on MOSX 10.11.6
 
-  create_key_or_plusEquals_to_its_value(singles, '=', '゠') ### DIGRAM FOR GREATER YANG
+  create_key_or_plusEquals_to_its_value(singles, '=', '゠')  ### DIGRAM FOR GREATER YANG
 
-  create_key_or_plusEquals_to_its_value(singles, '<', '〈') ###  LEFT ANGLE BRACKET
-  create_key_or_plusEquals_to_its_value(singles, '>', '〉') ### RIGHT ANGLE BRACKET
+  create_key_or_plusEquals_to_its_value(singles, '<', '〈')  ###  LEFT ANGLE BRACKET
+  create_key_or_plusEquals_to_its_value(singles, '>', '〉')  ### RIGHT ANGLE BRACKET
 
-  create_key_or_plusEquals_to_its_value(singles, ',', '﹐') ### SMALL COMMA
-  create_key_or_plusEquals_to_its_value(singles, '.', '﹒') ### SMALL FULL STOP
-  create_key_or_plusEquals_to_its_value(singles, ';', '﹔') ### SMALL SEMICOLON
-  create_key_or_plusEquals_to_its_value(singles, ':', '﹕') ### SMALL COLON
-  create_key_or_plusEquals_to_its_value(singles, '?', '﹖') ### SMALL QUESTION MARK
-  create_key_or_plusEquals_to_its_value(singles, '!', '﹗') ### SMALL EXCLAMATION MARK
-  create_key_or_plusEquals_to_its_value(singles, '(', '﹙') ### SMALL LEFT  PARENTHESIS [for search: SMALL LEFT PARENTHESIS]
-  create_key_or_plusEquals_to_its_value(singles, ')', '﹚') ### SMALL RIGHT PARENTHESIS
-  create_key_or_plusEquals_to_its_value(singles, '{', '﹛') ### SMALL LEFT  CURLY BRACKET [for search: LEFT CURLY BRACKET]
-  create_key_or_plusEquals_to_its_value(singles, '}', '﹜') ### SMALL RIGHT CURLY BRACKET
-  create_key_or_plusEquals_to_its_value(singles, '#', '﹟') ### SMALL NUMBER SIGN
-  create_key_or_plusEquals_to_its_value(singles, '&', '﹠') ### SMALL AMPERSAND
-  create_key_or_plusEquals_to_its_value(singles, '*', '﹡') ### SMALL ASTERISK
-  create_key_or_plusEquals_to_its_value(singles, '+', '﹢') ### SMALL PLUS SIGN
-  create_key_or_plusEquals_to_its_value(singles, '-', '﹣') ### SMALL HYPHEN-MINUS
-  create_key_or_plusEquals_to_its_value(singles, '<', '﹤') ### SMALL    LESS-THAN SIGN [for search: SMALL LESS-THAN SIGN]
-  create_key_or_plusEquals_to_its_value(singles, '>', '﹥') ### SMALL GREATER-THAN SIGN
-  create_key_or_plusEquals_to_its_value(singles, '=', '﹦') ### SMALL EQUALS SIGN
-  create_key_or_plusEquals_to_its_value(singles, '$', '﹩') ### SMALL DOLLAR SIGN
-  create_key_or_plusEquals_to_its_value(singles, '%', '﹪') ### SMALL PERCENT SIGN
-  create_key_or_plusEquals_to_its_value(singles, '@', '﹫') ### SMALL COMMERCIAL AT
+  create_key_or_plusEquals_to_its_value(singles, ',', '﹐')  ### SMALL COMMA
+  create_key_or_plusEquals_to_its_value(singles, '.', '﹒')  ### SMALL FULL STOP
+  create_key_or_plusEquals_to_its_value(singles, ';', '﹔')  ### SMALL SEMICOLON
+  create_key_or_plusEquals_to_its_value(singles, ':', '﹕')  ### SMALL COLON
+  create_key_or_plusEquals_to_its_value(singles, '?', '﹖')  ### SMALL QUESTION MARK
+  create_key_or_plusEquals_to_its_value(singles, '!', '﹗')  ### SMALL EXCLAMATION MARK
+  create_key_or_plusEquals_to_its_value(singles, '(', '﹙')  ### SMALL LEFT  PARENTHESIS [for search: SMALL LEFT PARENTHESIS]
+  create_key_or_plusEquals_to_its_value(singles, ')', '﹚')  ### SMALL RIGHT PARENTHESIS
+  create_key_or_plusEquals_to_its_value(singles, '{', '﹛')  ### SMALL LEFT  CURLY BRACKET [for search: LEFT CURLY BRACKET]
+  create_key_or_plusEquals_to_its_value(singles, '}', '﹜')  ### SMALL RIGHT CURLY BRACKET
+  create_key_or_plusEquals_to_its_value(singles, '#', '﹟')  ### SMALL NUMBER SIGN
+  create_key_or_plusEquals_to_its_value(singles, '&', '﹠')  ### SMALL AMPERSAND
+  create_key_or_plusEquals_to_its_value(singles, '*', '﹡')  ### SMALL ASTERISK
+  create_key_or_plusEquals_to_its_value(singles, '+', '﹢')  ### SMALL PLUS SIGN
+  create_key_or_plusEquals_to_its_value(singles, '-', '﹣')  ### SMALL HYPHEN-MINUS
+  create_key_or_plusEquals_to_its_value(singles, '<', '﹤')  ### SMALL    LESS-THAN SIGN [for search: SMALL LESS-THAN SIGN]
+  create_key_or_plusEquals_to_its_value(singles, '>', '﹥')  ### SMALL GREATER-THAN SIGN
+  create_key_or_plusEquals_to_its_value(singles, '=', '﹦')  ### SMALL EQUALS SIGN
+  create_key_or_plusEquals_to_its_value(singles, '$', '﹩')  ### SMALL DOLLAR SIGN
+  create_key_or_plusEquals_to_its_value(singles, '%', '﹪')  ### SMALL PERCENT SIGN
+  create_key_or_plusEquals_to_its_value(singles, '@', '﹫')  ### SMALL COMMERCIAL AT
 
 ### note: BIG SOLIDUS and BIG REVERSE SOLIDUS seem to be “weird”: in Mac OS X 10.11`s character viewer [now renamed “Emoji and Symbols” :-(], they both seem to be full-width, but in both iTerm2 and TextEdit [using Times New Roman] they are _not_ [albeit in TextEdit they _are_ wider than the respective ASCII char.s]
-  create_key_or_plusEquals_to_its_value(singles, '/' , '⧸') ### BIG         SOLIDUS [for search: BIG SOLIDUS]
-  create_key_or_plusEquals_to_its_value(singles, '\\', '⧹') ### BIG REVERSE SOLIDUS
+  create_key_or_plusEquals_to_its_value(singles, '/' , '⧸')  ### BIG         SOLIDUS [for search: BIG SOLIDUS]
+  create_key_or_plusEquals_to_its_value(singles, '\\', '⧹')  ### BIG REVERSE SOLIDUS
 
   create_key_or_plusEquals_to_its_value(singles, ':' , '︰') ### PRESENTATION FORM FOR VERTICAL TWO DOT LEADER
   create_key_or_plusEquals_to_its_value(singles, ':' , '︓') ### PRESENTATION FORM FOR VERTICAL     COLON [PRESENTATION FORM FOR VERTICAL COLON]
@@ -449,124 +449,124 @@ if OK_to_use_Unicode_chars_that_are_wider_than_the_original:
 
 if not we_are_in_a_monospaced_context:
 
-# create_key_or_plusEquals_to_its_value(singles, '_', '_')      ### 
-  create_key_or_plusEquals_to_its_value(singles, '+', '➕')      ### HEAVY  PLUS SIGN [for search: HEAVY PLUS SIGN]
-  create_key_or_plusEquals_to_its_value(singles, '-', '➖')      ### HEAVY MINUS SIGN
-  create_key_or_plusEquals_to_its_value(triples, "...", ['…'])  ### HORIZONTAL ELLIPSIS
+# create_key_or_plusEquals_to_its_value(singles, '_', '_')       ### 
+  create_key_or_plusEquals_to_its_value(singles, '+', '➕')       ### HEAVY  PLUS SIGN [for search: HEAVY PLUS SIGN]
+  create_key_or_plusEquals_to_its_value(singles, '-', '➖')       ### HEAVY MINUS SIGN
+  create_key_or_plusEquals_to_its_value(triples, "...", ['…'])   ### HORIZONTAL ELLIPSIS
 
-  create_key_or_plusEquals_to_its_value(doubles, "><", ['⪥' ])  ### GREATER-THAN BESIDE LESS-THAN
+  create_key_or_plusEquals_to_its_value(doubles, "><", ['⪥' ])   ### GREATER-THAN BESIDE LESS-THAN
 
-  create_key_or_plusEquals_to_its_value(doubles, "==", ['⩵' ])  ### TWO   CONSECUTIVE EQUALS SIGNS [for search: TWO CONSECUTIVE EQUALS SIGNS]
-  create_key_or_plusEquals_to_its_value(triples, "===", ['⩶'])  ### THREE CONSECUTIVE EQUALS SIGNS
-  create_key_or_plusEquals_to_its_value(triples, "<<<", ['⋘'])  ### VERY MUCH    LESS-THAN [for search: VERY MUCH LESS-THAN]
-  create_key_or_plusEquals_to_its_value(triples, ">>>", ['⋙'])  ### VERY MUCH GREATER-THAN
+  create_key_or_plusEquals_to_its_value(doubles, "==", ['⩵' ])   ### TWO   CONSECUTIVE EQUALS SIGNS [for search: TWO CONSECUTIVE EQUALS SIGNS]
+  create_key_or_plusEquals_to_its_value(triples, "===", ['⩶'])   ### THREE CONSECUTIVE EQUALS SIGNS
+  create_key_or_plusEquals_to_its_value(triples, "<<<", ['⋘'])   ### VERY MUCH    LESS-THAN [for search: VERY MUCH LESS-THAN]
+  create_key_or_plusEquals_to_its_value(triples, ">>>", ['⋙'])   ### VERY MUCH GREATER-THAN
 
-  create_key_or_plusEquals_to_its_value(triples, "::=", '⩴')    ###       DOUBLE COLON EQUAL
-  create_key_or_plusEquals_to_its_value(doubles, "//",  ['⫽'])  ###       DOUBLE SOLIDUS OPERATOR
-  create_key_or_plusEquals_to_its_value(triples, "///", ['⫻'])  ###       TRIPLE SOLIDUS BINARY RELATION
-  create_key_or_plusEquals_to_its_value(triples, "|||", ['_'])  ### LARGE TRIPLE VERTICAL BAR OPERATOR
+  create_key_or_plusEquals_to_its_value(triples, "::=", '⩴')     ###       DOUBLE COLON EQUAL
+  create_key_or_plusEquals_to_its_value(doubles, "//",  ['⫽'])   ###       DOUBLE SOLIDUS OPERATOR
+  create_key_or_plusEquals_to_its_value(triples, "///", ['⫻'])   ###       TRIPLE SOLIDUS BINARY RELATION
+  create_key_or_plusEquals_to_its_value(triples, "|||", ['_'])   ### LARGE TRIPLE VERTICAL BAR OPERATOR
 
-  create_key_or_plusEquals_to_its_value(triples, "(a)", ['⒜'])  ### PARENTHESIZED LATIN SMALL LETTER A
-  create_key_or_plusEquals_to_its_value(triples, "(b)", ['⒝'])  ### PARENTHESIZED LATIN SMALL LETTER B
-  create_key_or_plusEquals_to_its_value(triples, "(c)", ['⒞'])  ### PARENTHESIZED LATIN SMALL LETTER C
-  create_key_or_plusEquals_to_its_value(triples, "(d)", ['⒟'])  ### PARENTHESIZED LATIN SMALL LETTER D
-  create_key_or_plusEquals_to_its_value(triples, "(e)", ['⒠'])  ### PARENTHESIZED LATIN SMALL LETTER E
-  create_key_or_plusEquals_to_its_value(triples, "(f)", ['⒡'])  ### PARENTHESIZED LATIN SMALL LETTER F
-  create_key_or_plusEquals_to_its_value(triples, "(g)", ['⒢'])  ### PARENTHESIZED LATIN SMALL LETTER G
-  create_key_or_plusEquals_to_its_value(triples, "(h)", ['⒣'])  ### PARENTHESIZED LATIN SMALL LETTER H
-  create_key_or_plusEquals_to_its_value(triples, "(i)", ['⒤'])  ### PARENTHESIZED LATIN SMALL LETTER I
-  create_key_or_plusEquals_to_its_value(triples, "(j)", ['⒥'])  ### PARENTHESIZED LATIN SMALL LETTER J
-  create_key_or_plusEquals_to_its_value(triples, "(k)", ['⒦'])  ### PARENTHESIZED LATIN SMALL LETTER K
-  create_key_or_plusEquals_to_its_value(triples, "(l)", ['⒧'])  ### PARENTHESIZED LATIN SMALL LETTER L
-  create_key_or_plusEquals_to_its_value(triples, "(m)", ['⒨'])  ### PARENTHESIZED LATIN SMALL LETTER M
-  create_key_or_plusEquals_to_its_value(triples, "(n)", ['⒩'])  ### PARENTHESIZED LATIN SMALL LETTER N
-  create_key_or_plusEquals_to_its_value(triples, "(o)", ['⒪'])  ### PARENTHESIZED LATIN SMALL LETTER O
-  create_key_or_plusEquals_to_its_value(triples, "(p)", ['⒫'])  ### PARENTHESIZED LATIN SMALL LETTER P
-  create_key_or_plusEquals_to_its_value(triples, "(q)", ['⒬'])  ### PARENTHESIZED LATIN SMALL LETTER Q
-  create_key_or_plusEquals_to_its_value(triples, "(r)", ['⒭'])  ### PARENTHESIZED LATIN SMALL LETTER R
-  create_key_or_plusEquals_to_its_value(triples, "(s)", ['⒮'])  ### PARENTHESIZED LATIN SMALL LETTER S
-  create_key_or_plusEquals_to_its_value(triples, "(t)", ['⒯'])  ### PARENTHESIZED LATIN SMALL LETTER T
-  create_key_or_plusEquals_to_its_value(triples, "(u)", ['⒰'])  ### PARENTHESIZED LATIN SMALL LETTER U
-  create_key_or_plusEquals_to_its_value(triples, "(v)", ['⒱'])  ### PARENTHESIZED LATIN SMALL LETTER V
-  create_key_or_plusEquals_to_its_value(triples, "(w)", ['⒲'])  ### PARENTHESIZED LATIN SMALL LETTER W
-  create_key_or_plusEquals_to_its_value(triples, "(x)", ['⒳'])  ### PARENTHESIZED LATIN SMALL LETTER X
-  create_key_or_plusEquals_to_its_value(triples, "(y)", ['⒴'])  ### PARENTHESIZED LATIN SMALL LETTER Y
-  create_key_or_plusEquals_to_its_value(triples, "(z)", ['⒵'])  ### PARENTHESIZED LATIN SMALL LETTER Z
+  create_key_or_plusEquals_to_its_value(triples, "(a)", ['⒜'])   ### PARENTHESIZED LATIN SMALL LETTER A
+  create_key_or_plusEquals_to_its_value(triples, "(b)", ['⒝'])   ### PARENTHESIZED LATIN SMALL LETTER B
+  create_key_or_plusEquals_to_its_value(triples, "(c)", ['⒞'])   ### PARENTHESIZED LATIN SMALL LETTER C
+  create_key_or_plusEquals_to_its_value(triples, "(d)", ['⒟'])   ### PARENTHESIZED LATIN SMALL LETTER D
+  create_key_or_plusEquals_to_its_value(triples, "(e)", ['⒠'])   ### PARENTHESIZED LATIN SMALL LETTER E
+  create_key_or_plusEquals_to_its_value(triples, "(f)", ['⒡'])   ### PARENTHESIZED LATIN SMALL LETTER F
+  create_key_or_plusEquals_to_its_value(triples, "(g)", ['⒢'])   ### PARENTHESIZED LATIN SMALL LETTER G
+  create_key_or_plusEquals_to_its_value(triples, "(h)", ['⒣'])   ### PARENTHESIZED LATIN SMALL LETTER H
+  create_key_or_plusEquals_to_its_value(triples, "(i)", ['⒤'])   ### PARENTHESIZED LATIN SMALL LETTER I
+  create_key_or_plusEquals_to_its_value(triples, "(j)", ['⒥'])   ### PARENTHESIZED LATIN SMALL LETTER J
+  create_key_or_plusEquals_to_its_value(triples, "(k)", ['⒦'])   ### PARENTHESIZED LATIN SMALL LETTER K
+  create_key_or_plusEquals_to_its_value(triples, "(l)", ['⒧'])   ### PARENTHESIZED LATIN SMALL LETTER L
+  create_key_or_plusEquals_to_its_value(triples, "(m)", ['⒨'])   ### PARENTHESIZED LATIN SMALL LETTER M
+  create_key_or_plusEquals_to_its_value(triples, "(n)", ['⒩'])   ### PARENTHESIZED LATIN SMALL LETTER N
+  create_key_or_plusEquals_to_its_value(triples, "(o)", ['⒪'])   ### PARENTHESIZED LATIN SMALL LETTER O
+  create_key_or_plusEquals_to_its_value(triples, "(p)", ['⒫'])   ### PARENTHESIZED LATIN SMALL LETTER P
+  create_key_or_plusEquals_to_its_value(triples, "(q)", ['⒬'])   ### PARENTHESIZED LATIN SMALL LETTER Q
+  create_key_or_plusEquals_to_its_value(triples, "(r)", ['⒭'])   ### PARENTHESIZED LATIN SMALL LETTER R
+  create_key_or_plusEquals_to_its_value(triples, "(s)", ['⒮'])   ### PARENTHESIZED LATIN SMALL LETTER S
+  create_key_or_plusEquals_to_its_value(triples, "(t)", ['⒯'])   ### PARENTHESIZED LATIN SMALL LETTER T
+  create_key_or_plusEquals_to_its_value(triples, "(u)", ['⒰'])   ### PARENTHESIZED LATIN SMALL LETTER U
+  create_key_or_plusEquals_to_its_value(triples, "(v)", ['⒱'])   ### PARENTHESIZED LATIN SMALL LETTER V
+  create_key_or_plusEquals_to_its_value(triples, "(w)", ['⒲'])   ### PARENTHESIZED LATIN SMALL LETTER W
+  create_key_or_plusEquals_to_its_value(triples, "(x)", ['⒳'])   ### PARENTHESIZED LATIN SMALL LETTER X
+  create_key_or_plusEquals_to_its_value(triples, "(y)", ['⒴'])   ### PARENTHESIZED LATIN SMALL LETTER Y
+  create_key_or_plusEquals_to_its_value(triples, "(z)", ['⒵'])   ### PARENTHESIZED LATIN SMALL LETTER Z
 
-  create_key_or_plusEquals_to_its_value(triples, "(1)", ['⑴'])  ### PARENTHESIZED DIGIT ONE
-  create_key_or_plusEquals_to_its_value(triples, "(2)", ['⑵'])  ### PARENTHESIZED DIGIT TWO
-  create_key_or_plusEquals_to_its_value(triples, "(3)", ['⑶'])  ### PARENTHESIZED DIGIT THREE
-  create_key_or_plusEquals_to_its_value(triples, "(4)", ['⑷'])  ### PARENTHESIZED DIGIT FOUR
-  create_key_or_plusEquals_to_its_value(triples, "(5)", ['⑸'])  ### PARENTHESIZED DIGIT FIVE
-  create_key_or_plusEquals_to_its_value(triples, "(6)", ['⑹'])  ### PARENTHESIZED DIGIT SIX
-  create_key_or_plusEquals_to_its_value(triples, "(7)", ['⑺'])  ### PARENTHESIZED DIGIT SEVEN
-  create_key_or_plusEquals_to_its_value(triples, "(8)", ['⑻'])  ### PARENTHESIZED DIGIT EIGHT
-  create_key_or_plusEquals_to_its_value(triples, "(9)", ['⑼'])  ### PARENTHESIZED DIGIT NINE
+  create_key_or_plusEquals_to_its_value(triples, "(1)", ['⑴'])   ### PARENTHESIZED DIGIT ONE
+  create_key_or_plusEquals_to_its_value(triples, "(2)", ['⑵'])   ### PARENTHESIZED DIGIT TWO
+  create_key_or_plusEquals_to_its_value(triples, "(3)", ['⑶'])   ### PARENTHESIZED DIGIT THREE
+  create_key_or_plusEquals_to_its_value(triples, "(4)", ['⑷'])   ### PARENTHESIZED DIGIT FOUR
+  create_key_or_plusEquals_to_its_value(triples, "(5)", ['⑸'])   ### PARENTHESIZED DIGIT FIVE
+  create_key_or_plusEquals_to_its_value(triples, "(6)", ['⑹'])   ### PARENTHESIZED DIGIT SIX
+  create_key_or_plusEquals_to_its_value(triples, "(7)", ['⑺'])   ### PARENTHESIZED DIGIT SEVEN
+  create_key_or_plusEquals_to_its_value(triples, "(8)", ['⑻'])   ### PARENTHESIZED DIGIT EIGHT
+  create_key_or_plusEquals_to_its_value(triples, "(9)", ['⑼'])   ### PARENTHESIZED DIGIT NINE
 
-  create_key_or_plusEquals_to_its_value(  quads, "(10)", ['⑽']) ### PARENTHESIZED NUMBER TEN
-  create_key_or_plusEquals_to_its_value(  quads, "(11)", ['⑾']) ### PARENTHESIZED NUMBER ELEVEN
-  create_key_or_plusEquals_to_its_value(  quads, "(12)", ['⑿']) ### PARENTHESIZED NUMBER TWELVE
-  create_key_or_plusEquals_to_its_value(  quads, "(13)", ['⒀']) ### PARENTHESIZED NUMBER THIRTEEN
-  create_key_or_plusEquals_to_its_value(  quads, "(14)", ['⒁']) ### PARENTHESIZED NUMBER FOURTEEN
-  create_key_or_plusEquals_to_its_value(  quads, "(15)", ['⒂']) ### PARENTHESIZED NUMBER FIFTEEN
-  create_key_or_plusEquals_to_its_value(  quads, "(16)", ['⒃']) ### PARENTHESIZED NUMBER SIXTEEN
-  create_key_or_plusEquals_to_its_value(  quads, "(17)", ['⒄']) ### PARENTHESIZED NUMBER SEVENTEEN
-  create_key_or_plusEquals_to_its_value(  quads, "(18)", ['⒅']) ### PARENTHESIZED NUMBER EIGHTEEN
-  create_key_or_plusEquals_to_its_value(  quads, "(19)", ['⒆']) ### PARENTHESIZED NUMBER NINETEEN
-  create_key_or_plusEquals_to_its_value(  quads, "(20)", ['⒇']) ### PARENTHESIZED NUMBER TWENTY
+  create_key_or_plusEquals_to_its_value(  quads, "(10)", ['⑽'])  ### PARENTHESIZED NUMBER TEN
+  create_key_or_plusEquals_to_its_value(  quads, "(11)", ['⑾'])  ### PARENTHESIZED NUMBER ELEVEN
+  create_key_or_plusEquals_to_its_value(  quads, "(12)", ['⑿'])  ### PARENTHESIZED NUMBER TWELVE
+  create_key_or_plusEquals_to_its_value(  quads, "(13)", ['⒀'])  ### PARENTHESIZED NUMBER THIRTEEN
+  create_key_or_plusEquals_to_its_value(  quads, "(14)", ['⒁'])  ### PARENTHESIZED NUMBER FOURTEEN
+  create_key_or_plusEquals_to_its_value(  quads, "(15)", ['⒂'])  ### PARENTHESIZED NUMBER FIFTEEN
+  create_key_or_plusEquals_to_its_value(  quads, "(16)", ['⒃'])  ### PARENTHESIZED NUMBER SIXTEEN
+  create_key_or_plusEquals_to_its_value(  quads, "(17)", ['⒄'])  ### PARENTHESIZED NUMBER SEVENTEEN
+  create_key_or_plusEquals_to_its_value(  quads, "(18)", ['⒅'])  ### PARENTHESIZED NUMBER EIGHTEEN
+  create_key_or_plusEquals_to_its_value(  quads, "(19)", ['⒆'])  ### PARENTHESIZED NUMBER NINETEEN
+  create_key_or_plusEquals_to_its_value(  quads, "(20)", ['⒇'])  ### PARENTHESIZED NUMBER TWENTY
 
-  create_key_or_plusEquals_to_its_value(doubles, "1.", ['⒈'])   ### DIGIT ONE   FULL STOP [for search: DIGIT ONE FULL STOP]
-  create_key_or_plusEquals_to_its_value(doubles, "2.", ['⒉'])   ### DIGIT TWO   FULL STOP [for search: DIGIT TWO FULL STOP]
-  create_key_or_plusEquals_to_its_value(doubles, "3.", ['⒊'])   ### DIGIT THREE FULL STOP
-  create_key_or_plusEquals_to_its_value(doubles, "4.", ['⒋'])   ### DIGIT FOUR  FULL STOP [for search: DIGIT FOUR FULL STOP]
-  create_key_or_plusEquals_to_its_value(doubles, "5.", ['⒌'])   ### DIGIT FIVE  FULL STOP [for search: DIGIT FIVE FULL STOP]
-  create_key_or_plusEquals_to_its_value(doubles, "6.", ['⒍'])   ### DIGIT SIX   FULL STOP [for search: DIGIT SIX FULL STOP]
-  create_key_or_plusEquals_to_its_value(doubles, "7.", ['⒎'])   ### DIGIT SEVEN FULL STOP
-  create_key_or_plusEquals_to_its_value(doubles, "8.", ['⒏'])   ### DIGIT EIGHT FULL STOP
-  create_key_or_plusEquals_to_its_value(doubles, "9.", ['⒐'])   ### DIGIT NINE  FULL STOP [for search: DIGIT NINE FULL STOP]
+  create_key_or_plusEquals_to_its_value(doubles, "1.", ['⒈'])    ### DIGIT ONE   FULL STOP [for search: DIGIT ONE FULL STOP]
+  create_key_or_plusEquals_to_its_value(doubles, "2.", ['⒉'])    ### DIGIT TWO   FULL STOP [for search: DIGIT TWO FULL STOP]
+  create_key_or_plusEquals_to_its_value(doubles, "3.", ['⒊'])    ### DIGIT THREE FULL STOP
+  create_key_or_plusEquals_to_its_value(doubles, "4.", ['⒋'])    ### DIGIT FOUR  FULL STOP [for search: DIGIT FOUR FULL STOP]
+  create_key_or_plusEquals_to_its_value(doubles, "5.", ['⒌'])    ### DIGIT FIVE  FULL STOP [for search: DIGIT FIVE FULL STOP]
+  create_key_or_plusEquals_to_its_value(doubles, "6.", ['⒍'])    ### DIGIT SIX   FULL STOP [for search: DIGIT SIX FULL STOP]
+  create_key_or_plusEquals_to_its_value(doubles, "7.", ['⒎'])    ### DIGIT SEVEN FULL STOP
+  create_key_or_plusEquals_to_its_value(doubles, "8.", ['⒏'])    ### DIGIT EIGHT FULL STOP
+  create_key_or_plusEquals_to_its_value(doubles, "9.", ['⒐'])    ### DIGIT NINE  FULL STOP [for search: DIGIT NINE FULL STOP]
 
-  create_key_or_plusEquals_to_its_value(triples, "10.", ['⒑'])  ### NUMBER TEN       FULL STOP [for search: NUMBER TEN FULL STOP]
-  create_key_or_plusEquals_to_its_value(triples, "11.", ['⒒'])  ### NUMBER ELEVEN    FULL STOP [for search: NUMBER ELEVEN FULL STOP]
-  create_key_or_plusEquals_to_its_value(triples, "12.", ['⒓'])  ### NUMBER TWELVE    FULL STOP [for search: NUMBER TWELVE FULL STOP]
-  create_key_or_plusEquals_to_its_value(triples, "13.", ['⒔'])  ### NUMBER THIRTEEN  FULL STOP [for search: NUMBER THIRTEEN FULL STOP]
-  create_key_or_plusEquals_to_its_value(triples, "14.", ['⒕'])  ### NUMBER FOURTEEN  FULL STOP [for search: NUMBER FOURTEEN FULL STOP]
-  create_key_or_plusEquals_to_its_value(triples, "15.", ['⒖'])  ### NUMBER FIFTEEN   FULL STOP [for search: NUMBER FIFTEEN FULL STOP]
-  create_key_or_plusEquals_to_its_value(triples, "16.", ['⒗'])  ### NUMBER SIXTEEN   FULL STOP [for search: NUMBER SIXTEEN FULL STOP]
-  create_key_or_plusEquals_to_its_value(triples, "17.", ['⒘'])  ### NUMBER SEVENTEEN FULL STOP
-  create_key_or_plusEquals_to_its_value(triples, "18.", ['⒙'])  ### NUMBER EIGHTEEN  FULL STOP [for search: NUMBER EIGHTEEN FULL STOP]
-  create_key_or_plusEquals_to_its_value(triples, "19.", ['⒚'])  ### NUMBER NINETEEN  FULL STOP [for search: NUMBER NINETEEN FULL STOP]
-  create_key_or_plusEquals_to_its_value(triples, "20.", ['⒛'])  ### NUMBER TWENTY    FULL STOP [for search: NUMBER TWENTY FULL STOP]
+  create_key_or_plusEquals_to_its_value(triples, "10.", ['⒑'])   ### NUMBER TEN       FULL STOP [for search: NUMBER TEN FULL STOP]
+  create_key_or_plusEquals_to_its_value(triples, "11.", ['⒒'])   ### NUMBER ELEVEN    FULL STOP [for search: NUMBER ELEVEN FULL STOP]
+  create_key_or_plusEquals_to_its_value(triples, "12.", ['⒓'])   ### NUMBER TWELVE    FULL STOP [for search: NUMBER TWELVE FULL STOP]
+  create_key_or_plusEquals_to_its_value(triples, "13.", ['⒔'])   ### NUMBER THIRTEEN  FULL STOP [for search: NUMBER THIRTEEN FULL STOP]
+  create_key_or_plusEquals_to_its_value(triples, "14.", ['⒕'])   ### NUMBER FOURTEEN  FULL STOP [for search: NUMBER FOURTEEN FULL STOP]
+  create_key_or_plusEquals_to_its_value(triples, "15.", ['⒖'])   ### NUMBER FIFTEEN   FULL STOP [for search: NUMBER FIFTEEN FULL STOP]
+  create_key_or_plusEquals_to_its_value(triples, "16.", ['⒗'])   ### NUMBER SIXTEEN   FULL STOP [for search: NUMBER SIXTEEN FULL STOP]
+  create_key_or_plusEquals_to_its_value(triples, "17.", ['⒘'])   ### NUMBER SEVENTEEN FULL STOP
+  create_key_or_plusEquals_to_its_value(triples, "18.", ['⒙'])   ### NUMBER EIGHTEEN  FULL STOP [for search: NUMBER EIGHTEEN FULL STOP]
+  create_key_or_plusEquals_to_its_value(triples, "19.", ['⒚'])   ### NUMBER NINETEEN  FULL STOP [for search: NUMBER NINETEEN FULL STOP]
+  create_key_or_plusEquals_to_its_value(triples, "20.", ['⒛'])   ### NUMBER TWENTY    FULL STOP [for search: NUMBER TWENTY FULL STOP]
 
-  create_key_or_plusEquals_to_its_value(triples, "III", ['Ⅲ'])  ###       ROMAN NUMERAL THREE
-  create_key_or_plusEquals_to_its_value(triples, "iii", ['ⅲ'])  ### SMALL ROMAN NUMERAL THREE
+  create_key_or_plusEquals_to_its_value(triples, "III", ['Ⅲ'])   ###       ROMAN NUMERAL THREE
+  create_key_or_plusEquals_to_its_value(triples, "iii", ['ⅲ'])   ### SMALL ROMAN NUMERAL THREE
 
-  create_key_or_plusEquals_to_its_value(triples, "Pts", ['₧'])  ### peseta(s) sign
+  create_key_or_plusEquals_to_its_value(triples, "Pts", ['₧'])   ### peseta(s) sign
 
-  create_key_or_plusEquals_to_its_value(triples, "VII", ['Ⅶ'])  ###       ROMAN NUMERAL SEVEN
-  create_key_or_plusEquals_to_its_value(triples, "vii", ['ⅶ'])  ### SMALL ROMAN NUMERAL SEVEN
+  create_key_or_plusEquals_to_its_value(triples, "VII", ['Ⅶ'])   ###       ROMAN NUMERAL SEVEN
+  create_key_or_plusEquals_to_its_value(triples, "vii", ['ⅶ'])   ### SMALL ROMAN NUMERAL SEVEN
 
-  create_key_or_plusEquals_to_its_value(  quads, "VIII", ['Ⅷ']) ###       ROMAN NUMERAL EIGHT
-  create_key_or_plusEquals_to_its_value(  quads, "viii", ['ⅷ']) ### SMALL ROMAN NUMERAL EIGHT
+  create_key_or_plusEquals_to_its_value(  quads, "VIII", ['Ⅷ'])  ###       ROMAN NUMERAL EIGHT
+  create_key_or_plusEquals_to_its_value(  quads, "viii", ['ⅷ'])  ### SMALL ROMAN NUMERAL EIGHT
 
-  create_key_or_plusEquals_to_its_value(triples, "XII", ['Ⅻ']) ### ROMAN NUMERAL TWELVE
-  create_key_or_plusEquals_to_its_value(triples, "XII", ['Ⅻ']) ### ROMAN NUMERAL TWELVE
+  create_key_or_plusEquals_to_its_value(triples, "XII", ['Ⅻ'])   ### ROMAN NUMERAL TWELVE
+  create_key_or_plusEquals_to_its_value(triples, "XII", ['Ⅻ'])   ### ROMAN NUMERAL TWELVE
 
   create_key_or_plusEquals_to_its_value(  quads, "a.m.", ['㏂']) ### SQUARE AM
   create_key_or_plusEquals_to_its_value(  quads, "p.m.", ['㏘']) ### SQUARE PM
 
   create_key_or_plusEquals_to_its_value(  quads, "K.K.", ['㏍']) ### SQUARE KK
 
-  create_key_or_plusEquals_to_its_value(doubles, "AA", ['Ꜳ'])   ### LATIN CAPITAL LETTER AA
-# create_key_or_plusEquals_to_its_value(doubles, "AO", ['Ꜵ'])   ### LATIN CAPITAL LETTER AO [disabled b/c its appearance sucks too badly in iTerm2 on MOSX 10.11.6]
-# create_key_or_plusEquals_to_its_value(doubles, "ao", ['ꜵ'])   ### LATIN SMALL   LETTER AO [for search: LATIN SMALL LETTER AO] [disabled b/c its appearance sucks too badly in iTerm2 on MOSX 10.11.6]
-  create_key_or_plusEquals_to_its_value(doubles, "aa", ['ꜳ'])   ### LATIN SMALL   LETTER AA [for search: LATIN SMALL LETTER AA]
+  create_key_or_plusEquals_to_its_value(doubles, "AA", ['Ꜳ'])    ### LATIN CAPITAL LETTER AA
+# create_key_or_plusEquals_to_its_value(doubles, "AO", ['Ꜵ'])    ### LATIN CAPITAL LETTER AO [disabled b/c its appearance sucks too badly in iTerm2 on MOSX 10.11.6]
+# create_key_or_plusEquals_to_its_value(doubles, "ao", ['ꜵ'])    ### LATIN SMALL   LETTER AO [for search: LATIN SMALL LETTER AO] [disabled b/c its appearance sucks too badly in iTerm2 on MOSX 10.11.6]
+  create_key_or_plusEquals_to_its_value(doubles, "aa", ['ꜳ'])    ### LATIN SMALL   LETTER AA [for search: LATIN SMALL LETTER AA]
 
-  create_key_or_plusEquals_to_its_value(singles, 'M', 'ꓟ')  ### LISU LETTER MA [this one came out all funky —— wide and overflowing to the right —— in iTerm2 on MOSX 10.11.6 on my main MBP]
-  create_key_or_plusEquals_to_its_value(singles, 'N', 'ꓠ')  ### LISU LETTER NA [this one came out all funky —— wide and overflowing to the right —— in iTerm2 on MOSX 10.11.6 on my main MBP]
-  create_key_or_plusEquals_to_its_value(singles, 'W', 'ꓪ')  ### LISU LETTER WA [this one came out all funky —— wide and overflowing to the right —— in iTerm2 on MOSX 10.11.6 on my main MBP]
+  create_key_or_plusEquals_to_its_value(singles, 'M', 'ꓟ')       ### LISU LETTER MA [this one came out all funky —— wide and overflowing to the right —— in iTerm2 on MOSX 10.11.6 on my main MBP]
+  create_key_or_plusEquals_to_its_value(singles, 'N', 'ꓠ')       ### LISU LETTER NA [this one came out all funky —— wide and overflowing to the right —— in iTerm2 on MOSX 10.11.6 on my main MBP]
+  create_key_or_plusEquals_to_its_value(singles, 'W', 'ꓪ')       ### LISU LETTER WA [this one came out all funky —— wide and overflowing to the right —— in iTerm2 on MOSX 10.11.6 on my main MBP]
  ### test: 'ꓲ' ### this one is _really_ shit — I can`t seem to get a serif version of this lame-ass fake capital letter I [“LISU LETTER I”]
 
-  create_key_or_plusEquals_to_its_value(singles, 'W' , 'Ꮃ')  ### CHEROKEE LETTER LA
+  create_key_or_plusEquals_to_its_value(singles, 'W' , 'Ꮃ')      ### CHEROKEE LETTER LA
 
 # create_key_or_plusEquals_to_its_value(doubles, "__", ['_'])  ###
 # create_key_or_plusEquals_to_its_value(triples, "___", ['_'])  ###
