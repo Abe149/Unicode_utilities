@@ -138,6 +138,33 @@ if OK_to_use_nonBMP_codepoints:
     create_key_or_plusEquals_to_its_value(doubles, "8,", ['🄉']) ### DIGIT EIGHT COMMA
     create_key_or_plusEquals_to_its_value(doubles, "9,", ['🄊']) ### DIGIT NINE  COMMA [for search: DIGIT NINE COMMA]
 
+    create_key_or_plusEquals_to_its_value(triples, "(A)", ['🄐']) ### PARENTHESIZED LATIN CAPITAL LETTER A
+    create_key_or_plusEquals_to_its_value(triples, "(B)", ['🄑']) ### PARENTHESIZED LATIN CAPITAL LETTER B
+    create_key_or_plusEquals_to_its_value(triples, "(C)", ['🄒']) ### PARENTHESIZED LATIN CAPITAL LETTER C
+    create_key_or_plusEquals_to_its_value(triples, "(D)", ['🄓']) ### PARENTHESIZED LATIN CAPITAL LETTER D
+    create_key_or_plusEquals_to_its_value(triples, "(E)", ['🄔']) ### PARENTHESIZED LATIN CAPITAL LETTER E
+    create_key_or_plusEquals_to_its_value(triples, "(F)", ['🄕']) ### PARENTHESIZED LATIN CAPITAL LETTER F
+    create_key_or_plusEquals_to_its_value(triples, "(G)", ['🄖']) ### PARENTHESIZED LATIN CAPITAL LETTER G
+    create_key_or_plusEquals_to_its_value(triples, "(H)", ['🄗']) ### PARENTHESIZED LATIN CAPITAL LETTER H
+    create_key_or_plusEquals_to_its_value(triples, "(I)", ['🄘']) ### PARENTHESIZED LATIN CAPITAL LETTER I
+    create_key_or_plusEquals_to_its_value(triples, "(J)", ['🄙']) ### PARENTHESIZED LATIN CAPITAL LETTER J
+    create_key_or_plusEquals_to_its_value(triples, "(K)", ['🄚']) ### PARENTHESIZED LATIN CAPITAL LETTER K
+    create_key_or_plusEquals_to_its_value(triples, "(L)", ['🄛']) ### PARENTHESIZED LATIN CAPITAL LETTER L
+    create_key_or_plusEquals_to_its_value(triples, "(M)", ['🄜']) ### PARENTHESIZED LATIN CAPITAL LETTER M
+    create_key_or_plusEquals_to_its_value(triples, "(N)", ['🄝']) ### PARENTHESIZED LATIN CAPITAL LETTER N
+    create_key_or_plusEquals_to_its_value(triples, "(O)", ['🄞']) ### PARENTHESIZED LATIN CAPITAL LETTER O
+    create_key_or_plusEquals_to_its_value(triples, "(P)", ['🄟']) ### PARENTHESIZED LATIN CAPITAL LETTER P
+    create_key_or_plusEquals_to_its_value(triples, "(Q)", ['🄠']) ### PARENTHESIZED LATIN CAPITAL LETTER Q
+    create_key_or_plusEquals_to_its_value(triples, "(R)", ['🄡']) ### PARENTHESIZED LATIN CAPITAL LETTER R
+    create_key_or_plusEquals_to_its_value(triples, "(S)", ['🄢']) ### PARENTHESIZED LATIN CAPITAL LETTER S
+    create_key_or_plusEquals_to_its_value(triples, "(T)", ['🄣']) ### PARENTHESIZED LATIN CAPITAL LETTER T
+    create_key_or_plusEquals_to_its_value(triples, "(U)", ['🄤']) ### PARENTHESIZED LATIN CAPITAL LETTER U
+    create_key_or_plusEquals_to_its_value(triples, "(V)", ['🄥']) ### PARENTHESIZED LATIN CAPITAL LETTER V
+    create_key_or_plusEquals_to_its_value(triples, "(W)", ['🄦']) ### PARENTHESIZED LATIN CAPITAL LETTER W
+    create_key_or_plusEquals_to_its_value(triples, "(X)", ['🄧']) ### PARENTHESIZED LATIN CAPITAL LETTER X
+    create_key_or_plusEquals_to_its_value(triples, "(Y)", ['🄨']) ### PARENTHESIZED LATIN CAPITAL LETTER Y
+    create_key_or_plusEquals_to_its_value(triples, "(Z)", ['🄩']) ### PARENTHESIZED LATIN CAPITAL LETTER Z
+
 ### end if OK_to_use_nonBMP_codepoints
 
 
