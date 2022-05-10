@@ -617,10 +617,17 @@ if not we_are_in_a_monospaced_context:
 
 
 
+### dump the data structures, if/when the DEBUG level is high enough
+if DEBUG>8:
+  print ("DEBUG [stderr]: singles:", singles, file = sys.stderr)
+  print ("DEBUG [stderr]: doubles:", doubles, file = sys.stderr)
+  print ("DEBUG [stderr]: triples:", triples, file = sys.stderr)
+  print ("DEBUG [stderr]:   quads:",   quads, file = sys.stderr)
+
+
+
 ### validate data structures
 
-if DEBUG>9:
-  print ("singles:", singles)
 for key in singles:
   val = singles[key]
   assert type(val) == type("")
@@ -642,8 +649,6 @@ for key in triples:
     assert type(supposed_string) == type("")
     assert len( supposed_string) > 0
 
-if DEBUG>9:
-  print ("quads:", quads)
 for key in   quads:
   ### just require some kind of “iterable”, i.e. don`t _insist_ on a _list_ of strings [even though that`s what is expected]
   val =   quads[key]
